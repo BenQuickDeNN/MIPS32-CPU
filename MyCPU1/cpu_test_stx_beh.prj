@@ -1,0 +1,2 @@
+vhdl isim_temp "MyCPU.vhd"
+vhdl isim_temp "cpu_test.vhd"

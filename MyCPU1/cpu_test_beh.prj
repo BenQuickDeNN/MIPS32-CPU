@@ -1,0 +1,2 @@
+vhdl work "MyCPU.vhd"
+vhdl work "cpu_test.vhd"

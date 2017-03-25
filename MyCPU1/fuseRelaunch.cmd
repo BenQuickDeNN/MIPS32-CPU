@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "E:/projects/VHDL/MyCPU1_ISE/MyCPU1/cpu_test_isim_beh.exe" -prj "E:/projects/VHDL/MyCPU1_ISE/MyCPU1/cpu_test_beh.prj" "work.cpu_test" 

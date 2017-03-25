@@ -1,0 +1,96 @@
+(DELAYFILE
+  (SDFVERSION "3.0")
+  (DESIGN "MyCPU1")
+  (DATE "Fri Mar 24 23:31:47 2017")
+  (VENDOR "Xilinx")
+  (PROGRAM "Xilinx SDF Writer")
+  (VERSION "P.20131013")
+  (DIVIDER /)
+  (TIMESCALE 1 ps)
+  (CELL (CELLTYPE "X_BUF")
+    (INSTANCE b_OBUF)
+      (DELAY
+        (ABSOLUTE
+          (IOPATH I O ( 1500 )( 1500 ))
+        )
+      )
+  )
+  (CELL (CELLTYPE "X_BUF")
+    (INSTANCE b_4)
+      (DELAY
+        (ABSOLUTE
+          (IOPATH I O ( 2000 )( 2000 ))
+        )
+      )
+  )
+  (CELL (CELLTYPE "X_BUF")
+    (INSTANCE b_OBUF_BUF0)
+      (DELAY
+        (ABSOLUTE
+          (IOPATH I O ( 0 )( 0 ))
+        )
+      )
+  )
+  (CELL (CELLTYPE "X_BUF")
+    (INSTANCE b_OBUF_BUF0_Q)
+      (DELAY
+        (ABSOLUTE
+          (IOPATH I O ( 500 )( 500 ))
+        )
+      )
+  )
+  (CELL (CELLTYPE "X_XOR2")
+    (INSTANCE b_OBUF_BUF0_D)
+      (DELAY
+        (ABSOLUTE
+          (PORT I0 ( 0 )( 0 ))
+          (PORT I1 ( 0 )( 0 ))
+          (IOPATH I0 O ( 0 )( 0 ))
+          (IOPATH I1 O ( 0 )( 0 ))
+        )
+      )
+  )
+  (CELL (CELLTYPE "X_AND2")
+    (INSTANCE b_OBUF_BUF0_D2)
+      (DELAY
+        (ABSOLUTE
+          (PORT I0 ( 1000 )( 1000 ))
+          (PORT I1 ( 1000 )( 1000 ))
+          (IOPATH I0 O ( 0 )( 0 ))
+          (IOPATH I1 O ( 0 )( 0 ))
+        )
+      )
+  )
+  (CELL (CELLTYPE "X_BUF")
+    (INSTANCE NlwBufferBlock_b_OBUF_BUF0_D_IN0)
+      (DELAY
+        (ABSOLUTE
+          (IOPATH I O ( 0 )( 0 ))
+        )
+      )
+  )
+  (CELL (CELLTYPE "X_BUF")
+    (INSTANCE NlwBufferBlock_b_OBUF_BUF0_D_IN1)
+      (DELAY
+        (ABSOLUTE
+          (IOPATH I O ( 0 )( 0 ))
+        )
+      )
+  )
+  (CELL (CELLTYPE "X_BUF")
+    (INSTANCE NlwBufferBlock_b_OBUF_BUF0_D2_IN0)
+      (DELAY
+        (ABSOLUTE
+          (IOPATH I O ( 0 )( 0 ))
+        )
+      )
+  )
+  (CELL (CELLTYPE "X_BUF")
+    (INSTANCE NlwBufferBlock_b_OBUF_BUF0_D2_IN1)
+      (DELAY
+        (ABSOLUTE
+          (IOPATH I O ( 0 )( 0 ))
+        )
+      )
+  )
+)

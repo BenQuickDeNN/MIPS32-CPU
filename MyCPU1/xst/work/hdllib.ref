@@ -1,0 +1,4 @@
+AR mycpu behavioral E:/projects/VHDL/MyCPU1_ISE/MyCPU1/MyCPU.vhd sub00/vhpl03 1490370093
+AR mycpu1 behavioral E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/MyCPU1.vhd sub00/vhpl01 1490368838
+EN mycpu1 NULL E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/MyCPU1.vhd sub00/vhpl00 1490368837
+EN mycpu NULL E:/projects/VHDL/MyCPU1_ISE/MyCPU1/MyCPU.vhd sub00/vhpl02 1490370092

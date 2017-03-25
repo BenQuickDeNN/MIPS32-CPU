@@ -1,0 +1,22 @@
+xst -intstyle ise -ifn "E:/projects/VHDL/MyCPU1_ISE/MyCPU1/MyCPU1.xst" -ofn "E:/projects/VHDL/MyCPU1_ISE/MyCPU1/MyCPU1.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7a100t-csg324-3 MyCPU1.ngc MyCPU1.ngd  
+xst -intstyle ise -ifn "E:/projects/VHDL/MyCPU1_ISE/MyCPU1/MyCPU1.xst" -ofn "E:/projects/VHDL/MyCPU1_ISE/MyCPU1/MyCPU1.syr" 
+ngdbuild -intstyle ise -dd _ngo -i -p xc9500 MyCPU1.ngc MyCPU1.ngd  
+xst -intstyle ise -ifn "E:/projects/VHDL/MyCPU1_ISE/MyCPU1/MyCPU1.xst" -ofn "E:/projects/VHDL/MyCPU1_ISE/MyCPU1/MyCPU1.syr" 
+ngdbuild -intstyle ise -dd _ngo -i -p xc9500 MyCPU1.ngc MyCPU1.ngd  
+cpldfit -intstyle ise -p xc95*-*-* -ofmt vhdl -optimize speed -htmlrpt -loc on -slew fast -init low -inputs 36 -pterms 25 -power std -localfbk -pinfbk MyCPU1.ngd 
+cpldfit -intstyle ise -p xc95*-*-* -ofmt vhdl -optimize speed -htmlrpt -loc on -slew fast -init low -inputs 36 -pterms 25 -power std -localfbk -pinfbk MyCPU1.ngd 
+xst -intstyle ise -ifn "E:/projects/VHDL/MyCPU1_ISE/MyCPU1/MyCPU1.xst" -ofn "E:/projects/VHDL/MyCPU1_ISE/MyCPU1/MyCPU1.syr" 
+ngdbuild -intstyle ise -dd _ngo -i -p xc9500 MyCPU1.ngc MyCPU1.ngd  
+cpldfit -intstyle ise -p xc95*-*-* -ofmt vhdl -optimize speed -htmlrpt -loc on -slew fast -init low -inputs 36 -pterms 25 -power std -localfbk -pinfbk MyCPU1.ngd 
+XSLTProcess MyCPU1_build.xml 
+tsim -intstyle ise MyCPU1 MyCPU1.nga 
+hprep6 -s IEEE1149 -n MyCPU1 -i MyCPU1 
+cpldfit -intstyle ise -p xc95*-*-* -ofmt vhdl -optimize speed -htmlrpt -loc on -slew fast -init low -inputs 36 -pterms 25 -power std -localfbk -pinfbk MyCPU1.ngd 
+XSLTProcess MyCPU1_build.xml 
+tsim -intstyle ise MyCPU1 MyCPU1.nga 
+hprep6 -s IEEE1149 -n MyCPU1 -i MyCPU1 
+taengine -intstyle ise -f MyCPU1 -w --format html1 -l MyCPU1_html/tim/timing_report.htm 
+netgen -intstyle ise -rpw 100 -ar Structure -tm MyCPU1 -w -dir netgen/fit -ofmt vhdl -sim MyCPU1.nga MyCPU1_timesim.vhd 
+ibiswriter -intstyle ise -g VCCIO:LVTTL MyCPU1.pnx MyCPU1.ibs 
+-cwd "E:/projects/VHDL/MyCPU1_ISE/MyCPU1" timingan_cpld -intstyle ise "E:/projects/VHDL/MyCPU1_ISE/MyCPU1/MyCPU1.vm6" 
