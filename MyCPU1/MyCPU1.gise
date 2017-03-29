@@ -23,6 +23,53 @@
 
   <files xmlns="http://www.xilinx.com/XMLSchema">
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name=".lso"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="ALU.prj"/>
+    <file xil_pn:fileType="FILE_SPL" xil_pn:name="ALU.spl"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="ALU.stx"/>
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="ALU.sym" xil_pn:origination="imported"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="ALU.xst"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="CU.prj"/>
+    <file xil_pn:fileType="FILE_SPL" xil_pn:name="CU.spl"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="CU.stx"/>
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="CU.sym" xil_pn:origination="imported"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="CU.xst"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Decoder38.prj"/>
+    <file xil_pn:fileType="FILE_SPL" xil_pn:name="Decoder38.spl"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="Decoder38.stx"/>
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="Decoder38.sym" xil_pn:origination="imported"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="Decoder38.xst"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="ImmeExt.prj"/>
+    <file xil_pn:fileType="FILE_SPL" xil_pn:name="ImmeExt.spl"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="ImmeExt.stx"/>
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="ImmeExt.sym" xil_pn:origination="imported"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="ImmeExt.xst"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Imme_Seperator.prj"/>
+    <file xil_pn:fileType="FILE_SPL" xil_pn:name="Imme_Seperator.spl"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="Imme_Seperator.stx"/>
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="Imme_Seperator.sym" xil_pn:origination="imported"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="Imme_Seperator.xst"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Instruction_Seperator.prj"/>
+    <file xil_pn:fileType="FILE_SPL" xil_pn:name="Instruction_Seperator.spl"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="Instruction_Seperator.stx"/>
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="Instruction_Seperator.sym" xil_pn:origination="imported"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="Instruction_Seperator.xst"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Mux_ALU_OP.prj"/>
+    <file xil_pn:fileType="FILE_SPL" xil_pn:name="Mux_ALU_OP.spl"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="Mux_ALU_OP.stx"/>
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="Mux_ALU_OP.sym" xil_pn:origination="imported"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="Mux_ALU_OP.xst"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Mux_LB.prj"/>
+    <file xil_pn:fileType="FILE_SPL" xil_pn:name="Mux_LB.spl"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="Mux_LB.stx"/>
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="Mux_LB.sym" xil_pn:origination="imported"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="Mux_LB.xst"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Mux_PC.prj"/>
+    <file xil_pn:fileType="FILE_SPL" xil_pn:name="Mux_PC.spl"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="Mux_PC.stx"/>
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="Mux_PC.sym" xil_pn:origination="imported"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="Mux_PC.xst"/>
+    <file xil_pn:fileType="FILE_SPL" xil_pn:name="Mux_Reg.spl"/>
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="Mux_Reg.sym" xil_pn:origination="imported"/>
     <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="MyCPU.cmd_log"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="MyCPU.lso"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="MyCPU.ngc"/>
@@ -65,9 +112,56 @@
     <file xil_pn:fileType="FILE_HTML" xil_pn:name="MyCPU_summary.html"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="MyCPU_vhdl.prj"/>
     <file xil_pn:fileType="FILE_XRPT" xil_pn:name="MyCPU_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Oprand_Seperator.prj"/>
+    <file xil_pn:fileType="FILE_SPL" xil_pn:name="Oprand_Seperator.spl"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="Oprand_Seperator.stx"/>
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="Oprand_Seperator.sym" xil_pn:origination="imported"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="Oprand_Seperator.xst"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="PC_Adder.prj"/>
+    <file xil_pn:fileType="FILE_SPL" xil_pn:name="PC_Adder.spl"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="PC_Adder.stx"/>
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="PC_Adder.sym" xil_pn:origination="imported"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="PC_Adder.xst"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="PC_Seperator.prj"/>
+    <file xil_pn:fileType="FILE_SPL" xil_pn:name="PC_Seperator.spl"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="PC_Seperator.stx"/>
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="PC_Seperator.sym" xil_pn:origination="imported"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="PC_Seperator.xst"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Register32.prj"/>
+    <file xil_pn:fileType="FILE_SPL" xil_pn:name="Register32.spl"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="Register32.stx"/>
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="Register32.sym" xil_pn:origination="imported"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="Register32.xst"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="RegisterField.prj"/>
+    <file xil_pn:fileType="FILE_SPL" xil_pn:name="RegisterField.spl"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="RegisterField.stx"/>
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="RegisterField.sym" xil_pn:origination="imported"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="RegisterField.xst"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Register_32.prj"/>
+    <file xil_pn:fileType="FILE_SPL" xil_pn:name="Register_32.spl"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="Register_32.stx"/>
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="Register_32.sym" xil_pn:origination="imported"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="Register_32.xst"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="RegistersField.prj"/>
+    <file xil_pn:fileType="FILE_SPL" xil_pn:name="RegistersField.spl"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="RegistersField.stx"/>
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="RegistersField.sym" xil_pn:origination="imported"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="RegistersField.xst"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="ShamtExt.prj"/>
+    <file xil_pn:fileType="FILE_SPL" xil_pn:name="ShamtExt.spl"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="ShamtExt.stx"/>
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="ShamtExt.sym" xil_pn:origination="imported"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="ShamtExt.xst"/>
+    <file xil_pn:fileType="FILE_SPL" xil_pn:name="TriState.spl"/>
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="TriState.sym" xil_pn:origination="imported"/>
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="_ngo"/>
     <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
     <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/xst.xmsgs"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="alu_logic_shift.prj"/>
+    <file xil_pn:fileType="FILE_SPL" xil_pn:name="alu_logic_shift.spl"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="alu_logic_shift.stx"/>
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="alu_logic_shift.sym" xil_pn:origination="imported"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="alu_logic_shift.xst"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="cpu_test_beh.prj"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="cpu_test_isim_beh.exe"/>
     <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="cpu_test_isim_beh.wdb"/>
@@ -99,8 +193,12 @@
     <transform xil_pn:end_ts="1490370674" xil_pn:in_ck="-4622862813091269643" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1490370674">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <outfile xil_pn:name="MyCPU.vhd"/>
-      <outfile xil_pn:name="cpu_test.vhd"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputAdded"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="InputRemoved"/>
+      <status xil_pn:value="OutputRemoved"/>
     </transform>
     <transform xil_pn:end_ts="1490370674" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-444740482251151835" xil_pn:start_ts="1490370674">
       <status xil_pn:value="SuccessfullyRun"/>
@@ -109,26 +207,33 @@
     <transform xil_pn:end_ts="1490370674" xil_pn:in_ck="-4622862813091269643" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1490370674">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <outfile xil_pn:name="MyCPU.vhd"/>
-      <outfile xil_pn:name="cpu_test.vhd"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="InputRemoved"/>
+      <status xil_pn:value="OutputRemoved"/>
     </transform>
     <transform xil_pn:end_ts="1490370678" xil_pn:in_ck="-4622862813091269643" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="2188963057195113972" xil_pn:start_ts="1490370674">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="OutOfDateForProperties"/>
-      <outfile xil_pn:name="cpu_test_beh.prj"/>
-      <outfile xil_pn:name="cpu_test_isim_beh.exe"/>
-      <outfile xil_pn:name="fuse.log"/>
-      <outfile xil_pn:name="isim"/>
-      <outfile xil_pn:name="xilinxsim.ini"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="InputRemoved"/>
+      <status xil_pn:value="OutputRemoved"/>
     </transform>
     <transform xil_pn:end_ts="1490370678" xil_pn:in_ck="8571220969298292022" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-4034994671836640543" xil_pn:start_ts="1490370678">
       <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="NotReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="OutOfDateForProperties"/>
       <status xil_pn:value="OutOfDateForPredecessor"/>
-      <outfile xil_pn:name="cpu_test_isim_beh.wdb"/>
-      <outfile xil_pn:name="isim.cmd"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputRemoved"/>
+      <status xil_pn:value="OutputRemoved"/>
     </transform>
     <transform xil_pn:end_ts="1490368659" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1490368658">
       <status xil_pn:value="SuccessfullyRun"/>
@@ -141,21 +246,13 @@
     <transform xil_pn:end_ts="1490370096" xil_pn:in_ck="113540056978558" xil_pn:name="TRANEXT_xstsynthesize_CPLD" xil_pn:prop_ck="5121429521546849889" xil_pn:start_ts="1490370091">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <outfile xil_pn:name=".lso"/>
-      <outfile xil_pn:name="MyCPU.lso"/>
-      <outfile xil_pn:name="MyCPU.ngc"/>
-      <outfile xil_pn:name="MyCPU.ngr"/>
-      <outfile xil_pn:name="MyCPU.prj"/>
-      <outfile xil_pn:name="MyCPU.stx"/>
-      <outfile xil_pn:name="MyCPU.syr"/>
-      <outfile xil_pn:name="MyCPU.xst"/>
-      <outfile xil_pn:name="MyCPU1.prj"/>
-      <outfile xil_pn:name="MyCPU1_vhdl.prj"/>
-      <outfile xil_pn:name="MyCPU_vhdl.prj"/>
-      <outfile xil_pn:name="MyCPU_xst.xrpt"/>
-      <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
-      <outfile xil_pn:name="webtalk_pn.xml"/>
-      <outfile xil_pn:name="xst"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputAdded"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="InputRemoved"/>
+      <status xil_pn:value="OutputChanged"/>
+      <status xil_pn:value="OutputRemoved"/>
     </transform>
     <transform xil_pn:end_ts="1490368669" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="1393408276587550007" xil_pn:start_ts="1490368669">
       <status xil_pn:value="SuccessfullyRun"/>

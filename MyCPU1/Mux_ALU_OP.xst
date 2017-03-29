@@ -1,0 +1,5 @@
+set -tmpdir "E:/projects/VHDL/MyCPU1_ISE/MyCPU1/xst/projnav.tmp"
+set -xsthdpdir "E:/projects/VHDL/MyCPU1_ISE/MyCPU1/xst"
+elaborate
+-ifn Mux_ALU_OP.prj
+-ifmt mixed

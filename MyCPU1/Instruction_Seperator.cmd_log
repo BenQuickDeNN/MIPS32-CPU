@@ -1,0 +1,2 @@
+vhdtdtfi -lib work Instruction_Seperator.vhd -prj MyCPU1 -o Instruction_Seperator.spl -module Instruction_Seperator -template D:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family xc9500 Instruction_Seperator.spl E:/projects/VHDL/MyCPU1_ISE/MyCPU1/Instruction_Seperator.sym 

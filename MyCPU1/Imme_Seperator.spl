@@ -1,0 +1,7 @@
+[Inputs]
+=Imme[15:0]=
+[Outputs]
+=Rd[4:0]=
+=shamt[4:0]=
+=alu_func[5:0]=
+[BiDir]

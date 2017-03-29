@@ -1,0 +1,2 @@
+vhdtdtfi -lib work source/PC_Seperator.vhd -prj MyCPU1 -o PC_Seperator.spl -module PC_Seperator -template D:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family xc9500 PC_Seperator.spl E:/projects/VHDL/MyCPU1_ISE/MyCPU1/PC_Seperator.sym 

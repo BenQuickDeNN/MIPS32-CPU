@@ -1,0 +1,8 @@
+[Inputs]
+=Reg_addr_0[4:0]=
+=Reg_addr_1[4:0]=
+=Reg_addr_2[4:0]=
+=Reg_Key[1:0]=
+[Outputs]
+=Reg_out_addr[4:0]=
+[BiDir]

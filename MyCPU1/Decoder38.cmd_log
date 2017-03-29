@@ -1,0 +1,2 @@
+vhdtdtfi -lib work source/Decoder38.vhd -prj MyCPU1 -o Decoder38.spl -module Decoder38 -template D:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family xc9500 Decoder38.spl E:/projects/VHDL/MyCPU1_ISE/MyCPU1/Decoder38.sym 

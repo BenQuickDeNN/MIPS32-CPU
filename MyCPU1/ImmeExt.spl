@@ -1,0 +1,5 @@
+[Inputs]
+=Imme_in[15:0]=
+[Outputs]
+=Imme_out[31:0]=
+[BiDir]

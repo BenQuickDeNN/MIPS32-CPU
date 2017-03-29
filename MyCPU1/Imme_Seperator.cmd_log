@@ -1,0 +1,2 @@
+vhdtdtfi -lib work source/Imme_Seperator.vhd -prj MyCPU1 -o Imme_Seperator.spl -module Imme_Seperator -template D:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family xc9500 Imme_Seperator.spl E:/projects/VHDL/MyCPU1_ISE/MyCPU1/Imme_Seperator.sym 

@@ -3,7 +3,7 @@ library ieee;
 use ieee.std_logic_1164.all;
 use ieee.std_logic_unsigned.all;
 use ieee.std_logic_arith.all;
-USE IEEE.STD_LOGIC_UNSIGNED.ALL;
+
 entity ALU is
 	port(alu_in_a, alu_in_b:in std_logic_vector(31 downto 0);-- oprand
 			op_code:in std_logic_vector(5 downto 0);-- opcode

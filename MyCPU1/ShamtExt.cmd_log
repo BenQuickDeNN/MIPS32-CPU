@@ -1,0 +1,2 @@
+vhdtdtfi -lib work source/ShamtExt.vhd -prj MyCPU1 -o ShamtExt.spl -module ShamtExt -template D:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family xc9500 ShamtExt.spl E:/projects/VHDL/MyCPU1_ISE/MyCPU1/ShamtExt.sym 

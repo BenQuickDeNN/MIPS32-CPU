@@ -1,0 +1,7 @@
+[Inputs]
+op_select
+=op0[5:0]=
+=op1[5:0]=
+[Outputs]
+=op_out[5:0]=
+[BiDir]

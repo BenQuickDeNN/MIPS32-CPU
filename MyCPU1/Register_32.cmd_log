@@ -1,0 +1,2 @@
+vhdtdtfi -lib work source/Register_32.vhd -prj MyCPU1 -o Register_32.spl -module Register_32 -template D:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family xc9500 Register_32.spl E:/projects/VHDL/MyCPU1_ISE/MyCPU1/Register_32.sym 

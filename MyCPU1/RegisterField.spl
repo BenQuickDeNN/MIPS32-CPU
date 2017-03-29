@@ -1,0 +1,9 @@
+[Inputs]
+WE
+OE
+clk
+=W_data[31:0]=
+=Reg_addr[4:0]=
+[Outputs]
+=R_data[31:0]=
+[BiDir]

@@ -1,0 +1,8 @@
+[Inputs]
+=Data_Imme[31:0]=
+=Data_Shamt[31:0]=
+=Data_Bus[31:0]=
+=Data_select[1:0]=
+[Outputs]
+=Data_out[31:0]=
+[BiDir]

@@ -1,0 +1,14 @@
+vhdtdtfi -lib work source/RegisterField.vhd -prj MyCPU1 -o RegisterField.spl -module RegisterField -template D:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family xc9500 RegisterField.spl E:/projects/VHDL/MyCPU1_ISE/MyCPU1/RegisterField.sym 
+vhdtdtfi -lib work source/RegisterField.vhd -prj MyCPU1 -o RegisterField.spl -module RegisterField -template D:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family xc9500 RegisterField.spl E:/projects/VHDL/MyCPU1_ISE/MyCPU1/RegisterField.sym 
+vhdtdtfi -lib work source/RegisterField.vhd -prj MyCPU1 -o RegisterField.spl -module RegisterField -template D:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family xc9500 RegisterField.spl E:/projects/VHDL/MyCPU1_ISE/MyCPU1/RegisterField.sym 
+vhdtdtfi -lib work source/RegisterField.vhd -prj MyCPU1 -o RegisterField.spl -module RegisterField -template D:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family xc9500 RegisterField.spl E:/projects/VHDL/MyCPU1_ISE/MyCPU1/RegisterField.sym 
+vhdtdtfi -lib work source/RegisterField.vhd -prj MyCPU1 -o RegisterField.spl -module RegisterField -template D:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family xc9500 RegisterField.spl E:/projects/VHDL/MyCPU1_ISE/MyCPU1/RegisterField.sym 
+vhdtdtfi -lib work source/RegisterField.vhd -prj MyCPU1 -o RegisterField.spl -module RegisterField -template D:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family xc9500 RegisterField.spl E:/projects/VHDL/MyCPU1_ISE/MyCPU1/RegisterField.sym 
+vhdtdtfi -lib work source/RegisterField.vhd -prj MyCPU1 -o RegisterField.spl -module RegisterField -template D:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family xc9500 RegisterField.spl E:/projects/VHDL/MyCPU1_ISE/MyCPU1/RegisterField.sym 

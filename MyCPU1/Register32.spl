@@ -1,0 +1,7 @@
+[Inputs]
+WE
+clk
+=data_in[31:0]=
+[Outputs]
+=data_out[31:0]=
+[BiDir]

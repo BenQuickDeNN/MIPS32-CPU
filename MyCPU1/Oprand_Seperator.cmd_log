@@ -1,0 +1,2 @@
+vhdtdtfi -lib work Oprand_Seperator.vhd -prj MyCPU1 -o Oprand_Seperator.spl -module Oprand_Seperator -template D:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family xc9500 Oprand_Seperator.spl E:/projects/VHDL/MyCPU1_ISE/MyCPU1/Oprand_Seperator.sym 

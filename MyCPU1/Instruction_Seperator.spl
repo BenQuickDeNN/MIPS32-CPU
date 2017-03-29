@@ -1,0 +1,6 @@
+[Inputs]
+=instruction_in[31:0]=
+[Outputs]
+=OPcode[5:0]=
+=OPrand[25:0]=
+[BiDir]

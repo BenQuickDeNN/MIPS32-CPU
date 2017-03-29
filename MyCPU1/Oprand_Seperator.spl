@@ -1,0 +1,7 @@
+[Inputs]
+=oprand[25:0]=
+[Outputs]
+=Rs[4:0]=
+=Rt[4:0]=
+=Imme[15:0]=
+[BiDir]

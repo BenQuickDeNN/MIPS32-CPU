@@ -1,0 +1,6 @@
+vhdtdtfi -lib work source/alu_logic_shift.vhd -prj MyCPU1 -o alu_logic_shift.spl -module alu_logic_shift -template D:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family xc9500 alu_logic_shift.spl E:/projects/VHDL/MyCPU1_ISE/MyCPU1/alu_logic_shift.sym 
+vhdtdtfi -lib work source/alu_logic_shift.vhd -prj MyCPU1 -o alu_logic_shift.spl -module alu_logic_shift -template D:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family xc9500 alu_logic_shift.spl E:/projects/VHDL/MyCPU1_ISE/MyCPU1/alu_logic_shift.sym 
+vhdtdtfi -lib work source/alu_logic_shift.vhd -prj MyCPU1 -o alu_logic_shift.spl -module alu_logic_shift -template D:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family xc9500 alu_logic_shift.spl E:/projects/VHDL/MyCPU1_ISE/MyCPU1/alu_logic_shift.sym 

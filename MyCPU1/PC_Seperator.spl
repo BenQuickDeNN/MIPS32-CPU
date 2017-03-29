@@ -1,0 +1,6 @@
+[Inputs]
+=PC_value[31:0]=
+[Outputs]
+=high4[3:0]=
+=low4[27:0]=
+[BiDir]

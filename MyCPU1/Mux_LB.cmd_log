@@ -1,0 +1,4 @@
+vhdtdtfi -lib work source/Mux_LB.vhd -prj MyCPU1 -o Mux_LB.spl -module Mux_LB -template D:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family xc9500 Mux_LB.spl E:/projects/VHDL/MyCPU1_ISE/MyCPU1/Mux_LB.sym 
+vhdtdtfi -lib work source/Mux_LB.vhd -prj MyCPU1 -o Mux_LB.spl -module Mux_LB -template D:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family xc9500 Mux_LB.spl E:/projects/VHDL/MyCPU1_ISE/MyCPU1/Mux_LB.sym 

@@ -1,0 +1,8 @@
+[Inputs]
+=alu_in_a[31:0]=
+=alu_in_b[31:0]=
+=op_code[5:0]=
+[Outputs]
+flag_z
+=result[31:0]=
+[BiDir]

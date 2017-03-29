@@ -1,0 +1,2 @@
+vhdtdtfi -lib work source/PC_Adder.vhd -prj MyCPU1 -o PC_Adder.spl -module PC_Adder -template D:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family xc9500 PC_Adder.spl E:/projects/VHDL/MyCPU1_ISE/MyCPU1/PC_Adder.sym 

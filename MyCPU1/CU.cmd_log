@@ -1,0 +1,2 @@
+vhdtdtfi -lib work source/CU.vhd -prj MyCPU1 -o CU.spl -module CU -template D:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family xc9500 CU.spl E:/projects/VHDL/MyCPU1_ISE/MyCPU1/CU.sym 
