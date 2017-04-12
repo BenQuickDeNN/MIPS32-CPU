@@ -193,7 +193,7 @@ architecture behav of CU is
 				end case;
 				test_MCounter <= InstructionAddress;
 				test_opcode <= opcode;
-				test_Miinstruct <= MicroInstructionAddrTable2(conv_integer(InstructionAddress));
+				test_Miinstruct <= MicroInstructionROM(conv_integer(InstructionAddress));
 			end if;
 		end process ControlProcess;
 end behav;

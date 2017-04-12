@@ -32,6 +32,7 @@
     <file xil_pn:fileType="FILE_SPL" xil_pn:name="CU.spl"/>
     <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="CU.stx"/>
     <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="CU.sym" xil_pn:origination="imported"/>
+    <file xil_pn:fileType="FILE_VHDL_INSTTEMPLATE" xil_pn:name="CU.vhi"/>
     <file xil_pn:fileType="FILE_XST" xil_pn:name="CU.xst"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="CU_isim_beh.exe"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="CU_stx_beh.prj"/>
@@ -119,6 +120,11 @@
     <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="Oprand_Seperator.stx"/>
     <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="Oprand_Seperator.sym" xil_pn:origination="imported"/>
     <file xil_pn:fileType="FILE_XST" xil_pn:name="Oprand_Seperator.xst"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="PCHighExtender.prj"/>
+    <file xil_pn:fileType="FILE_SPL" xil_pn:name="PCHighExtender.spl"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="PCHighExtender.stx"/>
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="PCHighExtender.sym" xil_pn:origination="imported"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="PCHighExtender.xst"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="PC_Adder.prj"/>
     <file xil_pn:fileType="FILE_SPL" xil_pn:name="PC_Adder.spl"/>
     <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="PC_Adder.stx"/>
@@ -150,7 +156,9 @@
     <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="RegistersField.sym" xil_pn:origination="imported"/>
     <file xil_pn:fileType="FILE_XST" xil_pn:name="RegistersField.xst"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="SRAM.prj"/>
+    <file xil_pn:fileType="FILE_SPL" xil_pn:name="SRAM.spl"/>
     <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="SRAM.stx"/>
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="SRAM.sym" xil_pn:origination="imported"/>
     <file xil_pn:fileType="FILE_XST" xil_pn:name="SRAM.xst"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="SRAM_beh.prj"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="SRAM_isim_beh.exe"/>
@@ -206,9 +214,45 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1492001119" xil_pn:in_ck="7670589240663639250" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1492001119">
+    <transform xil_pn:end_ts="1492004316" xil_pn:in_ck="5996849154515649844" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1492004316">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="Instruction_Seperator.vhd"/>
+      <outfile xil_pn:name="MyCPU.vhd"/>
+      <outfile xil_pn:name="Oprand_Seperator.vhd"/>
+      <outfile xil_pn:name="cpu_test.vhd"/>
+      <outfile xil_pn:name="source/ALU.vhd"/>
+      <outfile xil_pn:name="source/CU.vhd"/>
+      <outfile xil_pn:name="source/Decoder38.vhd"/>
+      <outfile xil_pn:name="source/ImmeExt.vhd"/>
+      <outfile xil_pn:name="source/Imme_Seperator.vhd"/>
+      <outfile xil_pn:name="source/Mux_ALU_OP.vhd"/>
+      <outfile xil_pn:name="source/Mux_LB.vhd"/>
+      <outfile xil_pn:name="source/Mux_PC.vhd"/>
+      <outfile xil_pn:name="source/Mux_Reg.vhd"/>
+      <outfile xil_pn:name="source/PCHighExtender.vhd"/>
+      <outfile xil_pn:name="source/PC_Adder.vhd"/>
+      <outfile xil_pn:name="source/PC_Seperator.vhd"/>
+      <outfile xil_pn:name="source/Register32.vhd"/>
+      <outfile xil_pn:name="source/RegisterField.vhd"/>
+      <outfile xil_pn:name="source/Register_32.vhd"/>
+      <outfile xil_pn:name="source/SRAM.vhd"/>
+      <outfile xil_pn:name="source/ShamtExt.vhd"/>
+      <outfile xil_pn:name="source/TriState.vhd"/>
+      <outfile xil_pn:name="source/alu_logic_shift.vhd"/>
+      <outfile xil_pn:name="source/testSRAM.vhd"/>
+      <outfile xil_pn:name="source/test_CU.vhd"/>
+    </transform>
+    <transform xil_pn:end_ts="1492004319" xil_pn:in_ck="-8976754647023043861" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="1195535889907918004" xil_pn:start_ts="1492004316">
+      <status xil_pn:value="FailedRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1492002760" xil_pn:in_ck="7670589240663639250" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1492002760">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="InputAdded"/>
       <outfile xil_pn:name="Instruction_Seperator.vhd"/>
       <outfile xil_pn:name="MyCPU.vhd"/>
       <outfile xil_pn:name="Oprand_Seperator.vhd"/>
@@ -234,41 +278,13 @@
       <outfile xil_pn:name="source/testSRAM.vhd"/>
       <outfile xil_pn:name="source/test_CU.vhd"/>
     </transform>
-    <transform xil_pn:end_ts="1492001123" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="6577931555670449201" xil_pn:start_ts="1492001123">
+    <transform xil_pn:end_ts="1492002764" xil_pn:in_ck="7670589240663639250" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="8472913968186434828" xil_pn:start_ts="1492002760">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-    </transform>
-    <transform xil_pn:end_ts="1492001123" xil_pn:in_ck="7670589240663639250" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1492001123">
-      <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="ReadyToRun"/>
-      <outfile xil_pn:name="Instruction_Seperator.vhd"/>
-      <outfile xil_pn:name="MyCPU.vhd"/>
-      <outfile xil_pn:name="Oprand_Seperator.vhd"/>
-      <outfile xil_pn:name="cpu_test.vhd"/>
-      <outfile xil_pn:name="source/ALU.vhd"/>
-      <outfile xil_pn:name="source/CU.vhd"/>
-      <outfile xil_pn:name="source/Decoder38.vhd"/>
-      <outfile xil_pn:name="source/ImmeExt.vhd"/>
-      <outfile xil_pn:name="source/Imme_Seperator.vhd"/>
-      <outfile xil_pn:name="source/Mux_ALU_OP.vhd"/>
-      <outfile xil_pn:name="source/Mux_LB.vhd"/>
-      <outfile xil_pn:name="source/Mux_PC.vhd"/>
-      <outfile xil_pn:name="source/Mux_Reg.vhd"/>
-      <outfile xil_pn:name="source/PC_Adder.vhd"/>
-      <outfile xil_pn:name="source/PC_Seperator.vhd"/>
-      <outfile xil_pn:name="source/Register32.vhd"/>
-      <outfile xil_pn:name="source/RegisterField.vhd"/>
-      <outfile xil_pn:name="source/Register_32.vhd"/>
-      <outfile xil_pn:name="source/SRAM.vhd"/>
-      <outfile xil_pn:name="source/ShamtExt.vhd"/>
-      <outfile xil_pn:name="source/TriState.vhd"/>
-      <outfile xil_pn:name="source/alu_logic_shift.vhd"/>
-      <outfile xil_pn:name="source/testSRAM.vhd"/>
-      <outfile xil_pn:name="source/test_CU.vhd"/>
-    </transform>
-    <transform xil_pn:end_ts="1492001127" xil_pn:in_ck="7670589240663639250" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="8472913968186434828" xil_pn:start_ts="1492001123">
-      <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="fuse.log"/>
       <outfile xil_pn:name="isim"/>
       <outfile xil_pn:name="isim.log"/>
@@ -276,9 +292,12 @@
       <outfile xil_pn:name="testSRAM_isim_beh.exe"/>
       <outfile xil_pn:name="xilinxsim.ini"/>
     </transform>
-    <transform xil_pn:end_ts="1492001127" xil_pn:in_ck="-513624509623576219" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="4390106577779171961" xil_pn:start_ts="1492001127">
-      <status xil_pn:value="SuccessfullyRun"/>
+    <transform xil_pn:end_ts="1492002764" xil_pn:in_ck="-513624509623576219" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="4390106577779171961" xil_pn:start_ts="1492002764">
+      <status xil_pn:value="AbortedRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForced"/>
       <outfile xil_pn:name="isim.cmd"/>
       <outfile xil_pn:name="isim.log"/>
       <outfile xil_pn:name="testSRAM_isim_beh.wdb"/>
@@ -290,7 +309,10 @@
     <transform xil_pn:end_ts="1490370066" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="7768520987608203001" xil_pn:start_ts="1490370066">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="OutOfDateForProperties"/>
+      <status xil_pn:value="InputAdded"/>
+      <status xil_pn:value="InputRemoved"/>
     </transform>
     <transform xil_pn:end_ts="1490370096" xil_pn:in_ck="113540056978558" xil_pn:name="TRANEXT_xstsynthesize_CPLD" xil_pn:prop_ck="5121429521546849889" xil_pn:start_ts="1490370091">
       <status xil_pn:value="SuccessfullyRun"/>

@@ -4,7 +4,7 @@ use ieee.std_logic_1164.all;
 use ieee.std_logic_unSIGNED.all;
 entity SRAM is
 	port(address, data_in: in std_logic_vector(31 downto 0);
-			write0_read1, oe, cs, clk: in std_logic;
+			write1, read1, oe, cs, clk: in std_logic;
 			ready : out std_logic;-- 内存准备好
 			data_out: out std_logic_vector(31 downto 0));
 end SRAM;
@@ -20,13 +20,13 @@ signal memory_space_256: memory_space;
 	process(clk)
 		begin
 		-- static access operation
-			if (write0_read1 = '0') then
+			if (write1 = '1') then
 				if (cs = '1') then
 					if (clk = '1' and clk'event) then
 						memory_space_256(conv_integer(address)) <= data_in;
 					end if;
 				end if;
-			else
+			elsif(read1 = '1') then
 				if (oe = '1') then
 					if (cs = '1') then
 						if (clk = '1' and clk'event) then

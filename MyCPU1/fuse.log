@@ -8,7 +8,7 @@ Parsing VHDL file "E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/testSRAM.vhd" into 
 Starting static elaboration
 Completed static elaboration
 Fuse Memory Usage: 156600 KB
-Fuse CPU Usage: 234 ms
+Fuse CPU Usage: 312 ms
 Compiling package standard
 Compiling package std_logic_1164
 Compiling package std_logic_arith
@@ -20,4 +20,4 @@ Waiting for 1 sub-compilation(s) to finish...
 Compiled 7 VHDL Units
 Built simulation executable E:/projects/VHDL/MyCPU1_ISE/MyCPU1/testSRAM_isim_beh.exe
 Fuse Memory Usage: 176556 KB
-Fuse CPU Usage: 327 ms
+Fuse CPU Usage: 437 ms

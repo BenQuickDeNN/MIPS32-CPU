@@ -1,10 +1,12 @@
 [Inputs]
-write0_read1
+write1
+read1
 oe
 cs
 clk
 =address[31:0]=
 =data_in[31:0]=
 [Outputs]
+ready
 =data_out[31:0]=
 [BiDir]

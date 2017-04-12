@@ -1,0 +1,6 @@
+select figure at 2646 233 8 -branches -sn=1
+select figure at 2656 212 8 -branches -sn=1
+add atwin 3350 11 3350 11 8 Name -sn=1
+delete atwin 3350 16 3350 16 8 Name -sn=1
+undo
+undo

@@ -43,7 +43,8 @@ ARCHITECTURE behavior OF testSRAM IS
     PORT(
          address : IN  std_logic_vector(31 downto 0);
          data_in : IN  std_logic_vector(31 downto 0);
-         write0_read1 : IN  std_logic;
+         write1 : IN  std_logic;
+			read1 : in std_logic;
          oe : IN  std_logic;
          cs : IN  std_logic;
          clk : IN  std_logic;
@@ -55,7 +56,8 @@ ARCHITECTURE behavior OF testSRAM IS
    --Inputs
    signal address : std_logic_vector(31 downto 0) := (others => '0');
    signal data_in : std_logic_vector(31 downto 0) := (others => '0');
-   signal write0_read1 : std_logic := '0';
+   signal write1 : std_logic := '0';
+	signal read1 : std_logic;
    signal oe : std_logic := '0';
    signal cs : std_logic := '0';
    signal clk : std_logic := '0';
@@ -72,7 +74,8 @@ BEGIN
    uut: SRAM PORT MAP (
           address => address,
           data_in => data_in,
-          write0_read1 => write0_read1,
+          write1 => write1,
+			 read1 => read1,
           oe => oe,
           cs => cs,
           clk => clk,
@@ -98,11 +101,12 @@ BEGIN
 		cs <= '1';
 		address <= "00000000000000000000000000000001";
 		data_in <= "11111111111111111111111111111111";
-		write0_read1 <= '0';
+		write1 <= '1';
 		oe <= '0';
 		wait for clk_period*4;
+		write1 <= '0';
 		oe <= '1';
-		write0_read1 <= '1';
+		read1 <= '1';
 		
       wait for clk_period*10;
 
