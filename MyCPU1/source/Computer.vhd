@@ -134,6 +134,14 @@ architecture Behavioral of Computer is
          ctrl : IN  std_logic
         );
     END COMPONENT;
+	 -- ÷∏¡Ó∑÷¿Î∆˜
+	 COMPONENT Instruction_Seperator
+    PORT(
+         instruction_in : IN  std_logic_vector(31 downto 0);
+         OPcode : OUT  std_logic_vector(5 downto 0);
+         OPrand : OUT  std_logic_vector(25 downto 0)
+        );
+    END COMPONENT;
 begin
 
 
