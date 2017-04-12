@@ -1,0 +1,216 @@
+# Reading D:/altera/11.0/modelsim_ae/tcl/vsim/pref.tcl 
+# do CU_run_msim_rtl_vhdl.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying D:\altera\11.0\modelsim_ae\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied D:\altera\11.0\modelsim_ae\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vcom -93 -work work {E:/projects/VHDL/MyCPU1_ISE/MyCPU1/quartus_test/CU/CU.vhd}
+# Model Technology ModelSim ALTERA vcom 6.6d Compiler 2010.11 Nov  2 2010
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_unsigned
+# -- Loading package textio
+# -- Loading package std_logic_textio
+# -- Compiling entity cu
+# -- Compiling architecture behav of cu
+# 
+vsim -voptargs=+acc work.cu
+# vsim -voptargs=+acc work.cu 
+# //  ModelSim ALTERA 6.6d Nov  2 2010 
+# //
+# //  Copyright 1991-2010 Mentor Graphics Corporation
+# //              All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND 
+# //  PROPRIETARY INFORMATION WHICH IS THE PROPERTY
+# //  OF MENTOR GRAPHICS CORPORATION OR ITS LICENSORS
+# //  AND IS SUBJECT TO LICENSE TERMS.
+# //
+# Loading std.standard
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading std.textio(body)
+# Loading ieee.std_logic_textio(body)
+# Loading work.cu(behav)
+# WARNING: No extended dataflow license exists
+add wave \
+{sim:/cu/allow_alu_bus } \
+{sim:/cu/allow_imme_shamt_to_bus } \
+{sim:/cu/allow_mdr_bus } \
+{sim:/cu/allow_pc_bus } \
+{sim:/cu/alu_op } \
+{sim:/cu/alu_op_select } \
+{sim:/cu/clk } \
+{sim:/cu/flag_zero } \
+{sim:/cu/initiation } \
+{sim:/cu/instruction_done } \
+{sim:/cu/instructionaddress } \
+{sim:/cu/lb_data_select } \
+{sim:/cu/mdr_data_select } \
+{sim:/cu/mem_ready } \
+{sim:/cu/microinstructionaddrtable1 } \
+{sim:/cu/microinstructionaddrtable2 } \
+{sim:/cu/microinstructionrom } \
+{sim:/cu/oe_rf } \
+{sim:/cu/opcode } \
+{sim:/cu/pc_data_select } \
+{sim:/cu/read_mem } \
+{sim:/cu/reg_type_select } \
+{sim:/cu/write_ir } \
+{sim:/cu/write_la } \
+{sim:/cu/write_lb } \
+{sim:/cu/write_mar } \
+{sim:/cu/write_mdr } \
+{sim:/cu/write_mem } \
+{sim:/cu/write_pc } \
+{sim:/cu/write_rf } 
+# WARNING: No extended dataflow license exists
+force -freeze sim:/cu/clk 1 0, 0 {50 ps} -r 100
+force -freeze sim:/cu/clk 1 0, 0 {50 ps} -r 100
+wave create -driver freeze -pattern clock -initialvalue 1 -period 100ps -dutycycle 50 -starttime 0ps -endtime 100000ps sim:/cu/clk
+wave create -driver freeze -pattern constant -value 1 -starttime 0ps -endtime 100000ps sim:/cu/initiation
+wave edit change_value -start 0ps -end 197ps -value 0 Edit:/cu/initiation
+wave create -driver freeze -pattern constant -value 0 -starttime 0ps -endtime 100000ps sim:/cu/flag_zero
+wave create -driver freeze -pattern constant -value 1 -starttime 0ps -endtime 100000ps sim:/cu/mem_ready
+wave create -driver freeze -pattern constant -value 001000 -range 5 0 -starttime 0ps -endtime 100000ps sim:/cu/opcode
+add wave sim:/cu/*
+run -all
+# ** Fatal: (vsim-7) Failed to open VHDL file "addrTable2.txt" in rb mode.
+# No such file or directory. (errno = ENOENT)
+#    Time: 0 ps  Iteration: 0  Process: /cu/intiataddrtable2process File: E:/projects/VHDL/MyCPU1_ISE/MyCPU1/quartus_test/CU/CU.vhd
+# Fatal error in ForLoop addr_table2_loop at E:/projects/VHDL/MyCPU1_ISE/MyCPU1/quartus_test/CU/CU.vhd line 108
+# 
+# HDL call sequence:
+# Stopped at E:/projects/VHDL/MyCPU1_ISE/MyCPU1/quartus_test/CU/CU.vhd 108 ForLoop addr_table2_loop
+# 
+# Load canceled
+run -all
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at E:/projects/VHDL/MyCPU1_ISE/MyCPU1/quartus_test/CU/CU.vhd 108 ForLoop addr_table2_loop
+# 
+run -all
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at E:/projects/VHDL/MyCPU1_ISE/MyCPU1/quartus_test/CU/CU.vhd 108 ForLoop addr_table2_loop
+# 
+run -all
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at E:/projects/VHDL/MyCPU1_ISE/MyCPU1/quartus_test/CU/CU.vhd 108 ForLoop addr_table2_loop
+# 
+run -all
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at E:/projects/VHDL/MyCPU1_ISE/MyCPU1/quartus_test/CU/CU.vhd 108 ForLoop addr_table2_loop
+# 
+run -all
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at E:/projects/VHDL/MyCPU1_ISE/MyCPU1/quartus_test/CU/CU.vhd 108 ForLoop addr_table2_loop
+# 
+run -continue
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at E:/projects/VHDL/MyCPU1_ISE/MyCPU1/quartus_test/CU/CU.vhd 108 ForLoop addr_table2_loop
+# 
+run -continue
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at E:/projects/VHDL/MyCPU1_ISE/MyCPU1/quartus_test/CU/CU.vhd 108 ForLoop addr_table2_loop
+# 
+run
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at E:/projects/VHDL/MyCPU1_ISE/MyCPU1/quartus_test/CU/CU.vhd 108 ForLoop addr_table2_loop
+# 
+run
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at E:/projects/VHDL/MyCPU1_ISE/MyCPU1/quartus_test/CU/CU.vhd 108 ForLoop addr_table2_loop
+# 
+run
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at E:/projects/VHDL/MyCPU1_ISE/MyCPU1/quartus_test/CU/CU.vhd 108 ForLoop addr_table2_loop
+# 
+run
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at E:/projects/VHDL/MyCPU1_ISE/MyCPU1/quartus_test/CU/CU.vhd 108 ForLoop addr_table2_loop
+# 
+run
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at E:/projects/VHDL/MyCPU1_ISE/MyCPU1/quartus_test/CU/CU.vhd 108 ForLoop addr_table2_loop
+# 
+run
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at E:/projects/VHDL/MyCPU1_ISE/MyCPU1/quartus_test/CU/CU.vhd 108 ForLoop addr_table2_loop
+# 
+run
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at E:/projects/VHDL/MyCPU1_ISE/MyCPU1/quartus_test/CU/CU.vhd 108 ForLoop addr_table2_loop
+# 
+run
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at E:/projects/VHDL/MyCPU1_ISE/MyCPU1/quartus_test/CU/CU.vhd 108 ForLoop addr_table2_loop
+# 
+run -all
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at E:/projects/VHDL/MyCPU1_ISE/MyCPU1/quartus_test/CU/CU.vhd 108 ForLoop addr_table2_loop
+# 
+run -all
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at E:/projects/VHDL/MyCPU1_ISE/MyCPU1/quartus_test/CU/CU.vhd 108 ForLoop addr_table2_loop
+# 
+run -all
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at E:/projects/VHDL/MyCPU1_ISE/MyCPU1/quartus_test/CU/CU.vhd 108 ForLoop addr_table2_loop
+# 
+run -all
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at E:/projects/VHDL/MyCPU1_ISE/MyCPU1/quartus_test/CU/CU.vhd 108 ForLoop addr_table2_loop
+# 
+run -all
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at E:/projects/VHDL/MyCPU1_ISE/MyCPU1/quartus_test/CU/CU.vhd 108 ForLoop addr_table2_loop
+# 
+run -all
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at E:/projects/VHDL/MyCPU1_ISE/MyCPU1/quartus_test/CU/CU.vhd 108 ForLoop addr_table2_loop
+# 
+run -all
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at E:/projects/VHDL/MyCPU1_ISE/MyCPU1/quartus_test/CU/CU.vhd 108 ForLoop addr_table2_loop
+# 
+run -all
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at E:/projects/VHDL/MyCPU1_ISE/MyCPU1/quartus_test/CU/CU.vhd 108 ForLoop addr_table2_loop
+# 
+# Updating msgviewer database...
+# Schematic viewing requires an extended dataflow license
+run -all
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at E:/projects/VHDL/MyCPU1_ISE/MyCPU1/quartus_test/CU/CU.vhd 108 ForLoop addr_table2_loop
+# 

@@ -1,0 +1,2 @@
+vhdl isim_temp "source/SRAM.vhd"
+vhdl isim_temp "source/testSRAM.vhd"

@@ -1,0 +1,6 @@
+[Inputs]
+=pc_high[3:0]=
+=address[25:0]=
+[Outputs]
+=out_new_addr[31:0]=
+[BiDir]

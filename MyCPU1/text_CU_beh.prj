@@ -1,0 +1,2 @@
+vhdl work "source/CU.vhd"
+vhdl work "source/text_CU.vhd"

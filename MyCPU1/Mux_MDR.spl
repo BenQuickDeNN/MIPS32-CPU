@@ -1,0 +1,7 @@
+[Inputs]
+data_select
+=data_bus[31:0]=
+=data_mem[31:0]=
+[Outputs]
+=data_out[31:0]=
+[BiDir]

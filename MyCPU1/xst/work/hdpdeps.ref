@@ -1,4 +1,4 @@
-V3 59
+V3 62
 FL E:/projects/VHDL/MyCPU1_ISE/MyCPU1/Instruction_Seperator.vhd 2017/03/25.19:31:31 P.20131013
 EN work/Instruction_Seperator 1490441516 \
       FL E:/projects/VHDL/MyCPU1_ISE/MyCPU1/Instruction_Seperator.vhd \
@@ -32,12 +32,13 @@ EN work/alu_logic_shift 1490441494 \
 AR work/alu_logic_shift/behave 1490441495 \
       FL E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/alu_logic_shift.vhd \
       EN work/alu_logic_shift 1490441494
-FL E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/CU.vhd 2017/03/28.15:39:05 P.20131013
-EN work/CU 1490686748 FL E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/CU.vhd \
+FL E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/CU.vhd 2017/04/12.20:28:50 P.20131013
+EN work/CU 1492000133 FL E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/CU.vhd \
       PB ieee/std_logic_1164 1381692176 PB ieee/STD_LOGIC_UNSIGNED 1381692179 \
-      PB ieee/std_logic_arith 1381692177
-AR work/CU/behav 1490686749 \
-      FL E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/CU.vhd EN work/CU 1490686748
+      PB ieee/std_logic_arith 1381692177 PB ieee/STD_LOGIC_TEXTIO 1381692180 \
+      PB std/TEXTIO 1381692176
+AR work/CU/behav 1492000134 \
+      FL E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/CU.vhd EN work/CU 1492000133
 FL E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/Decoder38.vhd 2016/10/31.12:16:02 P.20131013
 EN work/Decoder38 1490433331 \
       FL E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/Decoder38.vhd \
@@ -127,3 +128,8 @@ EN work/ShamtExt 1490691018 \
       PB ieee/std_logic_1164 1381692176
 AR work/ShamtExt/Behavioral 1490691019 \
       FL E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/ShamtExt.vhd EN work/ShamtExt 1490691018
+FL E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/SRAM.vhd 2017/04/12.20:42:07 P.20131013
+EN work/SRAM 1492001064 FL E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/SRAM.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/SRAM/behave 1492001065 \
+      FL E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/SRAM.vhd EN work/SRAM 1492001064

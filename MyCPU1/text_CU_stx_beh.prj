@@ -1,0 +1,2 @@
+vhdl isim_temp "source/CU.vhd"
+vhdl isim_temp "source/text_CU.vhd"

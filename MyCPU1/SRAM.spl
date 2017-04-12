@@ -1,0 +1,10 @@
+[Inputs]
+write0_read1
+oe
+cs
+clk
+=address[31:0]=
+=data_in[31:0]=
+[Outputs]
+=data_out[31:0]=
+[BiDir]
