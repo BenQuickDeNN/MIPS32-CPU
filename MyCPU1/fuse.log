@@ -1,21 +1,21 @@
-Running: D:\Xilinx\14.7\ISE_DS\ISE\bin\nt\unwrapped\fuse.exe -intstyle ise -incremental -o E:/projects/VHDL/MyCPU1_ISE/MyCPU1/testInstructionSeperator_isim_beh.exe -prj E:/projects/VHDL/MyCPU1_ISE/MyCPU1/testInstructionSeperator_beh.prj work.testInstructionSeperator 
+Running: D:\Xilinx\14.7\ISE_DS\ISE\bin\nt\unwrapped\fuse.exe -intstyle ise -incremental -o E:/projects/VHDL/MyCPU1_ISE/MyCPU1/testOperandSeperator_isim_beh.exe -prj E:/projects/VHDL/MyCPU1_ISE/MyCPU1/testOperandSeperator_beh.prj work.testOperandSeperator 
 ISim P.20131013 (signature 0x8ef4fb42)
 Number of CPUs detected in this system: 4
 Turning on mult-threading, number of parallel sub-compilation jobs: 8 
 Determining compilation order of HDL files
-Parsing VHDL file "E:/projects/VHDL/MyCPU1_ISE/MyCPU1/Instruction_Seperator.vhd" into library work
-Parsing VHDL file "E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/testInstructionSeperator.vhd" into library work
+Parsing VHDL file "E:/projects/VHDL/MyCPU1_ISE/MyCPU1/Oprand_Seperator.vhd" into library work
+Parsing VHDL file "E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/testOperandSeperator.vhd" into library work
 Starting static elaboration
 Completed static elaboration
-Fuse Memory Usage: 156280 KB
-Fuse CPU Usage: 312 ms
+Fuse Memory Usage: 156664 KB
+Fuse CPU Usage: 327 ms
 Compiling package standard
 Compiling package std_logic_1164
-Compiling architecture behavioral of entity Instruction_Seperator [instruction_seperator_default]
-Compiling architecture behavior of entity testinstructionseperator
+Compiling architecture behavioral of entity Oprand_Seperator [oprand_seperator_default]
+Compiling architecture behavior of entity testoperandseperator
 Time Resolution for simulation is 1ps.
 Waiting for 1 sub-compilation(s) to finish...
 Compiled 5 VHDL Units
-Built simulation executable E:/projects/VHDL/MyCPU1_ISE/MyCPU1/testInstructionSeperator_isim_beh.exe
-Fuse Memory Usage: 168108 KB
-Fuse CPU Usage: 343 ms
+Built simulation executable E:/projects/VHDL/MyCPU1_ISE/MyCPU1/testOperandSeperator_isim_beh.exe
+Fuse Memory Usage: 168492 KB
+Fuse CPU Usage: 359 ms

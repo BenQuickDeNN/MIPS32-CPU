@@ -1,0 +1,2 @@
+vhdl isim_temp "Oprand_Seperator.vhd"
+vhdl isim_temp "source/testOperandSeperator.vhd"

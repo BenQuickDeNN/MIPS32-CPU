@@ -142,6 +142,15 @@ architecture Behavioral of Computer is
          OPrand : OUT  std_logic_vector(25 downto 0)
         );
     END COMPONENT;
+	 -- ²Ù×÷Êý·ÖÀëÆ÷
+	 COMPONENT Oprand_Seperator
+    PORT(
+         oprand : IN  std_logic_vector(25 downto 0);
+         Rs : OUT  std_logic_vector(4 downto 0);
+         Rt : OUT  std_logic_vector(4 downto 0);
+         Imme : OUT  std_logic_vector(15 downto 0)
+        );
+    END COMPONENT;
 begin
 
 

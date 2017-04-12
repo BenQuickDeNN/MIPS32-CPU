@@ -1,1 +1,1 @@
--intstyle "ise" -incremental -o "E:/projects/VHDL/MyCPU1_ISE/MyCPU1/testInstructionSeperator_isim_beh.exe" -prj "E:/projects/VHDL/MyCPU1_ISE/MyCPU1/testInstructionSeperator_beh.prj" "work.testInstructionSeperator" 
+-intstyle "ise" -incremental -o "E:/projects/VHDL/MyCPU1_ISE/MyCPU1/testOperandSeperator_isim_beh.exe" -prj "E:/projects/VHDL/MyCPU1_ISE/MyCPU1/testOperandSeperator_beh.prj" "work.testOperandSeperator" 

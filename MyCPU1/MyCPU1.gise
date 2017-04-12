@@ -191,20 +191,18 @@
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="cpu_test_isim_beh.exe"/>
     <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="cpu_test_isim_beh.wdb"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="cpu_test_stx_beh.prj"/>
-    <file xil_pn:fileType="FILE_LOG" xil_pn:name="fuse.log"/>
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="isim"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_CMD" xil_pn:name="isim.cmd"/>
-    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_LOG" xil_pn:name="isim.log"/>
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="netgen"/>
     <file xil_pn:branch="PostRouteSimulation" xil_pn:fileType="FILE_NETGEN_REPORT" xil_pn:name="netgen/fit/MyCPU1_timesim.nlf"/>
     <file xil_pn:branch="PostRouteSimulation" xil_pn:fileType="FILE_SDF" xil_pn:name="netgen/fit/MyCPU1_timesim.sdf"/>
     <file xil_pn:branch="PostRouteSimulation" xil_pn:fileType="FILE_VHDL" xil_pn:name="netgen/fit/MyCPU1_timesim.vhd"/>
-    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="testInstructionSeperator_beh.prj"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="testInstructionSeperator_isim_beh.exe"/>
     <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="testInstructionSeperator_isim_beh.wdb"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="testInstructionSeperator_stx_beh.prj"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="testMUX_PC_isim_beh.exe"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="testMUX_PC_stx_beh.prj"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="testOperandSeperator_stx_beh.prj"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="testPCHighExtender_isim_beh.exe"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="testPCHighExtender_stx_beh.prj"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="testPC_Adder_isim_beh.exe"/>
@@ -236,7 +234,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1492012485" xil_pn:in_ck="-2259355292956803221" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1492012485">
+    <transform xil_pn:end_ts="1492012742" xil_pn:in_ck="-6136670346598034727" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1492012742">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="Instruction_Seperator.vhd"/>
@@ -265,6 +263,7 @@
       <outfile xil_pn:name="source/alu_logic_shift.vhd"/>
       <outfile xil_pn:name="source/testInstructionSeperator.vhd"/>
       <outfile xil_pn:name="source/testMUX_PC.vhd"/>
+      <outfile xil_pn:name="source/testOperandSeperator.vhd"/>
       <outfile xil_pn:name="source/testPCHighExtender.vhd"/>
       <outfile xil_pn:name="source/testPC_Adder.vhd"/>
       <outfile xil_pn:name="source/testPC_Seperator.vhd"/>
@@ -273,13 +272,17 @@
       <outfile xil_pn:name="source/testTriState.vhd"/>
       <outfile xil_pn:name="source/test_CU.vhd"/>
     </transform>
-    <transform xil_pn:end_ts="1492012491" xil_pn:in_ck="-8976754647023043861" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-376691723032955947" xil_pn:start_ts="1492012489">
+    <transform xil_pn:end_ts="1492012724" xil_pn:in_ck="-8976754647023043861" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-2758634736921735908" xil_pn:start_ts="1492012722">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1492012491" xil_pn:in_ck="-2259355292956803221" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1492012491">
+    <transform xil_pn:end_ts="1492012724" xil_pn:in_ck="-6136670346598034727" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1492012724">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="Instruction_Seperator.vhd"/>
       <outfile xil_pn:name="MyCPU.vhd"/>
       <outfile xil_pn:name="Oprand_Seperator.vhd"/>
@@ -306,6 +309,7 @@
       <outfile xil_pn:name="source/alu_logic_shift.vhd"/>
       <outfile xil_pn:name="source/testInstructionSeperator.vhd"/>
       <outfile xil_pn:name="source/testMUX_PC.vhd"/>
+      <outfile xil_pn:name="source/testOperandSeperator.vhd"/>
       <outfile xil_pn:name="source/testPCHighExtender.vhd"/>
       <outfile xil_pn:name="source/testPC_Adder.vhd"/>
       <outfile xil_pn:name="source/testPC_Seperator.vhd"/>
@@ -314,21 +318,20 @@
       <outfile xil_pn:name="source/testTriState.vhd"/>
       <outfile xil_pn:name="source/test_CU.vhd"/>
     </transform>
-    <transform xil_pn:end_ts="1492012494" xil_pn:in_ck="-2259355292956803221" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-8362682340606877868" xil_pn:start_ts="1492012491">
-      <status xil_pn:value="SuccessfullyRun"/>
+    <transform xil_pn:end_ts="1492012727" xil_pn:in_ck="-6136670346598034727" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="4986123012540214690" xil_pn:start_ts="1492012724">
+      <status xil_pn:value="FailedRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <outfile xil_pn:name="fuse.log"/>
-      <outfile xil_pn:name="isim"/>
-      <outfile xil_pn:name="isim.log"/>
-      <outfile xil_pn:name="testInstructionSeperator_beh.prj"/>
-      <outfile xil_pn:name="testInstructionSeperator_isim_beh.exe"/>
-      <outfile xil_pn:name="xilinxsim.ini"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="InputChanged"/>
     </transform>
     <transform xil_pn:end_ts="1492012495" xil_pn:in_ck="8263994666356520344" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="1943920477645855809" xil_pn:start_ts="1492012494">
-      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="AbortedRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForced"/>
       <outfile xil_pn:name="isim.cmd"/>
-      <outfile xil_pn:name="isim.log"/>
       <outfile xil_pn:name="testInstructionSeperator_isim_beh.wdb"/>
     </transform>
     <transform xil_pn:end_ts="1490368659" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1490368658">
