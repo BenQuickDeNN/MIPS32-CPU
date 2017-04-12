@@ -1,23 +1,23 @@
-Running: D:\Xilinx\14.7\ISE_DS\ISE\bin\nt\unwrapped\fuse.exe -intstyle ise -incremental -o E:/projects/VHDL/MyCPU1_ISE/MyCPU1/testSRAM_isim_beh.exe -prj E:/projects/VHDL/MyCPU1_ISE/MyCPU1/testSRAM_beh.prj work.testSRAM 
+Running: D:\Xilinx\14.7\ISE_DS\ISE\bin\nt\unwrapped\fuse.exe -intstyle ise -incremental -o E:/projects/VHDL/MyCPU1_ISE/MyCPU1/testRegister32_isim_beh.exe -prj E:/projects/VHDL/MyCPU1_ISE/MyCPU1/testRegister32_beh.prj work.testRegister32 
 ISim P.20131013 (signature 0x8ef4fb42)
 Number of CPUs detected in this system: 4
 Turning on mult-threading, number of parallel sub-compilation jobs: 8 
 Determining compilation order of HDL files
-Parsing VHDL file "E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/SRAM.vhd" into library work
-Parsing VHDL file "E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/testSRAM.vhd" into library work
+Parsing VHDL file "E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/Register32.vhd" into library work
+Parsing VHDL file "E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/testRegister32.vhd" into library work
 Starting static elaboration
 Completed static elaboration
-Fuse Memory Usage: 156600 KB
-Fuse CPU Usage: 312 ms
+Fuse Memory Usage: 156280 KB
+Fuse CPU Usage: 280 ms
 Compiling package standard
 Compiling package std_logic_1164
 Compiling package std_logic_arith
 Compiling package std_logic_unsigned
-Compiling architecture behave of entity SRAM [sram_default]
-Compiling architecture behavior of entity testsram
+Compiling architecture behav of entity Register32 [register32_default]
+Compiling architecture behavior of entity testregister32
 Time Resolution for simulation is 1ps.
 Waiting for 1 sub-compilation(s) to finish...
 Compiled 7 VHDL Units
-Built simulation executable E:/projects/VHDL/MyCPU1_ISE/MyCPU1/testSRAM_isim_beh.exe
-Fuse Memory Usage: 176556 KB
-Fuse CPU Usage: 437 ms
+Built simulation executable E:/projects/VHDL/MyCPU1_ISE/MyCPU1/testRegister32_isim_beh.exe
+Fuse Memory Usage: 176236 KB
+Fuse CPU Usage: 421 ms

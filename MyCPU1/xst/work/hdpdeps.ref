@@ -1,4 +1,4 @@
-V3 65
+V3 68
 FL E:/projects/VHDL/MyCPU1_ISE/MyCPU1/Instruction_Seperator.vhd 2017/03/25.19:31:31 P.20131013
 EN work/Instruction_Seperator 1490441516 \
       FL E:/projects/VHDL/MyCPU1_ISE/MyCPU1/Instruction_Seperator.vhd \
@@ -32,6 +32,12 @@ EN work/alu_logic_shift 1490441494 \
 AR work/alu_logic_shift/behave 1490441495 \
       FL E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/alu_logic_shift.vhd \
       EN work/alu_logic_shift 1490441494
+FL E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/Computer.vhd 2017/04/12.21:48:08 P.20131013
+EN work/Computer 1492004898 \
+      FL E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/Computer.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/Computer/Behavioral 1492004899 \
+      FL E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/Computer.vhd EN work/Computer 1492004898
 FL E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/CU.vhd 2017/04/12.20:58:31 P.20131013
 EN work/CU 1492001913 FL E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/CU.vhd \
       PB ieee/std_logic_1164 1381692176 PB ieee/STD_LOGIC_UNSIGNED 1381692179 \
@@ -136,7 +142,7 @@ EN work/ShamtExt 1490691018 \
 AR work/ShamtExt/Behavioral 1490691019 \
       FL E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/ShamtExt.vhd EN work/ShamtExt 1490691018
 FL E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/SRAM.vhd 2017/04/12.21:12:36 P.20131013
-EN work/SRAM 1492002794 FL E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/SRAM.vhd \
+EN work/SRAM 1492004984 FL E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/SRAM.vhd \
       PB ieee/std_logic_1164 1381692176 PB ieee/STD_LOGIC_UNSIGNED 1381692179
-AR work/SRAM/behave 1492002795 \
-      FL E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/SRAM.vhd EN work/SRAM 1492002794
+AR work/SRAM/behave 1492004985 \
+      FL E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/SRAM.vhd EN work/SRAM 1492004984

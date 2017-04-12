@@ -1,0 +1,2 @@
+vhdl isim_temp "source/Register32.vhd"
+vhdl isim_temp "source/testRegister32.vhd"

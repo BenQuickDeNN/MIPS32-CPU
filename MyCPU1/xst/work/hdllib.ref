@@ -8,13 +8,15 @@ AR mycpu1 behavioral E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/MyCPU1.vhd sub00/
 EN mux_pc NULL E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/Mux_PC.vhd sub00/vhpl38 1490692380
 EN decoder38 NULL E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/Decoder38.vhd sub00/vhpl08 1490433331
 AR imme_seperator behavioral E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/Imme_Seperator.vhd sub00/vhpl25 1490442942
-EN sram NULL E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/SRAM.vhd sub00/vhpl40 1492002794
+AR computer behavioral E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/Computer.vhd sub00/vhpl45 1492004899
+EN sram NULL E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/SRAM.vhd sub00/vhpl40 1492004984
 AR registerfield behav E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/RegisterField.vhd sub00/vhpl11 1490438324
 AR mux_alu_op behavioral E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/Mux_ALU_OP.vhd sub00/vhpl29 1490689574
 EN shamtext NULL E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/ShamtExt.vhd sub00/vhpl34 1490691018
 AR mux_lb behavioral E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/Mux_LB.vhd sub00/vhpl33 1490690732
 AR shamtext behavioral E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/ShamtExt.vhd sub00/vhpl35 1490691019
 EN register32 NULL E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/Register32.vhd sub00/vhpl14 1490439809
+EN computer NULL E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/Computer.vhd sub00/vhpl44 1492004898
 AR alu behav E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/ALU.vhd sub00/vhpl05 1490691438
 AR pc_adder behavioral E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/PC_Adder.vhd sub00/vhpl37 1490691640
 AR decoder38 behave E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/Decoder38.vhd sub00/vhpl09 1490433332
@@ -27,7 +29,7 @@ AR mux_pc behavioral E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/Mux_PC.vhd sub00/
 AR pc_seperator behavioral E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/PC_Seperator.vhd sub00/vhpl27 1490446280
 EN mycpu1 NULL E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/MyCPU1.vhd sub00/vhpl00 1490368837
 EN imme_seperator NULL E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/Imme_Seperator.vhd sub00/vhpl24 1490442941
-AR sram behave E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/SRAM.vhd sub00/vhpl41 1492002795
+AR sram behave E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/SRAM.vhd sub00/vhpl41 1492004985
 EN mycpu NULL E:/projects/VHDL/MyCPU1_ISE/MyCPU1/MyCPU.vhd sub00/vhpl02 1490370092
 EN instruction_seperator NULL E:/projects/VHDL/MyCPU1_ISE/MyCPU1/Instruction_Seperator.vhd sub00/vhpl20 1490441516
 EN registerfield NULL E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/RegisterField.vhd sub00/vhpl10 1490438323
