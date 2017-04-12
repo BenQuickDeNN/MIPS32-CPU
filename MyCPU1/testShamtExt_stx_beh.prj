@@ -1,0 +1,2 @@
+vhdl isim_temp "source/ShamtExt.vhd"
+vhdl isim_temp "source/testShamtExt.vhd"

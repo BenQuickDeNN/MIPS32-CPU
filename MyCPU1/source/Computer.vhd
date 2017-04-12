@@ -168,6 +168,13 @@ architecture Behavioral of Computer is
         );
     END COMPONENT;
 	 -- 移位数扩展器
+	 COMPONENT ShamtExt
+    PORT(
+         shamt : IN  std_logic_vector(4 downto 0);
+         shamt32 : OUT  std_logic_vector(31 downto 0)
+        );
+    END COMPONENT;
+	 -- LB数据源选择器
 	 
 begin
 
