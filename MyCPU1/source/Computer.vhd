@@ -101,6 +101,14 @@ architecture Behavioral of Computer is
          new_pc : OUT  std_logic_vector(31 downto 0)
         );
     END COMPONENT;
+	 -- PC Seperator
+	 COMPONENT PC_Seperator
+    PORT(
+         PC_value : IN  std_logic_vector(31 downto 0);
+         high4 : OUT  std_logic_vector(3 downto 0);
+         low4 : OUT  std_logic_vector(27 downto 0)
+        );
+    END COMPONENT;
 begin
 
 

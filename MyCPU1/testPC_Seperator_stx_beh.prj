@@ -1,0 +1,2 @@
+vhdl isim_temp "source/PC_Seperator.vhd"
+vhdl isim_temp "source/testPC_Seperator.vhd"
