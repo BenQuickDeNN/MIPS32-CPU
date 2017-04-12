@@ -1,0 +1,2 @@
+vhdl work "source/Mux_LB.vhd"
+vhdl work "source/testMUX_LB.vhd"

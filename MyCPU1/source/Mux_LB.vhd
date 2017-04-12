@@ -38,7 +38,7 @@ end Mux_LB;
 architecture Behavioral of Mux_LB is
 
 begin
-	process(Data_select)
+	process(Data_select, Data_Imme, Data_Shamt, Data_Bus)
 	begin
 		case(Data_select) is
 			when "00" =>

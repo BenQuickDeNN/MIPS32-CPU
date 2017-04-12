@@ -1,21 +1,21 @@
-Running: D:\Xilinx\14.7\ISE_DS\ISE\bin\nt\unwrapped\fuse.exe -intstyle ise -incremental -o E:/projects/VHDL/MyCPU1_ISE/MyCPU1/testShamtExt_isim_beh.exe -prj E:/projects/VHDL/MyCPU1_ISE/MyCPU1/testShamtExt_beh.prj work.testShamtExt 
+Running: D:\Xilinx\14.7\ISE_DS\ISE\bin\nt\unwrapped\fuse.exe -intstyle ise -incremental -o E:/projects/VHDL/MyCPU1_ISE/MyCPU1/testMUX_LB_isim_beh.exe -prj E:/projects/VHDL/MyCPU1_ISE/MyCPU1/testMUX_LB_beh.prj work.testMUX_LB 
 ISim P.20131013 (signature 0x8ef4fb42)
 Number of CPUs detected in this system: 4
 Turning on mult-threading, number of parallel sub-compilation jobs: 8 
 Determining compilation order of HDL files
-Parsing VHDL file "E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/ShamtExt.vhd" into library work
-Parsing VHDL file "E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/testShamtExt.vhd" into library work
+Parsing VHDL file "E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/Mux_LB.vhd" into library work
+Parsing VHDL file "E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/testMUX_LB.vhd" into library work
 Starting static elaboration
 Completed static elaboration
-Fuse Memory Usage: 156152 KB
-Fuse CPU Usage: 343 ms
+Fuse Memory Usage: 157248 KB
+Fuse CPU Usage: 327 ms
 Compiling package standard
 Compiling package std_logic_1164
-Compiling architecture behavioral of entity ShamtExt [shamtext_default]
-Compiling architecture behavior of entity testshamtext
+Compiling architecture behavioral of entity Mux_LB [mux_lb_default]
+Compiling architecture behavior of entity testmux_lb
 Time Resolution for simulation is 1ps.
 Waiting for 1 sub-compilation(s) to finish...
 Compiled 5 VHDL Units
-Built simulation executable E:/projects/VHDL/MyCPU1_ISE/MyCPU1/testShamtExt_isim_beh.exe
-Fuse Memory Usage: 169004 KB
-Fuse CPU Usage: 375 ms
+Built simulation executable E:/projects/VHDL/MyCPU1_ISE/MyCPU1/testMUX_LB_isim_beh.exe
+Fuse Memory Usage: 169076 KB
+Fuse CPU Usage: 390 ms

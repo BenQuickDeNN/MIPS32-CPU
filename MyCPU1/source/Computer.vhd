@@ -175,7 +175,16 @@ architecture Behavioral of Computer is
         );
     END COMPONENT;
 	 -- LB数据源选择器
-	 
+	 COMPONENT Mux_LB
+    PORT(
+         Data_Imme : IN  std_logic_vector(31 downto 0);
+         Data_Shamt : IN  std_logic_vector(31 downto 0);
+         Data_Bus : IN  std_logic_vector(31 downto 0);
+         Data_out : OUT  std_logic_vector(31 downto 0);
+         Data_select : IN  std_logic_vector(1 downto 0)
+        );
+    END COMPONENT;
+	 -- ALU操作码选择器
 begin
 
 
