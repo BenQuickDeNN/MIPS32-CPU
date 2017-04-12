@@ -196,9 +196,11 @@
     <file xil_pn:branch="PostRouteSimulation" xil_pn:fileType="FILE_NETGEN_REPORT" xil_pn:name="netgen/fit/MyCPU1_timesim.nlf"/>
     <file xil_pn:branch="PostRouteSimulation" xil_pn:fileType="FILE_SDF" xil_pn:name="netgen/fit/MyCPU1_timesim.sdf"/>
     <file xil_pn:branch="PostRouteSimulation" xil_pn:fileType="FILE_VHDL" xil_pn:name="netgen/fit/MyCPU1_timesim.vhd"/>
-    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="testRegister32_beh.prj"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="testPC_Adder_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="testPC_Adder_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="testPC_Adder_isim_beh.wdb"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="testPC_Adder_stx_beh.prj"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="testRegister32_isim_beh.exe"/>
-    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="testRegister32_isim_beh.wdb"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="testRegister32_stx_beh.prj"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="testSRAM_isim_beh.exe"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="testSRAM_stx_beh.prj"/>
@@ -221,7 +223,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1492010287" xil_pn:in_ck="-7388348103387637971" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1492010287">
+    <transform xil_pn:end_ts="1492010525" xil_pn:in_ck="5947597770726099631" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1492010525">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="Instruction_Seperator.vhd"/>
@@ -248,23 +250,18 @@
       <outfile xil_pn:name="source/ShamtExt.vhd"/>
       <outfile xil_pn:name="source/TriState.vhd"/>
       <outfile xil_pn:name="source/alu_logic_shift.vhd"/>
+      <outfile xil_pn:name="source/testPC_Adder.vhd"/>
       <outfile xil_pn:name="source/testRegister32.vhd"/>
       <outfile xil_pn:name="source/testSRAM.vhd"/>
       <outfile xil_pn:name="source/test_CU.vhd"/>
     </transform>
-    <transform xil_pn:end_ts="1492009845" xil_pn:in_ck="-8976754647023043861" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-2156873193663350680" xil_pn:start_ts="1492009844">
+    <transform xil_pn:end_ts="1492010531" xil_pn:in_ck="-8976754647023043861" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="6015716206370300496" xil_pn:start_ts="1492010529">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForProperties"/>
     </transform>
-    <transform xil_pn:end_ts="1492010192" xil_pn:in_ck="-7388348103387637971" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1492010192">
+    <transform xil_pn:end_ts="1492010531" xil_pn:in_ck="5947597770726099631" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1492010531">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="InputChanged"/>
-      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="Instruction_Seperator.vhd"/>
       <outfile xil_pn:name="MyCPU.vhd"/>
       <outfile xil_pn:name="Oprand_Seperator.vhd"/>
@@ -289,36 +286,27 @@
       <outfile xil_pn:name="source/ShamtExt.vhd"/>
       <outfile xil_pn:name="source/TriState.vhd"/>
       <outfile xil_pn:name="source/alu_logic_shift.vhd"/>
+      <outfile xil_pn:name="source/testPC_Adder.vhd"/>
       <outfile xil_pn:name="source/testRegister32.vhd"/>
       <outfile xil_pn:name="source/testSRAM.vhd"/>
       <outfile xil_pn:name="source/test_CU.vhd"/>
     </transform>
-    <transform xil_pn:end_ts="1492010196" xil_pn:in_ck="-7388348103387637971" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-5048416792951278278" xil_pn:start_ts="1492010192">
+    <transform xil_pn:end_ts="1492010535" xil_pn:in_ck="5947597770726099631" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="7518496933829346058" xil_pn:start_ts="1492010531">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForProperties"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="InputChanged"/>
-      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="fuse.log"/>
       <outfile xil_pn:name="isim"/>
       <outfile xil_pn:name="isim.log"/>
-      <outfile xil_pn:name="testRegister32_beh.prj"/>
-      <outfile xil_pn:name="testRegister32_isim_beh.exe"/>
+      <outfile xil_pn:name="testPC_Adder_beh.prj"/>
+      <outfile xil_pn:name="testPC_Adder_isim_beh.exe"/>
       <outfile xil_pn:name="xilinxsim.ini"/>
     </transform>
-    <transform xil_pn:end_ts="1492010197" xil_pn:in_ck="148203113962603008" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-4039368038789487225" xil_pn:start_ts="1492010196">
+    <transform xil_pn:end_ts="1492010535" xil_pn:in_ck="99683577645736865" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-1290912897117939049" xil_pn:start_ts="1492010535">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForProperties"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="isim.cmd"/>
       <outfile xil_pn:name="isim.log"/>
-      <outfile xil_pn:name="testRegister32_isim_beh.wdb"/>
+      <outfile xil_pn:name="testPC_Adder_isim_beh.wdb"/>
     </transform>
     <transform xil_pn:end_ts="1490368659" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1490368658">
       <status xil_pn:value="SuccessfullyRun"/>

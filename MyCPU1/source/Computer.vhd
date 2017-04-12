@@ -94,6 +94,13 @@ architecture Behavioral of Computer is
          clk : IN  std_logic
         );
     END COMPONENT;
+	 -- PC Adder
+	 COMPONENT PC_Adder
+    PORT(
+         old_pc : IN  std_logic_vector(31 downto 0);
+         new_pc : OUT  std_logic_vector(31 downto 0)
+        );
+    END COMPONENT;
 begin
 
 
