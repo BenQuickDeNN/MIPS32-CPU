@@ -1,0 +1,29 @@
+Command line:
+   testImmeSeperator_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  49332
+
+Thu Apr 13 00:02:06 2017
+
+
+ Elaboration Time: 0.796875 sec
+
+ Current Memory Usage: 1035.83 Meg
+
+ Total Signals          : 8
+ Total Nets             : 32
+ Total Signal Drivers   : 4
+ Total Blocks           : 3
+ Total Primitive Blocks : 2
+ Total Processes        : 4
+ Total Traceable Variables  : 8
+ Total Scalar Nets and Variables : 392
+Total Line Count : 6
+
+ Total Simulation Time: 0.8125 sec
+
+ Current Memory Usage: 1035.83 Meg
+
+Thu Apr 13 00:02:24 2017
+

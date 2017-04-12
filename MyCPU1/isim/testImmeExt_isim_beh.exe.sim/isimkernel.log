@@ -1,0 +1,29 @@
+Command line:
+   testImmeExt_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  49528
+
+Thu Apr 13 00:04:39 2017
+
+
+ Elaboration Time: 0.640625 sec
+
+ Current Memory Usage: 1035.96 Meg
+
+ Total Signals          : 4
+ Total Nets             : 48
+ Total Signal Drivers   : 3
+ Total Blocks           : 3
+ Total Primitive Blocks : 2
+ Total Processes        : 3
+ Total Traceable Variables  : 8
+ Total Scalar Nets and Variables : 408
+Total Line Count : 5
+
+ Total Simulation Time: 0.640625 sec
+
+ Current Memory Usage: 1035.96 Meg
+
+Thu Apr 13 00:05:00 2017
+

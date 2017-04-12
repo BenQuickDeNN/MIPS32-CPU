@@ -151,6 +151,24 @@ architecture Behavioral of Computer is
          Imme : OUT  std_logic_vector(15 downto 0)
         );
     END COMPONENT;
+	 -- 立即数分离器
+	 COMPONENT Imme_Seperator
+    PORT(
+         Imme : IN  std_logic_vector(15 downto 0);
+         Rd : OUT  std_logic_vector(4 downto 0);
+         shamt : OUT  std_logic_vector(4 downto 0);
+         alu_func : OUT  std_logic_vector(5 downto 0)
+        );
+    END COMPONENT;
+	 -- 立即数扩展器
+	 COMPONENT ImmeExt
+    PORT(
+         Imme_in : IN  std_logic_vector(15 downto 0);
+         Imme_out : OUT  std_logic_vector(31 downto 0)
+        );
+    END COMPONENT;
+	 -- 移位数扩展器
+	 
 begin
 
 
