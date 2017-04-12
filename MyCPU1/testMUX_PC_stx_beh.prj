@@ -1,0 +1,2 @@
+vhdl isim_temp "source/Mux_PC.vhd"
+vhdl isim_temp "source/testMUX_PC.vhd"

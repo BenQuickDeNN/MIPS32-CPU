@@ -109,6 +109,31 @@ architecture Behavioral of Computer is
          low4 : OUT  std_logic_vector(27 downto 0)
         );
     END COMPONENT;
+	 -- PC 高4位扩展
+	 COMPONENT PCHighExtender
+    PORT(
+         pc_high : IN  std_logic_vector(3 downto 0);
+         pc_ext : OUT  std_logic_vector(31 downto 0)
+        );
+    END COMPONENT;
+	 -- PC数据源多路选择器
+	 COMPONENT Mux_PC
+    PORT(
+         data_adder4 : IN  std_logic_vector(31 downto 0);
+         data_bus : IN  std_logic_vector(31 downto 0);
+         data_addr_merge : IN  std_logic_vector(31 downto 0);
+         data_out : OUT  std_logic_vector(31 downto 0);
+         data_select : IN  std_logic_vector(1 downto 0)
+        );
+    END COMPONENT;
+	 -- 32位三态门
+	 COMPONENT TriState
+    PORT(
+         data_in : IN  std_logic_vector(31 downto 0);
+         data_out : OUT  std_logic_vector(31 downto 0);
+         ctrl : IN  std_logic
+        );
+    END COMPONENT;
 begin
 
 

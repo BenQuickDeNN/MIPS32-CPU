@@ -1,0 +1,2 @@
+vhdl isim_temp "source/PCHighExtender.vhd"
+vhdl isim_temp "source/testPCHighExtender.vhd"

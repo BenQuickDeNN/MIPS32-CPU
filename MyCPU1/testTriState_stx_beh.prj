@@ -1,0 +1,2 @@
+vhdl isim_temp "source/TriState.vhd"
+vhdl isim_temp "source/testTriState.vhd"

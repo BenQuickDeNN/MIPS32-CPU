@@ -1,5 +1,5 @@
 ISim log file
-Running: E:\projects\VHDL\MyCPU1_ISE\MyCPU1\testPC_Seperator_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb E:/projects/VHDL/MyCPU1_ISE/MyCPU1/testPC_Seperator_isim_beh.wdb 
+Running: E:\projects\VHDL\MyCPU1_ISE\MyCPU1\testTriState_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb E:/projects/VHDL/MyCPU1_ISE/MyCPU1/testTriState_isim_beh.wdb 
 ISim P.20131013 (signature 0x8ef4fb42)
 ----------------------------------------------------------------------
 INFO:Security:60 - The XILINXD_LICENSE_FILE environment variable is set to 'E:\Xilinx\license\xilinx_ise.lic'.
