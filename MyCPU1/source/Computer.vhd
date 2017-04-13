@@ -360,6 +360,13 @@ architecture Behavioral of Computer is
 	 -- allow_pc_bus
 	 -- PCHigh4Ext
 	 
+	 -- Tri Gate ALU to Bus
+	 -- 输出
+	 -- bus
+	 -- 输入
+	 -- ALUResult
+	 -- allow_alu_bus
+	 
 begin
 	-- 中央控制器
 	CentralCU : CU port map(
@@ -505,6 +512,13 @@ begin
 			-- 输入端口
 			ctrl => CUControl(1),
 			data_in => PCHigh4Ext,
+			-- 输出端口
+			data_out => MainBus
+		);
+	TriGate_ALUBus : TriState port map(
+			-- 输入端口
+			ctrl => CUControl(15),
+			data_in => ALUResult,
 			-- 输出端口
 			data_out => MainBus
 		);
