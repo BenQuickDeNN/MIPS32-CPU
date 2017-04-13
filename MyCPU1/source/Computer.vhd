@@ -398,7 +398,7 @@ architecture Behavioral of Computer is
 	 
 	 -- Imme Seperator
 	 -- 输出
-	 -- ALUFunc
+	 signal ALUFunc_1 : std_logic_vector(5 downto 0); -- ALU操作码1
 	 signal RDAddr : std_logic_vector(4 downto 0); -- RD寄存器号
 	 signal RealShamt : std_logic_vector(4 downto 0); -- 移位值
 	 -- 输入
@@ -424,6 +424,14 @@ architecture Behavioral of Computer is
 	 -- Shamt32
 	 -- bus
 	 -- LB_data_select
+	 
+	 -- MUX ALU OP
+	 -- 输出
+	 -- ALUFunc
+	 -- 输入
+	 -- ALUFunc_1
+	 -- alu_op
+	 -- alu_op_select
 	 
 begin
 	-- 中央控制器
@@ -616,7 +624,7 @@ begin
 			-- 输出端口
 			Rd => RDAddr,
 			shamt => RealShamt,
-			alu_func => ALUFunc
+			alu_func => ALUFunc_1
 		);
 	Imme_Ext : ImmeExt port map(
 			-- 输入端口
@@ -638,6 +646,14 @@ begin
 			Data_select => CUControl(26 downto 25),
 			-- 输出端口
 			Data_out => LBDataIn
+		);
+	MUX_ALUOP : MUX_ALU_OP port map(
+			-- 输入端口
+			op0 => ALUFunc_1,
+			op1 => CUControl(21 downto 16),
+			op_select => CUControl(22),
+			-- 输出端口
+			op_out => ALUFunc
 		);
 end Behavioral;
 
