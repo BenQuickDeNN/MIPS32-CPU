@@ -261,20 +261,42 @@ architecture Behavioral of Computer is
 	 -- MEMready
 	 signal MEMDataOut : std_logic_vector(31 downto 0); -- 内存数据输出
 	 -- SRAM输入信号
+	 -- clk
 	 signal MEMAddress : std_logic_vector(31 downto 0); -- 内存地址输入
 	 signal MEMDataIn : std_logic_vector(31 downto 0); -- 内存数据输入
-	 signal MEMWrite : std_logic; -- 内存写信号
-	 signal MEMRead : std_logic; -- 内存读信号
-	 signal MEMOE : std_logic; -- 内存输出使能
-	 signal MEMCS : std_logic; -- 内存片选
+	 -- MEMWrite : std_logic; -- 内存写信号
+	 -- MEMRead : std_logic; -- 内存读信号
+	 -- MEMOE : std_logic; -- 内存输出使能
+	 -- MEMCS : std_logic; -- 内存片选
 	 
 	 -- 专用寄存器信号
-	 -- PC信号
+	 
+	 -- PC寄存器
 	 -- PC输出信号
 	 signal PCDataOut : std_logic_vector(31 downto 0);
 	 -- PC输入信号
+	 -- clk
 	 -- WritePC
+	 -- oe = 1
 	 signal PCDataIn : std_logic_vector(31 downto 0);
+	 
+	 -- IR寄存器
+	 -- IR输出信号
+	 signal IRDataOut : std_logic_vector(31 downto 0);
+	 -- IR输入信号
+	 -- clk
+	 -- data_in from bus
+	 -- write IR
+	 -- oe = 1
+	 
+	 -- LA暂存器
+	 -- LA输出信号
+	 -- ALUOprand_a
+	 -- LA输入信号
+	 -- clk
+	 -- data_in from bus
+	 -- write LA
+	 -- oe = 1
 	 
 begin
 	-- 中央控制器
@@ -328,10 +350,10 @@ begin
 			clk => CLK,
 			address => MEMAddress,
 			data_in => MEMDataIn,
-			write1 => MEMWrite,
-			read1 => MEMRead,
-			oe => MEMOE,
-			cs => MEMCS,
+			write1 => CUControl(11),
+			read1 => CUControl(12),
+			oe => CUControl(12),
+			cs => C_VCC,
 			-- 输出端口
 			data_out => MEMDataOut
 		);
@@ -344,6 +366,23 @@ begin
 			-- 输出端口
 			data_out => PCDataOut
 		);
-
+	IR_Reg : Register32 port map(
+			-- 输入端口
+			clk => CLK,
+			data_in => MainBus,
+			WE => CUControl(2),
+			OE => C_VCC,
+			-- 输出端口
+			data_out => IRDataOut
+		);
+	LA_Reg : Register32 port map(
+			-- 输入端口
+			clk => CLK,
+			data_in => MainBus,
+			WE => CUControl(13),
+			OE => C_VCC,
+			-- 输出端口
+			data_out => ALUOprand_a
+		);
 end Behavioral;
 
