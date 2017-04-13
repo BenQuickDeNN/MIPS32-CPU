@@ -396,6 +396,14 @@ architecture Behavioral of Computer is
 	 -- 输入
 	 -- Oprand_1
 	 
+	 -- Imme Seperator
+	 -- 输出
+	 -- ALUFunc
+	 signal RDAddr : std_logic_vector(4 downto 0); -- RD寄存器号
+	 signal RealShamt : std_logic_vector(4 downto 0); -- 移位值
+	 -- 输入
+	 -- RealImme
+	 
 begin
 	-- 中央控制器
 	CentralCU : CU port map(
@@ -579,6 +587,14 @@ begin
 			Rs => RSAddr,
 			Rt => RTAddr,
 			Imme => RealImme
+		);
+	ImmeSeperator : Imme_Seperator port map(
+			-- 输入端口
+			Imme => RealImme,
+			-- 输出端口
+			Rd => RDAddr,
+			shamt => RealShamt,
+			alu_func => ALUFunc
 		);
 end Behavioral;
 
