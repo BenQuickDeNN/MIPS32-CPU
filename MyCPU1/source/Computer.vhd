@@ -353,6 +353,13 @@ architecture Behavioral of Computer is
 	 -- pc_data_select
 	 signal addrMerge : std_logic_vector(31 downto 0); -- 地址合并信号（已作废）
 	 
+	 -- Tri Gate PC to Bus
+	 -- 输出
+	 -- bus
+	 -- 输入
+	 -- allow_pc_bus
+	 -- PCHigh4Ext
+	 
 begin
 	-- 中央控制器
 	CentralCU : CU port map(
@@ -493,6 +500,13 @@ begin
 			data_select => CUControl(24 downto 23),
 			-- 输出信号
 			data_out => PCDataIn
+		);
+	TriGate_PCBus : TriState port map(
+			-- 输入端口
+			ctrl => CUControl(1),
+			data_in => PCHigh4Ext,
+			-- 输出端口
+			data_out => MainBus
 		);
 end Behavioral;
 
