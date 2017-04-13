@@ -461,7 +461,7 @@
         <block symbolname="vcc" name="XLXI_42">
             <blockpin signalname="XLXN_91" name="P" />
         </block>
-        <block symbolname="TriState" name="XLXI_43">
+        <block symbolname="TriState" name="ImmeShamt_to_BUS">
             <blockpin signalname="XLXN_102" name="ctrl" />
             <blockpin signalname="XLXN_101(31:0)" name="data_in(31:0)" />
             <blockpin signalname="BUS_Main" name="data_out(31:0)" />
@@ -788,7 +788,8 @@
         <instance x="2304" y="496" name="RF" orien="R270">
             <attrtext style="alignment:VRIGHT;fontsize:28;fontname:Arial" attrname="InstName" x="440" y="0" type="instance" />
         </instance>
-        <instance x="2752" y="1008" name="XLXI_43" orien="R270">
+        <instance x="2752" y="1008" name="ImmeShamt_to_BUS" orien="R270">
+            <attrtext style="alignment:VRIGHT;fontsize:28;fontname:Arial" attrname="InstName" x="248" y="0" type="instance" />
         </instance>
         <branch name="XLXN_100(1:0)">
             <wire x2="1584" y1="2112" y2="2128" x1="1584" />
