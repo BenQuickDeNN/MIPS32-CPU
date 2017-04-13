@@ -205,6 +205,15 @@ architecture Behavioral of Computer is
         );
     END COMPONENT;
 	 -- MUX REG
+	 COMPONENT Mux_Reg
+    PORT(
+         Reg_addr_0 : IN  std_logic_vector(4 downto 0);
+         Reg_addr_1 : IN  std_logic_vector(4 downto 0);
+         Reg_addr_2 : IN  std_logic_vector(4 downto 0);
+         Reg_out_addr : OUT  std_logic_vector(4 downto 0);
+         Reg_Key : IN  std_logic_vector(1 downto 0)
+        );
+    END COMPONENT;
 begin
 
 

@@ -13,7 +13,7 @@ entity Mux_Reg is
 end Mux_Reg;
 architecture behav of Mux_Reg is
 	begin
-	process(Reg_Key)
+	process(Reg_Key, Reg_addr_0, Reg_addr_1, Reg_addr_2)
 		begin
 		case Reg_Key is
 			when "00" =>
