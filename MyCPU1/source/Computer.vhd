@@ -381,6 +381,13 @@ architecture Behavioral of Computer is
 	 -- allow_MDR_Bus
 	 -- MEMDataIn
 	 
+	 -- Instruction Seperator
+	 -- 输出
+	 -- CUOpcode
+	 signal Oprand_1 : std_logic_vector(25 downto 0);
+	 -- 输入
+	 -- IRDataOut
+	 
 begin
 	-- 中央控制器
 	CentralCU : CU port map(
@@ -549,6 +556,13 @@ begin
 			data_in => MEMDataIn,
 			-- 输出端口
 			data_out => MainBus
+		);
+	InstructionSeperator : Instruction_Seperator port map(
+			-- 输入端口
+			instruction_in => IRDataOut,
+			-- 输出端口
+			OPcode => CUOpcode,
+			OPrand => Oprand_1
 		);
 end Behavioral;
 
