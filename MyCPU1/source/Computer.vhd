@@ -452,6 +452,14 @@ architecture Behavioral of Computer is
 	 -- RDAddr
 	 -- reg_type_select
 	 
+	 -- MUX MDR
+	 -- 输出
+	 -- MDRDataIn
+	 -- 输入
+	 -- MEMDataOut
+	 -- bus
+	 -- MDR_data_select
+	 
 begin
 	-- 中央控制器
 	CentralCU : CU port map(
@@ -692,6 +700,14 @@ begin
 			Reg_Key => CUControl(6 downto 5),
 			-- 输出端口
 			Reg_out_addr => RegAddr
+		);
+	MUXMDR : MUX_MDR port map(
+			-- 输入端口
+			data_bus => MainBus,
+			data_mem => MEMDataOut,
+			data_select => CUControl(10),
+			-- 输出端口
+			data_out => MDRDataIn
 		);
 end Behavioral;
 
