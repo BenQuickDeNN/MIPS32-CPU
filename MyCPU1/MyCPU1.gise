@@ -137,6 +137,7 @@
     <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="PC_Adder.stx"/>
     <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="PC_Adder.sym" xil_pn:origination="imported"/>
     <file xil_pn:fileType="FILE_XST" xil_pn:name="PC_Adder.xst"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="PC_Adder_stx_beh.prj"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="PC_Seperator.prj"/>
     <file xil_pn:fileType="FILE_SPL" xil_pn:name="PC_Seperator.spl"/>
     <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="PC_Seperator.stx"/>
@@ -257,7 +258,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1492090945" xil_pn:in_ck="-7261788366953649402" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1492090945">
+    <transform xil_pn:end_ts="1492091340" xil_pn:in_ck="-7261788366953649402" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1492091339">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="Instruction_Seperator.vhd"/>

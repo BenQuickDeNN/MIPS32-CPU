@@ -404,6 +404,18 @@ architecture Behavioral of Computer is
 	 -- 输入
 	 -- RealImme
 	 
+	 -- ImmeExt
+	 -- 输出
+	 signal Imme32 : std_logic_vector(31 downto 0); -- 32位立即数
+	 -- 输入
+	 -- RealImme
+	 
+	 -- ShamtExt
+	 -- 输出
+	 signal Shamt32 : std_logic_vector(31 downto 0); -- 32位移位数
+	 -- 输入
+	 -- RealShamt
+	 
 begin
 	-- 中央控制器
 	CentralCU : CU port map(
@@ -517,6 +529,7 @@ begin
 			-- 输出端口
 			data_out => MEMDataIn
 		);
+	-- 注意：PC地址是自加1
 	PCAdder : PC_Adder port map(
 			-- 输入端口
 			old_pc => PCDataOut,
@@ -595,6 +608,12 @@ begin
 			Rd => RDAddr,
 			shamt => RealShamt,
 			alu_func => ALUFunc
+		);
+	Imme_Ext : ImmeExt port map(
+			-- 输入端口
+			Imme_in => RealImme,
+			-- 输出端口
+			Imme_out => Imme32
 		);
 end Behavioral;
 

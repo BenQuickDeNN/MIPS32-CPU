@@ -37,7 +37,7 @@ entity PC_Adder is
 end PC_Adder;
 
 architecture Behavioral of PC_Adder is
-signal add_num:std_logic_vector(31 downto 0) := "00000000000000000000000000000100";
+signal add_num:std_logic_vector(31 downto 0) := "00000000000000000000000000000001";
 begin
 	process(old_pc)
 	begin
