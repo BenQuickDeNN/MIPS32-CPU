@@ -70,6 +70,16 @@ architecture Behavioral of Computer is
          allow_Imme_Shamt_to_Bus : OUT  std_logic
         );
     END COMPONENT;
+	 -- ALU
+	 COMPONENT ALU
+    PORT(
+         alu_in_a : IN  std_logic_vector(31 downto 0);
+         alu_in_b : IN  std_logic_vector(31 downto 0);
+         op_code : IN  std_logic_vector(5 downto 0);
+         flag_z : OUT  std_logic;
+         result : OUT  std_logic_vector(31 downto 0)
+        );
+    END COMPONENT;
 -- SRAM
 	COMPONENT SRAM
     PORT(
@@ -223,16 +233,7 @@ architecture Behavioral of Computer is
          data_select : IN  std_logic
         );
     END COMPONENT;
-	 -- ALU
-	 COMPONENT ALU
-    PORT(
-         alu_in_a : IN  std_logic_vector(31 downto 0);
-         alu_in_b : IN  std_logic_vector(31 downto 0);
-         op_code : IN  std_logic_vector(5 downto 0);
-         flag_z : OUT  std_logic;
-         result : OUT  std_logic_vector(31 downto 0)
-        );
-    END COMPONENT;
+
 	 -- 定义内部信号
 	 signal MainBus : std_logic_vector(31 downto 0); -- 总线
 	 -- CU信号
@@ -242,10 +243,18 @@ architecture Behavioral of Computer is
 	 signal MEMready : std_logic;-- 内存准备好
 	 signal CUOpcode : std_logic_vector(5 downto 0);-- 指令操作码部分
 	 signal ALUFlag_Zero : std_logic; -- 结果0标志
+	 -- ALU信号
+	 -- ALU输出信号
+	 -- ALUFlag_Zero
+	 signal ALUResult : std_logic_vector(31 downto 0); -- ALU运算结果
+	 signal ALUOprand_a : std_logic_vector(31 downto 0); -- ALU左操作数
+	 signal ALUOprand_b : std_logic_vector(31 downto 0); -- ALU右操作数
+	 signal ALUFunc : std_logic_vector(5 downto 0); -- ALU运算码
 	 -- PC信号
 	 signal PCDataOut : std_logic_vector(31 downto 0);
 	 
 begin
+	-- 中央控制器
 	CentralCU : CU port map(
 			-- 输入端口
 			opcode => CUOpcode,
@@ -279,6 +288,16 @@ begin
          pc_data_select => CUControl(24 downto 23),
          LB_data_select => CUControl(26 downto 25),
          allow_Imme_Shamt_to_Bus => CUControl(27)
+		);
+	-- ALU
+	MainALU : ALU port map(
+			-- 输入端口
+			alu_in_a => ALUOprand_a,
+         alu_in_b => ALUOprand_b,
+         op_code => ALUFunc,
+			-- 输出端口
+         flag_z => ALUFlag_Zero,
+         result => ALUResult
 		);
 
 end Behavioral;
