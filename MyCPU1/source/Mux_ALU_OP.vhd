@@ -39,7 +39,7 @@ end Mux_ALU_OP;
 architecture Behavioral of Mux_ALU_OP is
 
 begin
-	process(op_select)
+	process(op_select, op0, op1)
 	begin
 		if (op_select = '0') then
 			op_out <= op0;

@@ -19,17 +19,19 @@ architecture behav of RegistersField is
 	type register_space is array(0 to 31) of word;
 	signal register_space_32: register_space;
 	begin
-	process(WE, Reg_addr, clk)
+	writePro : process(WE, Reg_addr, clk)
 		begin
 		if (WE = '1') then
 			if (clk = '1' and clk'event) then
 				register_space_32(conv_integer(Reg_addr)) <= W_data;
 			end if;
 		end if;
+		
+	end process;
+	readPro : process(OE, Reg_addr)
+	begin
 		if (OE = '1') then
-			if (clk = '1' and clk'event) then
 				R_data <= register_space_32(conv_integer(Reg_addr));
-			end if;
 		else
 			R_data <= "ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ";
 		end if;

@@ -1,9 +1,9 @@
 ----------------------------------------------------------------------------------
--- Company: 
--- Engineer: 
+-- Company: 西安交通大学计算机43班
+-- Engineer: 屈彬
 -- 
 -- Create Date:    21:43:13 04/12/2017 
--- Design Name: 
+-- Design Name: 	Multiple Periods CPU
 -- Module Name:    Computer - Behavioral 
 -- Project Name: 
 -- Target Devices: 
@@ -185,6 +185,26 @@ architecture Behavioral of Computer is
         );
     END COMPONENT;
 	 -- ALU操作码选择器
+	 COMPONENT Mux_ALU_OP
+    PORT(
+         op0 : IN  std_logic_vector(5 downto 0);
+         op1 : IN  std_logic_vector(5 downto 0);
+         op_out : OUT  std_logic_vector(5 downto 0);
+         op_select : IN  std_logic
+        );
+    END COMPONENT;
+	 -- Register Field
+	 COMPONENT RegistersField
+    PORT(
+         W_data : IN  std_logic_vector(31 downto 0);
+         R_data : OUT  std_logic_vector(31 downto 0);
+         WE : IN  std_logic;
+         OE : IN  std_logic;
+         clk : IN  std_logic;
+         Reg_addr : IN  std_logic_vector(4 downto 0)
+        );
+    END COMPONENT;
+	 -- MUX REG
 begin
 
 
