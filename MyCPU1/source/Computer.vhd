@@ -338,6 +338,12 @@ architecture Behavioral of Computer is
 	 -- PC Seperator 输入信号
 	 -- PCDataOut
 	 
+	 -- PC High4 Extender
+	 -- PC High4 Extender 输出信号
+	 signal PCHigh4Ext : std_logic_vector(31 downto 0); -- PC高4位扩展为32位数
+	 -- PC High4 Extender 输入信号
+	 -- PCHigh
+	 
 begin
 	-- 中央控制器
 	CentralCU : CU port map(
@@ -463,6 +469,12 @@ begin
 			-- 输出端口
 			high4 => PCHigh,
 			low4 => PCLow
+		);
+	PCHigh4Extender : PCHighExtender port map(
+			-- 输入信号
+			pc_high => PCHigh,
+			-- 输出信号
+			pc_ext => PCHigh4Ext
 		);
 end Behavioral;
 

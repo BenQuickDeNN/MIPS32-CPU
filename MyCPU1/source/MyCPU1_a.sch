@@ -19,7 +19,6 @@
         <signal name="XLXN_36(5:0)" />
         <signal name="XLXN_38(15:0)" />
         <signal name="XLXN_41(31:0)" />
-        <signal name="XLXN_42(31:0)" />
         <signal name="XLXN_43(4:0)" />
         <signal name="XLXN_44(31:0)" />
         <signal name="XLXN_47(31:0)" />
@@ -44,38 +43,21 @@
         <signal name="XLXN_78" />
         <signal name="XLXN_79(1:0)" />
         <signal name="XLXN_80(1:0)" />
-        <signal name="XLXN_84" />
         <signal name="XLXN_90" />
         <signal name="XLXN_91" />
         <signal name="XLXN_92" />
         <signal name="XLXN_93" />
-        <signal name="XLXN_96(4:0)" />
-        <signal name="XLXN_97(1:0)" />
-        <signal name="XLXN_98" />
-        <signal name="XLXN_99" />
         <signal name="XLXN_100(1:0)" />
         <signal name="XLXN_101(31:0)" />
         <signal name="XLXN_102" />
-        <signal name="XLXN_103(31:0)" />
         <signal name="XLXN_104(3:0)" />
         <signal name="XLXN_105(31:0)" />
-        <signal name="XLXN_106(31:0)" />
-        <signal name="XLXN_107(31:0)" />
-        <signal name="XLXN_108(31:0)" />
-        <signal name="XLXN_109(31:0)" />
-        <signal name="XLXN_110(31:0)" />
-        <signal name="XLXN_111(31:0)" />
-        <signal name="XLXN_112(31:0)" />
-        <signal name="XLXN_113(31:0)" />
         <signal name="BUS_Main" />
         <signal name="CLK" />
-        <signal name="XLXN_116" />
-        <signal name="XLXN_117" />
-        <signal name="XLXN_118" />
-        <signal name="XLXN_119" />
         <signal name="XLXN_120" />
         <signal name="Initiation" />
         <signal name="InstructionDone" />
+        <signal name="XLXN_103(31:0)" />
         <port polarity="Input" name="CLK" />
         <port polarity="Input" name="Initiation" />
         <port polarity="Output" name="InstructionDone" />
@@ -831,12 +813,6 @@
         </instance>
         <instance x="384" y="896" name="XLXI_25" orien="R270">
         </instance>
-        <branch name="XLXN_103(31:0)">
-            <wire x2="288" y1="896" y2="944" x1="288" />
-            <wire x2="544" y1="944" y2="944" x1="288" />
-            <wire x2="288" y1="944" y2="976" x1="288" />
-            <wire x2="544" y1="928" y2="944" x1="544" />
-        </branch>
         <instance x="688" y="928" name="XLXI_47" orien="R270">
         </instance>
         <branch name="XLXN_104(3:0)">
@@ -858,7 +834,8 @@
             <wire x2="272" y1="32" y2="32" x1="224" />
             <wire x2="592" y1="32" y2="32" x1="272" />
             <wire x2="592" y1="32" y2="48" x1="592" />
-            <wire x2="1088" y1="32" y2="32" x1="592" />
+            <wire x2="848" y1="32" y2="32" x1="592" />
+            <wire x2="1088" y1="32" y2="32" x1="848" />
             <wire x2="1376" y1="32" y2="32" x1="1088" />
             <wire x2="1376" y1="32" y2="64" x1="1376" />
             <wire x2="1088" y1="32" y2="1456" x1="1088" />
@@ -901,8 +878,8 @@
             <wire x2="2624" y1="2816" y2="2816" x1="2608" />
             <wire x2="2608" y1="2816" y2="3232" x1="2608" />
             <wire x2="2880" y1="2416" y2="2416" x1="2608" />
-            <wire x2="2888" y1="2416" y2="2416" x1="2880" />
-            <wire x2="2992" y1="2416" y2="2416" x1="2888" />
+            <wire x2="2896" y1="2416" y2="2416" x1="2880" />
+            <wire x2="2992" y1="2416" y2="2416" x1="2896" />
             <wire x2="4112" y1="2416" y2="2416" x1="2992" />
             <wire x2="4928" y1="2416" y2="2416" x1="4112" />
             <wire x2="5312" y1="2416" y2="2416" x1="4928" />
@@ -939,5 +916,17 @@
             <wire x2="5376" y1="2800" y2="2800" x1="5328" />
         </branch>
         <iomarker fontsize="28" x="5376" y="2800" name="InstructionDone" orien="R0" />
+        <branch name="XLXN_103(31:0)">
+            <wire x2="288" y1="944" y2="944" x1="240" />
+            <wire x2="544" y1="944" y2="944" x1="288" />
+            <wire x2="288" y1="944" y2="976" x1="288" />
+            <wire x2="240" y1="944" y2="1424" x1="240" />
+            <wire x2="624" y1="1424" y2="1424" x1="240" />
+            <wire x2="288" y1="896" y2="944" x1="288" />
+            <wire x2="544" y1="928" y2="944" x1="544" />
+            <wire x2="624" y1="944" y2="1424" x1="624" />
+            <wire x2="912" y1="944" y2="944" x1="624" />
+            <wire x2="912" y1="464" y2="944" x1="912" />
+        </branch>
     </sheet>
 </drawing>
