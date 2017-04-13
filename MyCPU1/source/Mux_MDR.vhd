@@ -39,7 +39,7 @@ end Mux_MDR;
 architecture Behavioral of Mux_MDR is
 
 begin
-	process(data_select)
+	process(data_select, data_bus, data_mem)
 	begin
 		if (data_select = '0') then
 			data_out <= data_bus;

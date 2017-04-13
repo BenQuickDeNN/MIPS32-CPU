@@ -214,6 +214,25 @@ architecture Behavioral of Computer is
          Reg_Key : IN  std_logic_vector(1 downto 0)
         );
     END COMPONENT;
+	 -- MUX MDR
+	 COMPONENT Mux_MDR
+    PORT(
+         data_bus : IN  std_logic_vector(31 downto 0);
+         data_mem : IN  std_logic_vector(31 downto 0);
+         data_out : OUT  std_logic_vector(31 downto 0);
+         data_select : IN  std_logic
+        );
+    END COMPONENT;
+	 -- ALU
+	 COMPONENT ALU
+    PORT(
+         alu_in_a : IN  std_logic_vector(31 downto 0);
+         alu_in_b : IN  std_logic_vector(31 downto 0);
+         op_code : IN  std_logic_vector(5 downto 0);
+         flag_z : OUT  std_logic;
+         result : OUT  std_logic_vector(31 downto 0)
+        );
+    END COMPONENT;
 begin
 
 

@@ -1,1 +1,1 @@
--intstyle "ise" -incremental -o "E:/projects/VHDL/MyCPU1_ISE/MyCPU1/testMUX_Reg_isim_beh.exe" -prj "E:/projects/VHDL/MyCPU1_ISE/MyCPU1/testMUX_Reg_beh.prj" "work.testMUX_Reg" 
+-intstyle "ise" -incremental -o "E:/projects/VHDL/MyCPU1_ISE/MyCPU1/testALU_isim_beh.exe" -prj "E:/projects/VHDL/MyCPU1_ISE/MyCPU1/testALU_beh.prj" "work.testALU" 
