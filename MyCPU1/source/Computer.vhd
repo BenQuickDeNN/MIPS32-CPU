@@ -322,9 +322,14 @@ architecture Behavioral of Computer is
 	 -- MDR输入信号
 	 -- clk
 	 -- write MDR
-	 -- oe = write_mem | allow_mdr_bus
+	 -- oe = 1
 	 signal MDRDataIn : std_logic_vector(31 downto 0); -- MDR数据源
 	 
+	 -- PC Adder
+	 -- PC Adder 输出信号
+	 signal PCAdderDataOut : std_logic_vector(31 downto 0);
+	 -- PC Adder 输入信号
+	 -- PCDataOut
 begin
 	-- 中央控制器
 	CentralCU : CU port map(
@@ -434,9 +439,15 @@ begin
 			clk => CLK,
 			data_in => MDRDataIn,
 			WE => CUControl(8),
-			OE => CUControl(11) and CUControl(9),
+			OE => C_VCC,
 			-- 输出端口
 			data_out => MEMDataIn
+		);
+	PCAdder : PC_Adder port map(
+			-- 输入端口
+			old_pc => PCDataOut,
+			-- 输出端口
+			new_pc => PCAdderDataOut
 		);
 end Behavioral;
 
