@@ -1,6 +1,7 @@
 vhdl isim_temp "source/TriState.vhd"
 vhdl isim_temp "source/SRAM.vhd"
 vhdl isim_temp "source/ShamtExt.vhd"
+vhdl isim_temp "source/RegisterField.vhd"
 vhdl isim_temp "source/Register32.vhd"
 vhdl isim_temp "source/PC_Seperator.vhd"
 vhdl isim_temp "source/PC_Adder.vhd"

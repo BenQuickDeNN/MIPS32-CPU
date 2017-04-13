@@ -433,6 +433,16 @@ architecture Behavioral of Computer is
 	 -- alu_op
 	 -- alu_op_select
 	 
+	 -- RF
+	 -- 输出
+	 -- bus
+	 -- 输入
+	 -- clk
+	 -- write_RF
+	 -- oe_RF
+	 -- bus
+	 signal RegAddr : std_logic_vector(4 downto 0); -- 寄存器号
+	 
 begin
 	-- 中央控制器
 	CentralCU : CU port map(
@@ -654,6 +664,16 @@ begin
 			op_select => CUControl(22),
 			-- 输出端口
 			op_out => ALUFunc
+		);
+	Register_Field : RegistersField port map(
+			-- 输入端口
+			W_data => MainBus,
+			WE => CUControl(3),
+			OE => CUControl(4),
+			clk => CLK,
+			Reg_addr => RegAddr,
+			-- 输出端口
+			R_data => MainBus
 		);
 end Behavioral;
 
