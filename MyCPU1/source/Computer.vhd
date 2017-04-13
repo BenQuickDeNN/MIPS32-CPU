@@ -330,6 +330,14 @@ architecture Behavioral of Computer is
 	 signal PCAdderDataOut : std_logic_vector(31 downto 0);
 	 -- PC Adder 输入信号
 	 -- PCDataOut
+	 
+	 -- PC Seperator
+	 -- PC Seperator 输出信号
+	 signal PCHigh : std_logic_vector(3 downto 0); -- PC高四位数据
+	 signal PCLow : std_logic_vector(27 downto 0); -- PC低四位数据
+	 -- PC Seperator 输入信号
+	 -- PCDataOut
+	 
 begin
 	-- 中央控制器
 	CentralCU : CU port map(
@@ -448,6 +456,13 @@ begin
 			old_pc => PCDataOut,
 			-- 输出端口
 			new_pc => PCAdderDataOut
+		);
+	PCSeperator : PC_Seperator port map(
+			-- 输入端口
+			PC_value => PCDataOut,
+			-- 输出端口
+			high4 => PCHigh,
+			low4 => PCLow
 		);
 end Behavioral;
 
