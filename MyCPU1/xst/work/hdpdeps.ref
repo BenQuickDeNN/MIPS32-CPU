@@ -1,4 +1,4 @@
-V3 68
+V3 69
 FL E:/projects/VHDL/MyCPU1_ISE/MyCPU1/Instruction_Seperator.vhd 2017/03/25.19:31:31 P.20131013
 EN work/Instruction_Seperator 1490441516 \
       FL E:/projects/VHDL/MyCPU1_ISE/MyCPU1/Instruction_Seperator.vhd \
@@ -37,14 +37,15 @@ EN work/Computer 1492004898 \
       FL E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/Computer.vhd \
       PB ieee/std_logic_1164 1381692176
 AR work/Computer/Behavioral 1492004899 \
-      FL E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/Computer.vhd EN work/Computer 1492004898
+      FL E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/Computer.vhd EN work/Computer 1492004898 \
+      CP CU
 FL E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/CU.vhd 2017/04/12.20:58:31 P.20131013
-EN work/CU 1492001913 FL E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/CU.vhd \
+EN work/CU 1492072912 FL E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/CU.vhd \
       PB ieee/std_logic_1164 1381692176 PB ieee/STD_LOGIC_UNSIGNED 1381692179 \
       PB ieee/std_logic_arith 1381692177 PB ieee/STD_LOGIC_TEXTIO 1381692180 \
       PB std/TEXTIO 1381692176
-AR work/CU/behav 1492001914 \
-      FL E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/CU.vhd EN work/CU 1492001913
+AR work/CU/behav 1492072913 \
+      FL E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/CU.vhd EN work/CU 1492072912
 FL E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/Decoder38.vhd 2016/10/31.12:16:02 P.20131013
 EN work/Decoder38 1490433331 \
       FL E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/Decoder38.vhd \

@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2017-04-13T08:31:21</DateModified>
+  <DateModified>2017-04-13T16:19:33</DateModified>
   <ModuleName>ALU</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
   <SavedFilePath>E:/projects/VHDL/MyCPU1_ISE/MyCPU1/iseconfig/ALU.xreport</SavedFilePath>

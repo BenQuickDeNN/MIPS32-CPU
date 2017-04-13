@@ -233,8 +233,53 @@ architecture Behavioral of Computer is
          result : OUT  std_logic_vector(31 downto 0)
         );
     END COMPONENT;
+	 -- 定义内部信号
+	 signal MainBus : std_logic_vector(31 downto 0); -- 总线
+	 -- CU信号
+	 -- CU输出信号
+	 signal CUControl : std_logic_vector(31 downto 0); -- CU微命令向量
+	 -- CU输入信号
+	 signal MEMready : std_logic;-- 内存准备好
+	 signal CUOpcode : std_logic_vector(5 downto 0);-- 指令操作码部分
+	 signal ALUFlag_Zero : std_logic; -- 结果0标志
+	 -- PC信号
+	 signal PCDataOut : std_logic_vector(31 downto 0);
+	 
 begin
-
+	CentralCU : CU port map(
+			-- 输入端口
+			opcode => CUOpcode,
+         CLK => CLK,
+         flag_zero => ALUFlag_Zero,
+         initiation => Initiation,
+			mem_ready => MEMready,
+			--test_MCounter,
+			--test_opcode,
+			--test_Miinstruct,
+			-- 输出端口
+         instruction_done => InstructionDone,
+         -- 微命令输出端口
+         write_PC => CUControl(0),
+         allow_PC_BUS => CUControl(1),
+         write_IR => CUControl(2),
+         write_RF => CUControl(3),
+         oe_RF => CUControl(4),
+         reg_type_select => CUControl(6 downto 5),
+         write_MAR => CUControl(7),
+         write_MDR => CUControl(8),
+         allow_MDR_BUS => CUControl(9),
+			MDR_data_select => CUControl(10),
+         write_MEM => CUControl(11),
+         read_MEM => CUControl(12),
+         write_LA => CUControl(13),
+         write_LB => CUControl(14),
+         allow_ALU_BUS => CUControl(15),
+         alu_op => CUControl(21 downto 16),
+         alu_op_select => CUControl(22),
+         pc_data_select => CUControl(24 downto 23),
+         LB_data_select => CUControl(26 downto 25),
+         allow_Imme_Shamt_to_Bus => CUControl(27)
+		);
 
 end Behavioral;
 

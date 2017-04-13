@@ -4,32 +4,82 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.10 secs
+Total CPU time to Xst completion: 0.11 secs
  
 --> Parameter xsthdpdir set to E:/projects/VHDL/MyCPU1_ISE/MyCPU1/xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.10 secs
+Total CPU time to Xst completion: 0.11 secs
  
 --> WARNING:Xst:3164 - Option "-debug" found multiple times in the command line. Only the first occurence is considered.
 
 =========================================================================
 *                          HDL Compilation                              *
 =========================================================================
+Compiling vhdl file "E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/CU.vhd" in Library work.
+Architecture behav of Entity cu is up to date.
 Compiling vhdl file "E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/Computer.vhd" in Library work.
-Entity <Computer> compiled.
-Entity <Computer> (Architecture <Behavioral>) compiled.
+Entity <computer> compiled.
+ERROR:HDLParsers:3312 - "E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/Computer.vhd" Line 251. Undefined symbol 'opcode'.
+ERROR:HDLParsers:1209 - "E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/Computer.vhd" Line 251. opcode: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/Computer.vhd" Line 253. Undefined symbol 'flag_zero'.
+ERROR:HDLParsers:1209 - "E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/Computer.vhd" Line 253. flag_zero: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3313 - "E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/Computer.vhd" Line 255. Undefined symbol 'mem_ready'.  Should it be: memready?
+ERROR:HDLParsers:1209 - "E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/Computer.vhd" Line 255. mem_ready: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3313 - "E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/Computer.vhd" Line 260. Undefined symbol 'instruction_done'.  Should it be: instructiondone?
+ERROR:HDLParsers:1209 - "E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/Computer.vhd" Line 260. instruction_done: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/Computer.vhd" Line 262. Undefined symbol 'write_PC'.
+ERROR:HDLParsers:1209 - "E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/Computer.vhd" Line 262. write_PC: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/Computer.vhd" Line 263. Undefined symbol 'allow_PC_BUS'.
+ERROR:HDLParsers:1209 - "E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/Computer.vhd" Line 263. allow_PC_BUS: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/Computer.vhd" Line 264. Undefined symbol 'write_IR'.
+ERROR:HDLParsers:1209 - "E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/Computer.vhd" Line 264. write_IR: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/Computer.vhd" Line 265. Undefined symbol 'write_RF'.
+ERROR:HDLParsers:1209 - "E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/Computer.vhd" Line 265. write_RF: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/Computer.vhd" Line 266. Undefined symbol 'oe_RF'.
+ERROR:HDLParsers:1209 - "E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/Computer.vhd" Line 266. oe_RF: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/Computer.vhd" Line 267. Undefined symbol 'reg_type_select'.
+ERROR:HDLParsers:1209 - "E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/Computer.vhd" Line 267. reg_type_select: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/Computer.vhd" Line 268. Undefined symbol 'write_MAR'.
+ERROR:HDLParsers:1209 - "E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/Computer.vhd" Line 268. write_MAR: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/Computer.vhd" Line 269. Undefined symbol 'write_MDR'.
+ERROR:HDLParsers:1209 - "E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/Computer.vhd" Line 269. write_MDR: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/Computer.vhd" Line 270. Undefined symbol 'allow_MDR_BUS'.
+ERROR:HDLParsers:1209 - "E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/Computer.vhd" Line 270. allow_MDR_BUS: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/Computer.vhd" Line 271. Undefined symbol 'MDR_data_select'.
+ERROR:HDLParsers:1209 - "E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/Computer.vhd" Line 271. MDR_data_select: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/Computer.vhd" Line 272. Undefined symbol 'write_MEM'.
+ERROR:HDLParsers:1209 - "E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/Computer.vhd" Line 272. write_MEM: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/Computer.vhd" Line 273. Undefined symbol 'read_MEM'.
+ERROR:HDLParsers:1209 - "E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/Computer.vhd" Line 273. read_MEM: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/Computer.vhd" Line 274. Undefined symbol 'write_LA'.
+ERROR:HDLParsers:1209 - "E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/Computer.vhd" Line 274. write_LA: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/Computer.vhd" Line 275. Undefined symbol 'write_LB'.
+ERROR:HDLParsers:1209 - "E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/Computer.vhd" Line 275. write_LB: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/Computer.vhd" Line 276. Undefined symbol 'allow_ALU_BUS'.
+ERROR:HDLParsers:1209 - "E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/Computer.vhd" Line 276. allow_ALU_BUS: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/Computer.vhd" Line 277. Undefined symbol 'alu_op'.
+ERROR:HDLParsers:1209 - "E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/Computer.vhd" Line 277. alu_op: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/Computer.vhd" Line 278. Undefined symbol 'alu_op_select'.
+ERROR:HDLParsers:1209 - "E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/Computer.vhd" Line 278. alu_op_select: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/Computer.vhd" Line 279. Undefined symbol 'pc_data_select'.
+ERROR:HDLParsers:1209 - "E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/Computer.vhd" Line 279. pc_data_select: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/Computer.vhd" Line 280. Undefined symbol 'LB_data_select'.
+ERROR:HDLParsers:1209 - "E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/Computer.vhd" Line 280. LB_data_select: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/Computer.vhd" Line 282. Undefined symbol 'allow_Imme_Shamt_to_Bus'.
+ERROR:HDLParsers:1209 - "E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/Computer.vhd" Line 282. allow_Imme_Shamt_to_Bus: Undefined symbol (last report in this block)
+ERROR:HDLParsers:851 - "E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/Computer.vhd" Line 249. Formal opcode of CU with no default value must be associated with an actual value.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.14 secs
+Total CPU time to Xst completion: 0.18 secs
  
 --> 
 
-Total memory usage is 230056 kilobytes
+Total memory usage is 230440 kilobytes
 
-Number of errors   :    0 (   0 filtered)
+Number of errors   :   49 (   0 filtered)
 Number of warnings :    1 (   0 filtered)
 Number of infos    :    0 (   0 filtered)
 
