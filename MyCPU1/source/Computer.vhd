@@ -307,6 +307,15 @@ architecture Behavioral of Computer is
 	 -- oe = 1
 	 signal LBDataIn : std_logic_vector(31 downto 0); -- LB数据源
 	 
+	 -- MAR
+	 -- MAR输出信号
+	 -- MEMAddress
+	 -- MAR输入信号
+	 -- clk
+	 -- write MAR
+	 -- oe = 1
+	 -- data_in from bus
+	 
 begin
 	-- 中央控制器
 	CentralCU : CU port map(
@@ -401,6 +410,15 @@ begin
 			OE => C_VCC,
 			-- 输出端口
 			data_out => ALUOprand_b
+		);
+	MAR_Reg : Register32 port map(
+			-- 输入端口
+			clk => CLK,
+			data_in => MainBus,
+			WE => CUControl(7),
+			OE => C_VCC,
+			-- 输出端口
+			data_out => MEMAddress
 		);
 end Behavioral;
 
