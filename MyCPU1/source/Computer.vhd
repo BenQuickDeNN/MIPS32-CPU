@@ -298,6 +298,15 @@ architecture Behavioral of Computer is
 	 -- write LA
 	 -- oe = 1
 	 
+	 -- LB暂存器
+	 -- LB输出信号
+	 -- ALUOprand_b
+	 -- LB输入信号
+	 -- clk
+	 -- write LB
+	 -- oe = 1
+	 signal LBDataIn : std_logic_vector(31 downto 0); -- LB数据源
+	 
 begin
 	-- 中央控制器
 	CentralCU : CU port map(
@@ -383,6 +392,15 @@ begin
 			OE => C_VCC,
 			-- 输出端口
 			data_out => ALUOprand_a
+		);
+	LB_Reg : Register32 port map(
+			-- 输入端口
+			clk => CLK,
+			data_in => LBDataIn,
+			WE => CUControl(14),
+			OE => C_VCC,
+			-- 输出端口
+			data_out => ALUOprand_b
 		);
 end Behavioral;
 
