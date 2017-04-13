@@ -316,6 +316,15 @@ architecture Behavioral of Computer is
 	 -- oe = 1
 	 -- data_in from bus
 	 
+	 -- MDR
+	 -- MDR输出信号
+	 -- MEMDataOut
+	 -- MDR输入信号
+	 -- clk
+	 -- write MDR
+	 -- oe = write_mem | allow_mdr_bus
+	 signal MDRDataIn : std_logic_vector(31 downto 0); -- MDR数据源
+	 
 begin
 	-- 中央控制器
 	CentralCU : CU port map(
@@ -419,6 +428,15 @@ begin
 			OE => C_VCC,
 			-- 输出端口
 			data_out => MEMAddress
+		);
+	MDR_Reg : Register32 port map(
+			-- 输入端口
+			clk => CLK,
+			data_in => MDRDataIn,
+			WE => CUControl(8),
+			OE => CUControl(11) and CUControl(9),
+			-- 输出端口
+			data_out => MEMDataIn
 		);
 end Behavioral;
 
