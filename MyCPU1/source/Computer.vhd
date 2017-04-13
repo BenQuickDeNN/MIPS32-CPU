@@ -372,7 +372,7 @@ architecture Behavioral of Computer is
 	 -- bus
 	 -- 输入
 	 -- allow_Imme_Shamt_to_Bus
-	 signal MUXLBDataOut : std_logic_vector(31 downto 0); -- MUX LB 数据输出
+	 -- LBDataIn
 	 
 	 -- Tri Gate MDR to Bus
 	 -- 输出
@@ -415,6 +415,15 @@ architecture Behavioral of Computer is
 	 signal Shamt32 : std_logic_vector(31 downto 0); -- 32位移位数
 	 -- 输入
 	 -- RealShamt
+	 
+	 -- MUX LB
+	 -- 输出
+	 -- LBDataIn
+	 -- 输入
+	 -- Imme32
+	 -- Shamt32
+	 -- bus
+	 -- LB_data_select
 	 
 begin
 	-- 中央控制器
@@ -575,7 +584,7 @@ begin
 	TriGate_ImmeShamtBus : TriState port map(
 			-- 输入端口
 			ctrl => CUControl(27),
-			data_in => MUXLBDataOut,
+			data_in => LBDataIn,
 			-- 输出端口
 			data_out => MainBus
 		);
@@ -614,6 +623,21 @@ begin
 			Imme_in => RealImme,
 			-- 输出端口
 			Imme_out => Imme32
+		);
+	Shamt_Ext : ShamtExt port map(
+			-- 输入端口
+			shamt => RealShamt,
+			-- 输出端口
+			shamt32 => Shamt32
+		);
+	MUXLB : MUX_LB port map(
+			-- 输入端口
+			Data_Imme => Imme32,
+			Data_Shamt => Shamt32,
+			Data_Bus => MainBus,
+			Data_select => CUControl(26 downto 25),
+			-- 输出端口
+			Data_out => LBDataIn
 		);
 end Behavioral;
 
