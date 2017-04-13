@@ -344,6 +344,15 @@ architecture Behavioral of Computer is
 	 -- PC High4 Extender 输入信号
 	 -- PCHigh
 	 
+	 -- MUX PC
+	 -- MUX PC 输出信号
+	 -- PCDataIn
+	 -- MUX PC 输入信号
+	 -- PCAdderDataOut
+	 -- data from bus
+	 -- pc_data_select
+	 signal addrMerge : std_logic_vector(31 downto 0); -- 地址合并信号（已作废）
+	 
 begin
 	-- 中央控制器
 	CentralCU : CU port map(
@@ -475,6 +484,15 @@ begin
 			pc_high => PCHigh,
 			-- 输出信号
 			pc_ext => PCHigh4Ext
+		);
+	MUXPC : MUX_PC port map(
+			-- 输入信号
+			data_adder4 => PCAdderDataOut,
+			data_bus => MainBus,
+			data_addr_merge => addrMerge,
+			data_select => CUControl(24 downto 23),
+			-- 输出信号
+			data_out => PCDataIn
 		);
 end Behavioral;
 
