@@ -374,6 +374,13 @@ architecture Behavioral of Computer is
 	 -- allow_Imme_Shamt_to_Bus
 	 signal MUXLBDataOut : std_logic_vector(31 downto 0); -- MUX LB 数据输出
 	 
+	 -- Tri Gate MDR to Bus
+	 -- 输出
+	 -- bus
+	 -- 输入
+	 -- allow_MDR_Bus
+	 -- MEMDataIn
+	 
 begin
 	-- 中央控制器
 	CentralCU : CU port map(
@@ -533,6 +540,13 @@ begin
 			-- 输入端口
 			ctrl => CUControl(27),
 			data_in => MUXLBDataOut,
+			-- 输出端口
+			data_out => MainBus
+		);
+	TriGate_MDRBus : TriState port map(
+			-- 输入端口
+			ctrl => CUControl(9),
+			data_in => MEMDataIn,
 			-- 输出端口
 			data_out => MainBus
 		);
