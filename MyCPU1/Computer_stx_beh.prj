@@ -1,4 +1,5 @@
 vhdl isim_temp "source/SRAM.vhd"
+vhdl isim_temp "source/Register32.vhd"
 vhdl isim_temp "source/CU.vhd"
 vhdl isim_temp "source/ALU.vhd"
 vhdl isim_temp "source/Computer.vhd"

@@ -236,6 +236,8 @@ architecture Behavioral of Computer is
 
 	 -- 定义公共信号
 	 signal MainBus : std_logic_vector(31 downto 0); -- 总线
+	 signal C_VCC : std_logic := '1'; -- 默认高电平
+	 signal C_GND : std_logic := '0'; -- 默认地
 	 
 	 -- CU信号
 	 -- CU输出信号
@@ -266,9 +268,13 @@ architecture Behavioral of Computer is
 	 signal MEMOE : std_logic; -- 内存输出使能
 	 signal MEMCS : std_logic; -- 内存片选
 	 
-	 
+	 -- 专用寄存器信号
 	 -- PC信号
+	 -- PC输出信号
 	 signal PCDataOut : std_logic_vector(31 downto 0);
+	 -- PC输入信号
+	 -- WritePC
+	 signal PCDataIn : std_logic_vector(31 downto 0);
 	 
 begin
 	-- 中央控制器
@@ -328,6 +334,15 @@ begin
 			cs => MEMCS,
 			-- 输出端口
 			data_out => MEMDataOut
+		);
+	PC_Reg : Register32 port map(
+			-- 输入端口
+			clk => CLK,
+			data_in => PCDataIn,
+			WE => CUControl(0),
+			OE => C_VCC, -- 输出使能一直有效
+			-- 输出端口
+			data_out => PCDataOut
 		);
 
 end Behavioral;
