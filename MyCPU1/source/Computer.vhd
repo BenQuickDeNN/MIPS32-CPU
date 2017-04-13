@@ -234,8 +234,9 @@ architecture Behavioral of Computer is
         );
     END COMPONENT;
 
-	 -- 定义内部信号
+	 -- 定义公共信号
 	 signal MainBus : std_logic_vector(31 downto 0); -- 总线
+	 
 	 -- CU信号
 	 -- CU输出信号
 	 signal CUControl : std_logic_vector(31 downto 0); -- CU微命令向量
@@ -243,13 +244,29 @@ architecture Behavioral of Computer is
 	 signal MEMready : std_logic;-- 内存准备好
 	 signal CUOpcode : std_logic_vector(5 downto 0);-- 指令操作码部分
 	 signal ALUFlag_Zero : std_logic; -- 结果0标志
+	 
 	 -- ALU信号
 	 -- ALU输出信号
 	 -- ALUFlag_Zero
 	 signal ALUResult : std_logic_vector(31 downto 0); -- ALU运算结果
+	 -- ALU输入信号
 	 signal ALUOprand_a : std_logic_vector(31 downto 0); -- ALU左操作数
 	 signal ALUOprand_b : std_logic_vector(31 downto 0); -- ALU右操作数
 	 signal ALUFunc : std_logic_vector(5 downto 0); -- ALU运算码
+	 
+	 -- SRAM
+	 -- SRAM输出信号
+	 -- MEMready
+	 signal MEMDataOut : std_logic_vector(31 downto 0); -- 内存数据输出
+	 -- SRAM输入信号
+	 signal MEMAddress : std_logic_vector(31 downto 0); -- 内存地址输入
+	 signal MEMDataIn : std_logic_vector(31 downto 0); -- 内存数据输入
+	 signal MEMWrite : std_logic; -- 内存写信号
+	 signal MEMRead : std_logic; -- 内存读信号
+	 signal MEMOE : std_logic; -- 内存输出使能
+	 signal MEMCS : std_logic; -- 内存片选
+	 
+	 
 	 -- PC信号
 	 signal PCDataOut : std_logic_vector(31 downto 0);
 	 
@@ -298,6 +315,19 @@ begin
 			-- 输出端口
          flag_z => ALUFlag_Zero,
          result => ALUResult
+		);
+	-- SRAM
+	MainSRAM : SRAM port map(
+			-- 输入端口
+			clk => CLK,
+			address => MEMAddress,
+			data_in => MEMDataIn,
+			write1 => MEMWrite,
+			read1 => MEMRead,
+			oe => MEMOE,
+			cs => MEMCS,
+			-- 输出端口
+			data_out => MEMDataOut
 		);
 
 end Behavioral;
