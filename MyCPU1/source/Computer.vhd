@@ -443,6 +443,15 @@ architecture Behavioral of Computer is
 	 -- bus
 	 signal RegAddr : std_logic_vector(4 downto 0); -- 寄存器号
 	 
+	 -- MUX REG
+	 -- 输出
+	 -- RegAddr
+	 -- 输入
+	 -- RSAddr
+	 -- RTAddr
+	 -- RDAddr
+	 -- reg_type_select
+	 
 begin
 	-- 中央控制器
 	CentralCU : CU port map(
@@ -674,6 +683,15 @@ begin
 			Reg_addr => RegAddr,
 			-- 输出端口
 			R_data => MainBus
+		);
+	MUXReg : MUX_Reg port map(
+			-- 输入端口
+			Reg_addr_0 => RSAddr,
+			Reg_addr_1 => RTAddr,
+			Reg_addr_2 => RDAddr,
+			Reg_Key => CUControl(6 downto 5),
+			-- 输出端口
+			Reg_out_addr => RegAddr
 		);
 end Behavioral;
 
