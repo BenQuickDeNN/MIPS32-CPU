@@ -17,7 +17,8 @@ signal memory_space_256: memory_space;
 	begin
 	-- process of writing or reading, if write0_read1 = '0' then write, else read
 	-- when cs and oe are unavailable, set data_out as 'z'
-	process(clk)
+	ready <= '1';
+	acessSRAMPro : process(clk)
 		begin
 		-- static access operation
 			if (write1 = '1') then
@@ -26,17 +27,19 @@ signal memory_space_256: memory_space;
 						memory_space_256(conv_integer(address)) <= data_in;
 					end if;
 				end if;
-			elsif(read1 = '1') then
-				if (oe = '1') then
-					if (cs = '1') then
-						if (clk = '1' and clk'event) then
-							data_out <= memory_space_256(conv_integer(address));
-						end if;
-					end if;
-				else
-					data_out <= "ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ";
-				end if;
 			end if;
-			ready <= '1';
+	end process;
+	-- ¶Á¹ý³Ì
+	readPro : process(oe, read1, address, cs)
+	begin
+		if(read1 = '1') then
+			if (oe = '1') then
+				if (cs = '1') then
+					data_out <= memory_space_256(conv_integer(address));
+				end if;
+			else
+				data_out <= "ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ";
+			end if;
+		end if;
 	end process;
 end behave;

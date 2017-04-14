@@ -107,7 +107,6 @@ BEGIN
 		write1 <= '0';
 		oe <= '1';
 		read1 <= '1';
-		
       wait for clk_period*10;
 
       -- insert stimulus here 
