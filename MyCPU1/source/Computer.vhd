@@ -726,35 +726,6 @@ begin
 	
 	-- 指令输入过程
 	-- 从文件中输入指令到内存
-	pushInstructionPro : process(boot)-- 敏感信号为开机信号
-	variable INST_FILE_STATUS : FILE_OPEN_STATUS;-- 文件打开状态
-	variable file_buff : line;
-	variable file_buff_vector : std_logic_vector(31 downto 0);
-	begin
-		MEMAddress <= "00000000000000000000000000000000";
-		if(boot = '1')then
-			file_open(INST_FILE_STATUS, ProgramFile, "asm_test/TestPrograme.bin", read_mode);-- 打开文件
-			PUSH_LOOP: for i in 0 to 125 loop
-				BootCLK <='0';
-				readline(ProgramFile, file_buff);
-				read(file_buff, file_buff_vector);
-				--MEMAddress <= to_stdlogicvector(i);
-				MEMDataIn <= file_buff_vector;-- 将文件中的内容赋给内存
-				CUControl <= "00000000000000000000100000000000";-- 发送命令写入内存
-				debug_memAddr <= MEMAddress;
-				debug_memData <= file_buff_vector;
-				BootCLK <= '1';
-				MEMAddress <= MEMAddress + "00000000000000000000000000000001";
-			end loop PUSH_LOOP;
-			file_close(ProgramFile);
-			-- PC初值为0
-			PCDataIn <= x"00000000";
-			BootCLK <= '0';
-			CUControl <= "00000000000000000000000000000001";-- 发送命令写入PC
-			debug_PCData <= PCDataIn;
-			BootCLK <= '1';
-			MEMAddress <= "00000000000000000000000000000000";
-		end if;
-	end process;
+	
 end Behavioral;
 
