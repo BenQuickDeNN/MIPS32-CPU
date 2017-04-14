@@ -18,7 +18,7 @@
 --
 ----------------------------------------------------------------------------------
 library IEEE;
-use IEEE.STD_LOGIC_1164.ALL;
+use ieee.std_logic_1164.all;
 use ieee.std_logic_unsigned.all;
 use ieee.std_logic_arith.all;
 use ieee.std_logic_textio.all;
@@ -35,7 +35,9 @@ use std.textio.all;
 -- 整体结构
 entity Computer is
 	port(CLK, Initiation, boot : in std_logic;
-			InstructionDone : out std_logic);
+			InstructionDone : out std_logic;
+			-- 调试输出端口
+			debug_memData, debug_memAddr, debug_PCData: out std_logic_vector(31 downto 0));
 end Computer;
 
 architecture Behavioral of Computer is
@@ -471,6 +473,7 @@ architecture Behavioral of Computer is
 	 signal BootCLK : std_logic := '0';
 	 
 begin
+	-- 定义调试部分
 	BootCLK <= CLK;
 	-- 中央控制器
 	CentralCU : CU port map(
@@ -724,20 +727,22 @@ begin
 	-- 指令输入过程
 	-- 从文件中输入指令到内存
 	pushInstructionPro : process(boot)-- 敏感信号为开机信号
-	variable INST_FILE_STATUS:FILE_OPEN_STATUS;-- 文件打开状态
-	variable file_buff:line;
-	variable file_buff_vector:std_logic_vector(31 downto 0);
+	variable INST_FILE_STATUS : FILE_OPEN_STATUS;-- 文件打开状态
+	variable file_buff : line;
+	variable file_buff_vector : std_logic_vector(31 downto 0);
 	begin
 		MEMAddress <= "00000000000000000000000000000000";
 		if(boot = '1')then
-			file_open(INST_FILE_STATUS, ProgramFile, "TestPrograme.bin",read_mode);-- 打开文件
-			PUSH_LOOP: for i in 0 to 127 loop
+			file_open(INST_FILE_STATUS, ProgramFile, "asm_test/TestPrograme.bin", read_mode);-- 打开文件
+			PUSH_LOOP: for i in 0 to 125 loop
 				BootCLK <='0';
 				readline(ProgramFile, file_buff);
 				read(file_buff, file_buff_vector);
 				--MEMAddress <= to_stdlogicvector(i);
 				MEMDataIn <= file_buff_vector;-- 将文件中的内容赋给内存
 				CUControl <= "00000000000000000000100000000000";-- 发送命令写入内存
+				debug_memAddr <= MEMAddress;
+				debug_memData <= file_buff_vector;
 				BootCLK <= '1';
 				MEMAddress <= MEMAddress + "00000000000000000000000000000001";
 			end loop PUSH_LOOP;
@@ -746,7 +751,9 @@ begin
 			PCDataIn <= x"00000000";
 			BootCLK <= '0';
 			CUControl <= "00000000000000000000000000000001";-- 发送命令写入PC
+			debug_PCData <= PCDataIn;
 			BootCLK <= '1';
+			MEMAddress <= "00000000000000000000000000000000";
 		end if;
 	end process;
 end Behavioral;
