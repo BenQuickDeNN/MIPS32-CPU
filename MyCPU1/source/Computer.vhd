@@ -34,10 +34,12 @@ use std.textio.all;
 --use UNISIM.VComponents.all;
 -- 整体结构
 entity Computer is
-	port(CLK, Initiation, boot : in std_logic;
+	port(CLK, Initiation, boot, pro_run : in std_logic;
 			InstructionDone : out std_logic;
 			-- 调试输出端口
-			debug_memData, debug_memAddr, debug_PCData: out std_logic_vector(31 downto 0));
+			debug_memData, debug_memAddr, debug_PCData, debug_IRData, debug_BUSData : out std_logic_vector(31 downto 0);
+			debug_microInstruc : out std_logic_vector(31 downto 0);
+			debug_CUOPcode : out std_logic_vector(5 downto 0));
 end Computer;
 
 architecture Behavioral of Computer is
@@ -48,10 +50,11 @@ architecture Behavioral of Computer is
          opcode : IN  std_logic_vector(5 downto 0);
          CLK : IN  std_logic;
          flag_zero : IN  std_logic;
-         initiation : IN  std_logic;
+         initiation, pro_run : IN  std_logic;
 			test_MCounter : OUT std_logic_vector(5 downto 0);
 			test_opcode: out std_logic_vector(5 downto 0);
 			test_Miinstruct : OUT std_logic_vector(31 downto 0);
+			test_ROM_out : out std_logic_vector(31 downto 0);
          instruction_done : OUT  std_logic;
          mem_ready : IN  std_logic;
          write_PC : OUT  std_logic;
@@ -96,8 +99,10 @@ architecture Behavioral of Computer is
          oe : IN  std_logic;
          cs : IN  std_logic;
          clk : IN  std_logic;
+			boot : in std_logic;
 			ready : out std_logic;-- 内存准备好
-         data_out : OUT  std_logic_vector(31 downto 0)
+         data_out : OUT  std_logic_vector(31 downto 0);
+			test_data_out : out std_logic_vector(31 downto 0)
         );
     END COMPONENT;
 -- Register
@@ -241,7 +246,7 @@ architecture Behavioral of Computer is
     END COMPONENT;
 
 	 -- 定义公共信号
-	 signal MainBus : std_logic_vector(31 downto 0); -- 总线
+	 signal MainBus : std_logic_vector(31 downto 0) := (others => '0'); -- 总线
 	 signal C_VCC : std_logic := '1'; -- 默认高电平
 	 signal C_GND : std_logic := '0'; -- 默认地
 	 
@@ -268,8 +273,8 @@ architecture Behavioral of Computer is
 	 signal MEMDataOut : std_logic_vector(31 downto 0); -- 内存数据输出
 	 -- SRAM输入信号
 	 -- clk
-	 signal MEMAddress : std_logic_vector(31 downto 0); -- 内存地址输入
-	 signal MEMDataIn : std_logic_vector(31 downto 0); -- 内存数据输入
+	 signal MEMAddress : std_logic_vector(31 downto 0) := (others => '0'); -- 内存地址输入
+	 signal MEMDataIn : std_logic_vector(31 downto 0) := (others => '0'); -- 内存数据输入
 	 -- MEMWrite : std_logic; -- 内存写信号
 	 -- MEMRead : std_logic; -- 内存读信号
 	 -- MEMOE : std_logic; -- 内存输出使能
@@ -279,16 +284,16 @@ architecture Behavioral of Computer is
 	 
 	 -- PC寄存器
 	 -- PC输出信号
-	 signal PCDataOut : std_logic_vector(31 downto 0);
+	 signal PCDataOut : std_logic_vector(31 downto 0)  := (others => '0');
 	 -- PC输入信号
 	 -- clk
 	 -- WritePC
 	 -- oe = 1
-	 signal PCDataIn : std_logic_vector(31 downto 0);
+	 signal PCDataIn : std_logic_vector(31 downto 0)  := (others => '0');
 	 
 	 -- IR寄存器
 	 -- IR输出信号
-	 signal IRDataOut : std_logic_vector(31 downto 0);
+	 signal IRDataOut : std_logic_vector(31 downto 0)  := (others => '0');
 	 -- IR输入信号
 	 -- clk
 	 -- data_in from bus
@@ -466,8 +471,7 @@ architecture Behavioral of Computer is
 	 -- bus
 	 -- MDR_data_select
 	 
-	 -- 定义程序文件
-	 file ProgramFile : text;
+	 
 	 
 	 -- 定义初始化时钟
 	 signal BootCLK : std_logic := '0';
@@ -475,6 +479,13 @@ architecture Behavioral of Computer is
 begin
 	-- 定义调试部分
 	BootCLK <= CLK;
+	debug_PCData <= PCDataOut;
+	debug_memAddr <= MEMAddress;
+	-- debug_memData <= MEMDataIn;
+	debug_IRData <= IRDataOut;
+	debug_BUSData <= MainBus;
+	-- debug_microInstruc <= CUControl;
+	debug_CUOPcode <= CUOPcode;
 	-- 中央控制器
 	CentralCU : CU port map(
 			-- 输入端口
@@ -482,12 +493,14 @@ begin
          CLK => CLK,
          flag_zero => ALUFlag_Zero,
          initiation => Initiation,
+			pro_run => pro_run,
 			mem_ready => MEMready,
 			--test_MCounter,
 			--test_opcode,
-			--test_Miinstruct,
+			test_ROM_out => debug_microInstruc,
 			-- 输出端口
          instruction_done => InstructionDone,
+			--test_Miinstruct => debug_microInstruc,
          -- 微命令输出端口
          write_PC => CUControl(0),
          allow_PC_BUS => CUControl(1),
@@ -530,8 +543,10 @@ begin
 			read1 => CUControl(12),
 			oe => CUControl(12),
 			cs => C_VCC,
+			boot => boot,
 			-- 输出端口
-			data_out => MEMDataOut
+			data_out => MEMDataOut,
+			test_data_out => debug_memData
 		);
 	PC_Reg : Register32 port map(
 			-- 输入端口
@@ -616,9 +631,16 @@ begin
 			-- 输出信号
 			data_out => PCDataIn
 		);
+	TriGate_PCBus_Main : TriState port map(
+		-- 输入端口
+		ctrl => CUControl(1),
+		data_in => PCDataOut,
+		-- 输出端口
+		data_out => MainBus
+	);
 	TriGate_PCBus : TriState port map(
 			-- 输入端口
-			ctrl => CUControl(1),
+			ctrl => C_GND,
 			data_in => PCHigh4Ext,
 			-- 输出端口
 			data_out => MainBus
@@ -725,7 +747,6 @@ begin
 		);
 	
 	-- 指令输入过程
-	-- 从文件中输入指令到内存
 	
 end Behavioral;
 

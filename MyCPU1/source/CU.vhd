@@ -11,12 +11,13 @@ entity CU is
 	port(opcode:in std_logic_vector(5 downto 0);-- 操作码
 			CLK:in std_logic;
 			flag_zero:in std_logic;-- 结果状态输入
-			initiation:in std_logic;-- 初始化信号
+			initiation, pro_run :in std_logic;-- 初始化信号
 			instruction_done:out std_logic;-- 指令完成信号
 			mem_ready:in std_logic;-- 记忆体是否已准备好
 			test_MCounter : OUT std_logic_vector(5 downto 0);
 			test_opcode: out std_logic_vector(5 downto 0); 
 			test_Miinstruct : OUT std_logic_vector(31 downto 0);
+			test_ROM_out : out std_logic_vector(31 downto 0);
 			--微命令输出
 			write_PC:out STD_LOGIC;-- 允许写PC寄存器
 			allow_PC_BUS:out std_logic;-- 允许将PC内容写入总线
@@ -68,12 +69,13 @@ architecture behav of CU is
 	signal InstructionAddress:std_logic_vector(5 downto 0) := "000000";-- 地址计数器,初值为0
 	begin
 	-- 微指令存储器赋初值
-	IntiatCUROMProcess:process(initiation)
+	IntiatCUROMProcess:process(initiation, pro_run)
 	variable ROM_FILE_STATUS:FILE_OPEN_STATUS;-- 文件打开状态
 	--variable ROM_FILE_POINTER:integer:=0;
 	variable file_buff:line;
 	variable file_buff_vector:std_logic_vector(31 downto 0);
 	begin
+	if(initiation = '1' and not(pro_run = '1'))then
 		file_open(ROM_FILE_STATUS,ROM_INI_FILE,"ROM_INI.txt",read_mode);-- 打开文件
 		ROM_LOOP: for i in 0 to 63 loop
 			readline(ROM_INI_FILE, file_buff);
@@ -82,15 +84,17 @@ architecture behav of CU is
 			--ROM_FILE_POINTER := ROM_FILE_POINTER + 1;
 		end loop ROM_LOOP;
 		file_close(ROM_INI_FILE);
+	end if;
 	end process IntiatCUROMProcess;
-	
+	test_ROM_out <= MicroInstructionROM(0);
 	-- 功能转移1下地址表赋初值
-	IntiatAddrTable1Process:process(initiation)
+	IntiatAddrTable1Process:process(initiation, pro_run)
 	variable ROM_FILE_STATUS:FILE_OPEN_STATUS;-- 文件打开状态
 	--variable ROM_FILE_POINTER:integer:=0;
 	variable file_buff:line;
 	variable file_buff_vector:std_logic_vector(7 downto 0);
 	begin
+	if(initiation = '1' and not(pro_run = '1'))then
 		file_open(ROM_FILE_STATUS,addrTable1_ini_file,"addrTable1.txt",read_mode);-- 打开文件
 		ADDR_TABLE1_LOOP: for i in 0 to 63 loop
 			readline(addrTable1_ini_file, file_buff);
@@ -99,15 +103,17 @@ architecture behav of CU is
 			--ROM_FILE_POINTER := ROM_FILE_POINTER + 1;
 		end loop ADDR_TABLE1_LOOP;
 		file_close(addrTable1_ini_file);
+	end if;
 	end process IntiatAddrTable1Process;
 	
 	-- 功能转移2下地址表赋初值
-	IntiatAddrTable2Process:process(initiation)
+	IntiatAddrTable2Process:process(initiation, pro_run)
 	variable ROM_FILE_STATUS:FILE_OPEN_STATUS;-- 文件打开状态
 	--variable ROM_FILE_POINTER:integer:=0;
 	variable file_buff:line;
 	variable file_buff_vector:std_logic_vector(7 downto 0);
 	begin
+	if(initiation = '1' and not(pro_run = '1'))then
 		file_open(ROM_FILE_STATUS,addrTable2_ini_file,"addrTable2.txt",read_mode);-- 打开文件
 		ADDR_TABLE2_LOOP: for i in 0 to 63 loop
 			readline(addrTable2_ini_file, file_buff);
@@ -116,15 +122,18 @@ architecture behav of CU is
 			--ROM_FILE_POINTER := ROM_FILE_POINTER + 1;
 		end loop ADDR_TABLE2_LOOP;
 		file_close(addrTable2_ini_file);
+	end if;
 	end process IntiatAddrTable2Process;
+	
+	--test_Miinstruct <= MicroInstructionROM(conv_integer(InstructionAddress));
 	
 	ControlProcess:process(CLK)
 		begin
-			if(CLK = '1' and CLK'event and initiation = '1') then
+			if(CLK = '1' and CLK'event and initiation = '0' and pro_run = '1') then
 				instruction_done <= '0';
 				
 				-- 为控制信号赋值
-				test_Miinstruct <= MicroInstructionROM(conv_integer(InstructionAddress));
+				--test_Miinstruct <= MicroInstructionROM(conv_integer(InstructionAddress));
 				
 				write_PC <= MicroInstructionROM(conv_integer(InstructionAddress))(0);
 				allow_PC_BUS <= MicroInstructionROM(conv_integer(InstructionAddress))(1);

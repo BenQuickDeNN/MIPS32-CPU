@@ -1,0 +1,1013 @@
+Release 14.7 - xst P.20131013 (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> Reading design: Computer.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "Computer.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "Computer"
+Output Format                      : NGC
+Target Device                      : XC9500 CPLDs
+
+---- Source Options
+Top Module Name                    : Computer
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+
+---- Target Options
+Add IO Buffers                     : YES
+MACRO Preserve                     : YES
+XOR Preserve                       : YES
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : Yes
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Verilog 2001                       : YES
+
+---- Other Options
+wysiwyg                            : NO
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/CU.vhd" in Library work.
+Architecture behav of Entity cu is up to date.
+Compiling vhdl file "E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/ALU.vhd" in Library work.
+Architecture behav of Entity alu is up to date.
+Compiling vhdl file "E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/SRAM.vhd" in Library work.
+Architecture behave of Entity sram is up to date.
+Compiling vhdl file "E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/Register32.vhd" in Library work.
+Architecture behav of Entity register32 is up to date.
+Compiling vhdl file "E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/PC_Adder.vhd" in Library work.
+Architecture behavioral of Entity pc_adder is up to date.
+Compiling vhdl file "E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/PC_Seperator.vhd" in Library work.
+Architecture behavioral of Entity pc_seperator is up to date.
+Compiling vhdl file "E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/PCHighExtender.vhd" in Library work.
+Architecture behavioral of Entity pchighextender is up to date.
+Compiling vhdl file "E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/Mux_PC.vhd" in Library work.
+Architecture behavioral of Entity mux_pc is up to date.
+Compiling vhdl file "E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/TriState.vhd" in Library work.
+Architecture behav of Entity tristate is up to date.
+Compiling vhdl file "E:/projects/VHDL/MyCPU1_ISE/MyCPU1/Instruction_Seperator.vhd" in Library work.
+Architecture behavioral of Entity instruction_seperator is up to date.
+Compiling vhdl file "E:/projects/VHDL/MyCPU1_ISE/MyCPU1/Oprand_Seperator.vhd" in Library work.
+Architecture behavioral of Entity oprand_seperator is up to date.
+Compiling vhdl file "E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/Imme_Seperator.vhd" in Library work.
+Architecture behavioral of Entity imme_seperator is up to date.
+Compiling vhdl file "E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/ImmeExt.vhd" in Library work.
+Architecture behavioral of Entity immeext is up to date.
+Compiling vhdl file "E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/ShamtExt.vhd" in Library work.
+Architecture behavioral of Entity shamtext is up to date.
+Compiling vhdl file "E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/Mux_LB.vhd" in Library work.
+Architecture behavioral of Entity mux_lb is up to date.
+Compiling vhdl file "E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/Mux_ALU_OP.vhd" in Library work.
+Architecture behavioral of Entity mux_alu_op is up to date.
+Compiling vhdl file "E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/RegisterField.vhd" in Library work.
+Architecture behav of Entity registersfield is up to date.
+Compiling vhdl file "E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/Mux_Reg.vhd" in Library work.
+Architecture behav of Entity mux_reg is up to date.
+Compiling vhdl file "E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/Mux_MDR.vhd" in Library work.
+Architecture behavioral of Entity mux_mdr is up to date.
+Compiling vhdl file "E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/Computer.vhd" in Library work.
+Architecture behavioral of Entity computer is up to date.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <Computer> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <CU> in library <work> (architecture <behav>).
+
+Analyzing hierarchy for entity <ALU> in library <work> (architecture <behav>).
+
+Analyzing hierarchy for entity <SRAM> in library <work> (architecture <behave>).
+
+Analyzing hierarchy for entity <Register32> in library <work> (architecture <behav>).
+
+Analyzing hierarchy for entity <PC_Adder> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <PC_Seperator> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <PCHighExtender> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <Mux_PC> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <TriState> in library <work> (architecture <behav>).
+
+Analyzing hierarchy for entity <Instruction_Seperator> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <Oprand_Seperator> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <Imme_Seperator> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <ImmeExt> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <ShamtExt> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <Mux_LB> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <Mux_ALU_OP> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <RegistersField> in library <work> (architecture <behav>).
+
+Analyzing hierarchy for entity <Mux_Reg> in library <work> (architecture <behav>).
+
+Analyzing hierarchy for entity <Mux_MDR> in library <work> (architecture <behavioral>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <Computer> in library <work> (Architecture <behavioral>).
+WARNING:Xst:753 - "E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/Computer.vhd" line 489: Unconnected output port 'test_MCounter' of component 'CU'.
+WARNING:Xst:753 - "E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/Computer.vhd" line 489: Unconnected output port 'test_opcode' of component 'CU'.
+WARNING:Xst:753 - "E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/Computer.vhd" line 489: Unconnected output port 'test_ROM_out' of component 'CU'.
+WARNING:Xst:753 - "E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/Computer.vhd" line 536: Unconnected output port 'ready' of component 'SRAM'.
+Entity <Computer> analyzed. Unit <Computer> generated.
+
+Analyzing Entity <CU> in library <work> (Architecture <behav>).
+INFO:Xst:2679 - Register <MicroInstructionROM<0>> in unit <CU> has a constant value of 01000000000000000000000000000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <MicroInstructionROM<1>> in unit <CU> has a constant value of 01000100000000000000010001100010 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <MicroInstructionROM<2>> in unit <CU> has a constant value of 01000100000000000110010011100010 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <MicroInstructionROM<3>> in unit <CU> has a constant value of 01000100000000001001010001100001 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <MicroInstructionROM<4>> in unit <CU> has a constant value of 01000100000000000000011001100000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <MicroInstructionROM<5>> in unit <CU> has a constant value of 10000100000000000000001001100100 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <MicroInstructionROM<6>> in unit <CU> has a constant value of 11000100000000000000000000010000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <MicroInstructionROM<7>> in unit <CU> has a constant value of 01000100000000000010000000010000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <MicroInstructionROM<8>> in unit <CU> has a constant value of 01000100000000000000000000110000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <MicroInstructionROM<9>> in unit <CU> has a constant value of 01000100000000000100000000110000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <MicroInstructionROM<10>> in unit <CU> has a constant value of 01000100000000001000000001100000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <MicroInstructionROM<11>> in unit <CU> has a constant value of 00000100000000000000000001001000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <MicroInstructionROM<12>> in unit <CU> has a constant value of 11000000000000000010000000010000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <MicroInstructionROM<13>> in unit <CU> has a constant value of 01000000011000000100000000000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <MicroInstructionROM<14>> in unit <CU> has a constant value of 01000000011000001000000000100000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <MicroInstructionROM<15>> in unit <CU> has a constant value of 00000000011000001000000000101000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <MicroInstructionROM<16>> in unit <CU> has a constant value of 01000000011001000100000000000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <MicroInstructionROM<17>> in unit <CU> has a constant value of 01000000011001001000000000100000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <MicroInstructionROM<18>> in unit <CU> has a constant value of 00000000011001001000000000101000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <MicroInstructionROM<19>> in unit <CU> has a constant value of 01000000011001010100000000000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <MicroInstructionROM<20>> in unit <CU> has a constant value of 01000000011001011000000000100000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <MicroInstructionROM<21>> in unit <CU> has a constant value of 00000000011001011000000000101000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <MicroInstructionROM<22>> in unit <CU> has a constant value of 01000000011001100100000000000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <MicroInstructionROM<23>> in unit <CU> has a constant value of 01000000011001101000000000100000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <MicroInstructionROM<24>> in unit <CU> has a constant value of 00000000011001101000000000101000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <MicroInstructionROM<25>> in unit <CU> has a constant value of 01001000000000000000000000100000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <MicroInstructionROM<26>> in unit <CU> has a constant value of 00001000000000000000000000101000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <MicroInstructionROM<27>> in unit <CU> has a constant value of 01000000011000000100000000010000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <MicroInstructionROM<28>> in unit <CU> has a constant value of 01000000011000000010000000010000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <MicroInstructionROM<29>> in unit <CU> has a constant value of 01000000011000001000000000000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <MicroInstructionROM<30>> in unit <CU> has a constant value of 11000000011000001000000010000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <MicroInstructionROM<31>> in unit <CU> has a constant value of 01000000000000000001000001100000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <MicroInstructionROM<32>> in unit <CU> has a constant value of 01000000000000000001000100100000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <MicroInstructionROM<33>> in unit <CU> has a constant value of 01000000000000000000001000100000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <MicroInstructionROM<34>> in unit <CU> has a constant value of 00000000000000000000001000101000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <MicroInstructionROM<35>> in unit <CU> has a constant value of 01000000000000000000010000110000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <MicroInstructionROM<36>> in unit <CU> has a constant value of 01000000000000000000010100110000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <MicroInstructionROM<37>> in unit <CU> has a constant value of 00000000000000000000100000100000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <MicroInstructionROM<38>> in unit <CU> has a constant value of 01000010011001100000000000010000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <MicroInstructionROM<39>> in unit <CU> has a constant value of 01000010011001100010000000010000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <MicroInstructionROM<40>> in unit <CU> has a constant value of 01000010011001100000000000110000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <MicroInstructionROM<41>> in unit <CU> has a constant value of 01000010011001100100000000110000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <MicroInstructionROM<42>> in unit <CU> has a constant value of 01000000011000000100000001100010 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <MicroInstructionROM<43>> in unit <CU> has a constant value of 01000000011000000010000001100000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <MicroInstructionROM<44>> in unit <CU> has a constant value of 01000000111000001000000001100000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <MicroInstructionROM<45>> in unit <CU> has a constant value of 00000000111000001000000001100001 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <MicroInstructionROM<46>> in unit <CU> has a constant value of 00000001000000000000000001100001 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <MicroInstructionROM<47>> in unit <CU> has a constant value of 00000000000000000000000000000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <MicroInstructionROM<48>> in unit <CU> has a constant value of 00000000000000000000000000000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <MicroInstructionROM<49>> in unit <CU> has a constant value of 00000000000000000000000000000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <MicroInstructionROM<50>> in unit <CU> has a constant value of 00000000000000000000000000000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <MicroInstructionROM<51>> in unit <CU> has a constant value of 00000000000000000000000000000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <MicroInstructionROM<52>> in unit <CU> has a constant value of 00000000000000000000000000000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <MicroInstructionROM<53>> in unit <CU> has a constant value of 00000000000000000000000000000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <MicroInstructionROM<54>> in unit <CU> has a constant value of 00000000000000000000000000000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <MicroInstructionROM<55>> in unit <CU> has a constant value of 00000000000000000000000000000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <MicroInstructionROM<56>> in unit <CU> has a constant value of 00000000000000000000000000000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <MicroInstructionROM<57>> in unit <CU> has a constant value of 00000000000000000000000000000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <MicroInstructionROM<58>> in unit <CU> has a constant value of 00000000000000000000000000000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <MicroInstructionROM<59>> in unit <CU> has a constant value of 00000000000000000000000000000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <MicroInstructionROM<60>> in unit <CU> has a constant value of 00000000000000000000000000000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <MicroInstructionROM<61>> in unit <CU> has a constant value of 00000000000000000000000000000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <MicroInstructionROM<62>> in unit <CU> has a constant value of 00000000000000000000000000000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <MicroInstructionROM<63>> in unit <CU> has a constant value of 00000000000000000000000000000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <MicroInstructionAddrTable1<0>> in unit <CU> has a constant value of 00000110 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <MicroInstructionAddrTable1<1>> in unit <CU> has a constant value of 00000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <MicroInstructionAddrTable1<2>> in unit <CU> has a constant value of 00101110 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <MicroInstructionAddrTable1<3>> in unit <CU> has a constant value of 00000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <MicroInstructionAddrTable1<4>> in unit <CU> has a constant value of 00100110 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <MicroInstructionAddrTable1<5>> in unit <CU> has a constant value of 00000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <MicroInstructionAddrTable1<6>> in unit <CU> has a constant value of 00000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <MicroInstructionAddrTable1<7>> in unit <CU> has a constant value of 00000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <MicroInstructionAddrTable1<8>> in unit <CU> has a constant value of 00000110 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <MicroInstructionAddrTable1<9>> in unit <CU> has a constant value of 00000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <MicroInstructionAddrTable1<10>> in unit <CU> has a constant value of 00000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <MicroInstructionAddrTable1<11>> in unit <CU> has a constant value of 00000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <MicroInstructionAddrTable1<12>> in unit <CU> has a constant value of 00000110 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <MicroInstructionAddrTable1<13>> in unit <CU> has a constant value of 00000110 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <MicroInstructionAddrTable1<14>> in unit <CU> has a constant value of 00000110 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <MicroInstructionAddrTable1<15>> in unit <CU> has a constant value of 00011001 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <MicroInstructionAddrTable1<16>> in unit <CU> has a constant value of 00000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <MicroInstructionAddrTable1<17>> in unit <CU> has a constant value of 00000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <MicroInstructionAddrTable1<18>> in unit <CU> has a constant value of 00000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <MicroInstructionAddrTable1<19>> in unit <CU> has a constant value of 00000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <MicroInstructionAddrTable1<20>> in unit <CU> has a constant value of 00000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <MicroInstructionAddrTable1<21>> in unit <CU> has a constant value of 00000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <MicroInstructionAddrTable1<22>> in unit <CU> has a constant value of 00000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <MicroInstructionAddrTable1<23>> in unit <CU> has a constant value of 00000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <MicroInstructionAddrTable1<24>> in unit <CU> has a constant value of 00000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <MicroInstructionAddrTable1<25>> in unit <CU> has a constant value of 00000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <MicroInstructionAddrTable1<26>> in unit <CU> has a constant value of 00000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <MicroInstructionAddrTable1<27>> in unit <CU> has a constant value of 00000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <MicroInstructionAddrTable1<28>> in unit <CU> has a constant value of 00000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <MicroInstructionAddrTable1<29>> in unit <CU> has a constant value of 00000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <MicroInstructionAddrTable1<30>> in unit <CU> has a constant value of 00000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <MicroInstructionAddrTable1<31>> in unit <CU> has a constant value of 00000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <MicroInstructionAddrTable1<32>> in unit <CU> has a constant value of 00000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <MicroInstructionAddrTable1<33>> in unit <CU> has a constant value of 00000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <MicroInstructionAddrTable1<34>> in unit <CU> has a constant value of 00000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <MicroInstructionAddrTable1<35>> in unit <CU> has a constant value of 00011011 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <MicroInstructionAddrTable1<36>> in unit <CU> has a constant value of 00000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <MicroInstructionAddrTable1<37>> in unit <CU> has a constant value of 00000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <MicroInstructionAddrTable1<38>> in unit <CU> has a constant value of 00000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <MicroInstructionAddrTable1<39>> in unit <CU> has a constant value of 00000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <MicroInstructionAddrTable1<40>> in unit <CU> has a constant value of 00000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <MicroInstructionAddrTable1<41>> in unit <CU> has a constant value of 00000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <MicroInstructionAddrTable1<42>> in unit <CU> has a constant value of 00000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <MicroInstructionAddrTable1<43>> in unit <CU> has a constant value of 00011011 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <MicroInstructionAddrTable1<44>> in unit <CU> has a constant value of 00000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <MicroInstructionAddrTable1<45>> in unit <CU> has a constant value of 00000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <MicroInstructionAddrTable1<46>> in unit <CU> has a constant value of 00000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <MicroInstructionAddrTable1<47>> in unit <CU> has a constant value of 00000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <MicroInstructionAddrTable1<48>> in unit <CU> has a constant value of 00000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <MicroInstructionAddrTable1<49>> in unit <CU> has a constant value of 00000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <MicroInstructionAddrTable1<50>> in unit <CU> has a constant value of 00000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <MicroInstructionAddrTable1<51>> in unit <CU> has a constant value of 00000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <MicroInstructionAddrTable1<52>> in unit <CU> has a constant value of 00000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <MicroInstructionAddrTable1<53>> in unit <CU> has a constant value of 00000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <MicroInstructionAddrTable1<54>> in unit <CU> has a constant value of 00000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <MicroInstructionAddrTable1<55>> in unit <CU> has a constant value of 00000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <MicroInstructionAddrTable1<56>> in unit <CU> has a constant value of 00000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <MicroInstructionAddrTable1<57>> in unit <CU> has a constant value of 00000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <MicroInstructionAddrTable1<58>> in unit <CU> has a constant value of 00000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <MicroInstructionAddrTable1<59>> in unit <CU> has a constant value of 00000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <MicroInstructionAddrTable1<60>> in unit <CU> has a constant value of 00000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <MicroInstructionAddrTable1<61>> in unit <CU> has a constant value of 00000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <MicroInstructionAddrTable1<62>> in unit <CU> has a constant value of 00000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <MicroInstructionAddrTable1<63>> in unit <CU> has a constant value of 00000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <MicroInstructionAddrTable2<0>> in unit <CU> has a constant value of 00010000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <MicroInstructionAddrTable2<1>> in unit <CU> has a constant value of 00010011 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <MicroInstructionAddrTable2<2>> in unit <CU> has a constant value of 00010110 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <MicroInstructionAddrTable2<3>> in unit <CU> has a constant value of 00000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <MicroInstructionAddrTable2<4>> in unit <CU> has a constant value of 00001101 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <MicroInstructionAddrTable2<5>> in unit <CU> has a constant value of 00000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <MicroInstructionAddrTable2<6>> in unit <CU> has a constant value of 00000111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <MicroInstructionAddrTable2<7>> in unit <CU> has a constant value of 00000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <MicroInstructionAddrTable2<8>> in unit <CU> has a constant value of 00001100 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <MicroInstructionAddrTable2<9>> in unit <CU> has a constant value of 00000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <MicroInstructionAddrTable2<10>> in unit <CU> has a constant value of 00001100 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <MicroInstructionAddrTable2<11>> in unit <CU> has a constant value of 00001100 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <MicroInstructionAddrTable2<12>> in unit <CU> has a constant value of 00000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <MicroInstructionAddrTable2<13>> in unit <CU> has a constant value of 00000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <MicroInstructionAddrTable2<14>> in unit <CU> has a constant value of 00001100 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <MicroInstructionAddrTable2<15>> in unit <CU> has a constant value of 00000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <MicroInstructionAddrTable2<16>> in unit <CU> has a constant value of 00000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <MicroInstructionAddrTable2<17>> in unit <CU> has a constant value of 00000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <MicroInstructionAddrTable2<18>> in unit <CU> has a constant value of 00000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <MicroInstructionAddrTable2<19>> in unit <CU> has a constant value of 00000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <MicroInstructionAddrTable2<20>> in unit <CU> has a constant value of 00000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <MicroInstructionAddrTable2<21>> in unit <CU> has a constant value of 00000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <MicroInstructionAddrTable2<22>> in unit <CU> has a constant value of 00000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <MicroInstructionAddrTable2<23>> in unit <CU> has a constant value of 00000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <MicroInstructionAddrTable2<24>> in unit <CU> has a constant value of 00000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <MicroInstructionAddrTable2<25>> in unit <CU> has a constant value of 00000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <MicroInstructionAddrTable2<26>> in unit <CU> has a constant value of 00000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <MicroInstructionAddrTable2<27>> in unit <CU> has a constant value of 00000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <MicroInstructionAddrTable2<28>> in unit <CU> has a constant value of 00000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <MicroInstructionAddrTable2<29>> in unit <CU> has a constant value of 00000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <MicroInstructionAddrTable2<30>> in unit <CU> has a constant value of 00000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <MicroInstructionAddrTable2<31>> in unit <CU> has a constant value of 00000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <MicroInstructionAddrTable2<32>> in unit <CU> has a constant value of 00000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <MicroInstructionAddrTable2<33>> in unit <CU> has a constant value of 00000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <MicroInstructionAddrTable2<34>> in unit <CU> has a constant value of 00000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <MicroInstructionAddrTable2<35>> in unit <CU> has a constant value of 00000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <MicroInstructionAddrTable2<36>> in unit <CU> has a constant value of 00000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <MicroInstructionAddrTable2<37>> in unit <CU> has a constant value of 00000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <MicroInstructionAddrTable2<38>> in unit <CU> has a constant value of 00000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <MicroInstructionAddrTable2<39>> in unit <CU> has a constant value of 00000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <MicroInstructionAddrTable2<40>> in unit <CU> has a constant value of 00000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <MicroInstructionAddrTable2<41>> in unit <CU> has a constant value of 00000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <MicroInstructionAddrTable2<42>> in unit <CU> has a constant value of 00000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <MicroInstructionAddrTable2<43>> in unit <CU> has a constant value of 00000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <MicroInstructionAddrTable2<44>> in unit <CU> has a constant value of 00000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <MicroInstructionAddrTable2<45>> in unit <CU> has a constant value of 00000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <MicroInstructionAddrTable2<46>> in unit <CU> has a constant value of 00000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <MicroInstructionAddrTable2<47>> in unit <CU> has a constant value of 00000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <MicroInstructionAddrTable2<48>> in unit <CU> has a constant value of 00000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <MicroInstructionAddrTable2<49>> in unit <CU> has a constant value of 00000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <MicroInstructionAddrTable2<50>> in unit <CU> has a constant value of 00000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <MicroInstructionAddrTable2<51>> in unit <CU> has a constant value of 00000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <MicroInstructionAddrTable2<52>> in unit <CU> has a constant value of 00000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <MicroInstructionAddrTable2<53>> in unit <CU> has a constant value of 00100011 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <MicroInstructionAddrTable2<54>> in unit <CU> has a constant value of 00000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <MicroInstructionAddrTable2<55>> in unit <CU> has a constant value of 00000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <MicroInstructionAddrTable2<56>> in unit <CU> has a constant value of 00000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <MicroInstructionAddrTable2<57>> in unit <CU> has a constant value of 00000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <MicroInstructionAddrTable2<58>> in unit <CU> has a constant value of 00000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <MicroInstructionAddrTable2<59>> in unit <CU> has a constant value of 00000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <MicroInstructionAddrTable2<60>> in unit <CU> has a constant value of 00000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <MicroInstructionAddrTable2<61>> in unit <CU> has a constant value of 00011111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <MicroInstructionAddrTable2<62>> in unit <CU> has a constant value of 00000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <MicroInstructionAddrTable2<63>> in unit <CU> has a constant value of 00000000 during circuit operation. The register is replaced by logic.
+Entity <CU> analyzed. Unit <CU> generated.
+
+Analyzing Entity <ALU> in library <work> (Architecture <behav>).
+Entity <ALU> analyzed. Unit <ALU> generated.
+
+Analyzing Entity <SRAM> in library <work> (Architecture <behave>).
+Entity <SRAM> analyzed. Unit <SRAM> generated.
+
+Analyzing Entity <Register32> in library <work> (Architecture <behav>).
+WARNING:Xst:819 - "E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/Register32.vhd" line 24: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <storage>
+Entity <Register32> analyzed. Unit <Register32> generated.
+
+Analyzing Entity <PC_Adder> in library <work> (Architecture <behavioral>).
+WARNING:Xst:819 - "E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/PC_Adder.vhd" line 42: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <add_num>
+Entity <PC_Adder> analyzed. Unit <PC_Adder> generated.
+
+Analyzing Entity <PC_Seperator> in library <work> (Architecture <behavioral>).
+Entity <PC_Seperator> analyzed. Unit <PC_Seperator> generated.
+
+Analyzing Entity <PCHighExtender> in library <work> (Architecture <behavioral>).
+Entity <PCHighExtender> analyzed. Unit <PCHighExtender> generated.
+
+Analyzing Entity <Mux_PC> in library <work> (Architecture <behavioral>).
+Entity <Mux_PC> analyzed. Unit <Mux_PC> generated.
+
+Analyzing Entity <TriState> in library <work> (Architecture <behav>).
+Entity <TriState> analyzed. Unit <TriState> generated.
+
+Analyzing Entity <Instruction_Seperator> in library <work> (Architecture <behavioral>).
+Entity <Instruction_Seperator> analyzed. Unit <Instruction_Seperator> generated.
+
+Analyzing Entity <Oprand_Seperator> in library <work> (Architecture <behavioral>).
+Entity <Oprand_Seperator> analyzed. Unit <Oprand_Seperator> generated.
+
+Analyzing Entity <Imme_Seperator> in library <work> (Architecture <behavioral>).
+Entity <Imme_Seperator> analyzed. Unit <Imme_Seperator> generated.
+
+Analyzing Entity <ImmeExt> in library <work> (Architecture <behavioral>).
+Entity <ImmeExt> analyzed. Unit <ImmeExt> generated.
+
+Analyzing Entity <ShamtExt> in library <work> (Architecture <behavioral>).
+Entity <ShamtExt> analyzed. Unit <ShamtExt> generated.
+
+Analyzing Entity <Mux_LB> in library <work> (Architecture <behavioral>).
+Entity <Mux_LB> analyzed. Unit <Mux_LB> generated.
+
+Analyzing Entity <Mux_ALU_OP> in library <work> (Architecture <behavioral>).
+Entity <Mux_ALU_OP> analyzed. Unit <Mux_ALU_OP> generated.
+
+Analyzing Entity <RegistersField> in library <work> (Architecture <behav>).
+Entity <RegistersField> analyzed. Unit <RegistersField> generated.
+
+Analyzing Entity <Mux_Reg> in library <work> (Architecture <behav>).
+Entity <Mux_Reg> analyzed. Unit <Mux_Reg> generated.
+
+Analyzing Entity <Mux_MDR> in library <work> (Architecture <behavioral>).
+Entity <Mux_MDR> analyzed. Unit <Mux_MDR> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <CU>.
+    Related source file is "E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/CU.vhd".
+    Found 64x32-bit ROM for signal <MicroInstructionROM$mux0000> created at line 134.
+    Found 64x8-bit ROM for signal <MicroInstructionAddrTable1$mux0000> created at line 175.
+    Found 64x8-bit ROM for signal <MicroInstructionAddrTable2$mux0000> created at line 177.
+    Found 32-bit register for signal <test_Miinstruct>.
+    Found 1-bit register for signal <write_PC>.
+    Found 1-bit register for signal <instruction_done>.
+    Found 1-bit register for signal <write_MDR>.
+    Found 1-bit register for signal <write_MEM>.
+    Found 1-bit register for signal <write_RF>.
+    Found 1-bit register for signal <oe_RF>.
+    Found 2-bit register for signal <reg_type_select>.
+    Found 1-bit register for signal <MDR_data_select>.
+    Found 6-bit register for signal <alu_op>.
+    Found 2-bit register for signal <LB_data_select>.
+    Found 1-bit register for signal <read_MEM>.
+    Found 1-bit register for signal <allow_ALU_BUS>.
+    Found 6-bit register for signal <test_MCounter>.
+    Found 1-bit register for signal <allow_Imme_Shamt_to_Bus>.
+    Found 1-bit register for signal <alu_op_select>.
+    Found 1-bit register for signal <allow_MDR_BUS>.
+    Found 1-bit register for signal <allow_PC_BUS>.
+    Found 2-bit register for signal <pc_data_select>.
+    Found 1-bit register for signal <write_LA>.
+    Found 1-bit register for signal <write_LB>.
+    Found 1-bit register for signal <write_IR>.
+    Found 6-bit register for signal <test_opcode>.
+    Found 1-bit register for signal <write_MAR>.
+    Found 6-bit register for signal <InstructionAddress>.
+    Found 6-bit 4-to-1 multiplexer for signal <InstructionAddress$mux0000> created at line 165.
+    Found 6-bit adder for signal <InstructionAddress$share0000>.
+    Found 6-bit xor2 for signal <MicroInstructionAddrTable2$xor0000> created at line 177.
+    Summary:
+	inferred   3 ROM(s).
+	inferred  17 D-type flip-flop(s).
+	inferred   1 Adder/Subtractor(s).
+Unit <CU> synthesized.
+
+
+Synthesizing Unit <ALU>.
+    Related source file is "E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/ALU.vhd".
+WARNING:Xst:1780 - Signal <zero_vector> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+    Found 32-bit tristate buffer for signal <result>.
+    Found 32-bit tristate buffer for signal <temp_result>.
+    Found 32-bit adder for signal <temp_result$add0000> created at line 22.
+    Found 32-bit shifter logical left for signal <temp_result$shift0000> created at line 43.
+    Found 32-bit shifter logical right for signal <temp_result$shift0001> created at line 48.
+    Found 32-bit subtractor for signal <temp_result$sub0000> created at line 25.
+    Found 32-bit xor2 for signal <temp_result$xor0000> created at line 34.
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred   2 Combinational logic shifter(s).
+	inferred  64 Tristate(s).
+Unit <ALU> synthesized.
+
+
+Synthesizing Unit <SRAM>.
+    Related source file is "E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/SRAM.vhd".
+WARNING:Xst:647 - Input <address<31:8>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 32-bit tristate buffer for signal <data_out>.
+    Found 32-bit 256-to-1 multiplexer for signal <data_out$mux0000> created at line 59.
+    Found 8192-bit register for signal <memory_space_256>.
+    Summary:
+	inferred  32 Tristate(s).
+Unit <SRAM> synthesized.
+
+
+Synthesizing Unit <Register32>.
+    Related source file is "E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/Register32.vhd".
+    Found 32-bit tristate buffer for signal <data_out>.
+    Found 32-bit register for signal <storage>.
+    Summary:
+	inferred  32 Tristate(s).
+Unit <Register32> synthesized.
+
+
+Synthesizing Unit <PC_Adder>.
+    Related source file is "E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/PC_Adder.vhd".
+WARNING:Xst:653 - Signal <add_num> is used but never assigned. This sourceless signal will be automatically connected to value 00000000000000000000000000000001.
+    Found 32-bit adder for signal <new_pc>.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+Unit <PC_Adder> synthesized.
+
+
+Synthesizing Unit <PC_Seperator>.
+    Related source file is "E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/PC_Seperator.vhd".
+Unit <PC_Seperator> synthesized.
+
+
+Synthesizing Unit <PCHighExtender>.
+    Related source file is "E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/PCHighExtender.vhd".
+Unit <PCHighExtender> synthesized.
+
+
+Synthesizing Unit <Mux_PC>.
+    Related source file is "E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/Mux_PC.vhd".
+    Found 32-bit tristate buffer for signal <data_out>.
+    Found 32-bit 4-to-1 multiplexer for signal <data_out$mux0000>.
+    Summary:
+	inferred  32 Tristate(s).
+Unit <Mux_PC> synthesized.
+
+
+Synthesizing Unit <TriState>.
+    Related source file is "E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/TriState.vhd".
+    Found 32-bit tristate buffer for signal <data_out>.
+    Summary:
+	inferred  32 Tristate(s).
+Unit <TriState> synthesized.
+
+
+Synthesizing Unit <Instruction_Seperator>.
+    Related source file is "E:/projects/VHDL/MyCPU1_ISE/MyCPU1/Instruction_Seperator.vhd".
+Unit <Instruction_Seperator> synthesized.
+
+
+Synthesizing Unit <Oprand_Seperator>.
+    Related source file is "E:/projects/VHDL/MyCPU1_ISE/MyCPU1/Oprand_Seperator.vhd".
+Unit <Oprand_Seperator> synthesized.
+
+
+Synthesizing Unit <Imme_Seperator>.
+    Related source file is "E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/Imme_Seperator.vhd".
+Unit <Imme_Seperator> synthesized.
+
+
+Synthesizing Unit <ImmeExt>.
+    Related source file is "E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/ImmeExt.vhd".
+Unit <ImmeExt> synthesized.
+
+
+Synthesizing Unit <ShamtExt>.
+    Related source file is "E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/ShamtExt.vhd".
+Unit <ShamtExt> synthesized.
+
+
+Synthesizing Unit <Mux_LB>.
+    Related source file is "E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/Mux_LB.vhd".
+    Found 32-bit tristate buffer for signal <Data_out>.
+    Found 32-bit 4-to-1 multiplexer for signal <Data_out$mux0000>.
+    Summary:
+	inferred  32 Tristate(s).
+Unit <Mux_LB> synthesized.
+
+
+Synthesizing Unit <Mux_ALU_OP>.
+    Related source file is "E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/Mux_ALU_OP.vhd".
+Unit <Mux_ALU_OP> synthesized.
+
+
+Synthesizing Unit <RegistersField>.
+    Related source file is "E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/RegisterField.vhd".
+    Found 32-bit tristate buffer for signal <R_data>.
+    Found 32-bit 32-to-1 multiplexer for signal <R_data$mux0000> created at line 34.
+    Found 1024-bit register for signal <register_space_32>.
+    Summary:
+	inferred  32 Tristate(s).
+Unit <RegistersField> synthesized.
+
+
+Synthesizing Unit <Mux_Reg>.
+    Related source file is "E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/Mux_Reg.vhd".
+    Found 5-bit tristate buffer for signal <Reg_out_addr>.
+    Summary:
+	inferred   5 Tristate(s).
+Unit <Mux_Reg> synthesized.
+
+
+Synthesizing Unit <Mux_MDR>.
+    Related source file is "E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/Mux_MDR.vhd".
+Unit <Mux_MDR> synthesized.
+
+
+Synthesizing Unit <Computer>.
+    Related source file is "E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/Computer.vhd".
+WARNING:Xst:653 - Signal <addrMerge> is used but never assigned. This sourceless signal will be automatically connected to value 00000000000000000000000000000000.
+WARNING:Xst:646 - Signal <PCLow> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:653 - Signal <MEMready> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+WARNING:Xst:653 - Signal <C_VCC> is used but never assigned. This sourceless signal will be automatically connected to value 1.
+WARNING:Xst:1780 - Signal <C_GND> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <CUControl<31:28>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+Unit <Computer> synthesized.
+
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 3
+ 64x32-bit ROM                                         : 1
+ 64x8-bit ROM                                          : 2
+# Adders/Subtractors                                   : 4
+ 32-bit adder                                          : 2
+ 32-bit subtractor                                     : 1
+ 6-bit adder                                           : 1
+# Registers                                            : 319
+ 1-bit register                                        : 17
+ 2-bit register                                        : 3
+ 32-bit register                                       : 295
+ 6-bit register                                        : 4
+# Multiplexers                                         : 5
+ 32-bit 256-to-1 multiplexer                           : 1
+ 32-bit 32-to-1 multiplexer                            : 1
+ 32-bit 4-to-1 multiplexer                             : 2
+ 6-bit 4-to-1 multiplexer                              : 1
+# Logic shifters                                       : 2
+ 32-bit shifter logical left                           : 1
+ 32-bit shifter logical right                          : 1
+# Tristates                                            : 17
+ 32-bit tristate buffer                                : 16
+ 5-bit tristate buffer                                 : 1
+# Xors                                                 : 2
+ 32-bit xor2                                           : 1
+ 6-bit xor2                                            : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <4>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <19>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <20>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <28>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <29>. This FF/Latch will be trimmed during the optimization process.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 3
+ 64x32-bit ROM                                         : 1
+ 64x8-bit ROM                                          : 2
+# Adders/Subtractors                                   : 4
+ 32-bit adder                                          : 2
+ 32-bit subtractor                                     : 1
+ 6-bit adder                                           : 1
+# Registers                                            : 17
+ Flip-Flops                                            : 17
+# Multiplexers                                         : 5
+ 32-bit 256-to-1 multiplexer                           : 1
+ 32-bit 32-to-1 multiplexer                            : 1
+ 32-bit 4-to-1 multiplexer                             : 2
+ 6-bit 4-to-1 multiplexer                              : 1
+# Xors                                                 : 2
+ 32-bit xor2                                           : 1
+ 6-bit xor2                                            : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1710 - FF/Latch <alu_op_4> (without init value) has a constant value of 0 in block <CU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <alu_op_3> (without init value) has a constant value of 0 in block <CU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <test_Miinstruct_29> (without init value) has a constant value of 0 in block <CU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <test_Miinstruct_28> (without init value) has a constant value of 0 in block <CU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <test_Miinstruct_20> (without init value) has a constant value of 0 in block <CU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <test_Miinstruct_19> (without init value) has a constant value of 0 in block <CU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1348 - Unit TriState is merged (output interface has tristates)
+WARNING:Xst:1348 - Unit RegistersField is merged (output interface has tristates)
+WARNING:Xst:1348 - Unit Register32 is merged (output interface has tristates)
+WARNING:Xst:2183 - Unit Computer: the following tristate(s) are NOT replaced by logic (Please refer to Answer Record 20048 for more information): debug_BUSData<0>_MLTSRCEDGE, debug_BUSData<10>_MLTSRCEDGE, debug_BUSData<11>_MLTSRCEDGE, debug_BUSData<12>_MLTSRCEDGE, debug_BUSData<13>_MLTSRCEDGE, debug_BUSData<14>_MLTSRCEDGE, debug_BUSData<15>_MLTSRCEDGE, debug_BUSData<16>_MLTSRCEDGE, debug_BUSData<17>_MLTSRCEDGE, debug_BUSData<18>_MLTSRCEDGE, debug_BUSData<19>_MLTSRCEDGE, debug_BUSData<1>_MLTSRCEDGE, debug_BUSData<20>_MLTSRCEDGE, debug_BUSData<21>_MLTSRCEDGE, debug_BUSData<22>_MLTSRCEDGE, debug_BUSData<23>_MLTSRCEDGE, debug_BUSData<24>_MLTSRCEDGE, debug_BUSData<25>_MLTSRCEDGE, debug_BUSData<26>_MLTSRCEDGE, debug_BUSData<27>_MLTSRCEDGE, debug_BUSData<28>_MLTSRCEDGE, debug_BUSData<29>_MLTSRCEDGE, debug_BUSData<2>_MLTSRCEDGE, debug_BUSData<30>_MLTSRCEDGE, debug_BUSData<31>_MLTSRCEDGE, debug_BUSData<3>_MLTSRCEDGE, debug_BUSData<4>_MLTSRCEDGE, debug_BUSData<5>_MLTSRCEDGE, debug_BUSData<6>_MLTSRCEDGE, debug_BUSData<7>_MLTSRCEDGE, debug_BUSData<8>_MLTSRCEDGE, debug_BUSData<9>_MLTSRCEDGE.
+
+Optimizing unit <Computer> ...
+  implementation constraint: INIT=r	 : MDR_Reg/storage_0
+  implementation constraint: INIT=r	 : MDR_Reg/storage_1
+  implementation constraint: INIT=r	 : MDR_Reg/storage_2
+  implementation constraint: INIT=r	 : MDR_Reg/storage_3
+  implementation constraint: INIT=r	 : MDR_Reg/storage_4
+  implementation constraint: INIT=r	 : MDR_Reg/storage_5
+  implementation constraint: INIT=r	 : MDR_Reg/storage_6
+  implementation constraint: INIT=r	 : MDR_Reg/storage_7
+  implementation constraint: INIT=r	 : MDR_Reg/storage_8
+  implementation constraint: INIT=r	 : MDR_Reg/storage_9
+  implementation constraint: INIT=r	 : MDR_Reg/storage_10
+  implementation constraint: INIT=r	 : MDR_Reg/storage_11
+  implementation constraint: INIT=r	 : MDR_Reg/storage_12
+  implementation constraint: INIT=r	 : MDR_Reg/storage_13
+  implementation constraint: INIT=r	 : MDR_Reg/storage_14
+  implementation constraint: INIT=r	 : MDR_Reg/storage_15
+  implementation constraint: INIT=r	 : MDR_Reg/storage_16
+  implementation constraint: INIT=r	 : MDR_Reg/storage_17
+  implementation constraint: INIT=r	 : MDR_Reg/storage_18
+  implementation constraint: INIT=r	 : MDR_Reg/storage_19
+  implementation constraint: INIT=r	 : MDR_Reg/storage_20
+  implementation constraint: INIT=r	 : MDR_Reg/storage_21
+  implementation constraint: INIT=r	 : MDR_Reg/storage_22
+  implementation constraint: INIT=r	 : MDR_Reg/storage_23
+  implementation constraint: INIT=r	 : MDR_Reg/storage_24
+  implementation constraint: INIT=r	 : MDR_Reg/storage_25
+  implementation constraint: INIT=r	 : MDR_Reg/storage_26
+  implementation constraint: INIT=r	 : MDR_Reg/storage_27
+  implementation constraint: INIT=r	 : MDR_Reg/storage_28
+  implementation constraint: INIT=r	 : MDR_Reg/storage_29
+  implementation constraint: INIT=r	 : MDR_Reg/storage_30
+  implementation constraint: INIT=r	 : MDR_Reg/storage_31
+  implementation constraint: INIT=r	 : MAR_Reg/storage_0
+  implementation constraint: INIT=r	 : MAR_Reg/storage_1
+  implementation constraint: INIT=r	 : MAR_Reg/storage_2
+  implementation constraint: INIT=r	 : MAR_Reg/storage_3
+  implementation constraint: INIT=r	 : MAR_Reg/storage_4
+  implementation constraint: INIT=r	 : MAR_Reg/storage_5
+  implementation constraint: INIT=r	 : MAR_Reg/storage_6
+  implementation constraint: INIT=r	 : MAR_Reg/storage_7
+  implementation constraint: INIT=r	 : MAR_Reg/storage_8
+  implementation constraint: INIT=r	 : MAR_Reg/storage_9
+  implementation constraint: INIT=r	 : MAR_Reg/storage_10
+  implementation constraint: INIT=r	 : MAR_Reg/storage_11
+  implementation constraint: INIT=r	 : MAR_Reg/storage_12
+  implementation constraint: INIT=r	 : MAR_Reg/storage_13
+  implementation constraint: INIT=r	 : MAR_Reg/storage_14
+  implementation constraint: INIT=r	 : MAR_Reg/storage_15
+  implementation constraint: INIT=r	 : MAR_Reg/storage_16
+  implementation constraint: INIT=r	 : MAR_Reg/storage_17
+  implementation constraint: INIT=r	 : MAR_Reg/storage_18
+  implementation constraint: INIT=r	 : MAR_Reg/storage_19
+  implementation constraint: INIT=r	 : MAR_Reg/storage_20
+  implementation constraint: INIT=r	 : MAR_Reg/storage_21
+  implementation constraint: INIT=r	 : MAR_Reg/storage_22
+  implementation constraint: INIT=r	 : MAR_Reg/storage_23
+  implementation constraint: INIT=r	 : MAR_Reg/storage_24
+  implementation constraint: INIT=r	 : MAR_Reg/storage_25
+  implementation constraint: INIT=r	 : MAR_Reg/storage_26
+  implementation constraint: INIT=r	 : MAR_Reg/storage_27
+  implementation constraint: INIT=r	 : MAR_Reg/storage_28
+  implementation constraint: INIT=r	 : MAR_Reg/storage_29
+  implementation constraint: INIT=r	 : MAR_Reg/storage_30
+  implementation constraint: INIT=r	 : MAR_Reg/storage_31
+  implementation constraint: INIT=r	 : LB_Reg/storage_0
+  implementation constraint: INIT=r	 : LB_Reg/storage_1
+  implementation constraint: INIT=r	 : LB_Reg/storage_2
+  implementation constraint: INIT=r	 : LB_Reg/storage_3
+  implementation constraint: INIT=r	 : LB_Reg/storage_4
+  implementation constraint: INIT=r	 : LB_Reg/storage_5
+  implementation constraint: INIT=r	 : LB_Reg/storage_6
+  implementation constraint: INIT=r	 : LB_Reg/storage_7
+  implementation constraint: INIT=r	 : LB_Reg/storage_8
+  implementation constraint: INIT=r	 : LB_Reg/storage_9
+  implementation constraint: INIT=r	 : LB_Reg/storage_10
+  implementation constraint: INIT=r	 : LB_Reg/storage_11
+  implementation constraint: INIT=r	 : LB_Reg/storage_12
+  implementation constraint: INIT=r	 : LB_Reg/storage_13
+  implementation constraint: INIT=r	 : LB_Reg/storage_14
+  implementation constraint: INIT=r	 : LB_Reg/storage_15
+  implementation constraint: INIT=r	 : LB_Reg/storage_16
+  implementation constraint: INIT=r	 : LB_Reg/storage_17
+  implementation constraint: INIT=r	 : LB_Reg/storage_18
+  implementation constraint: INIT=r	 : LB_Reg/storage_19
+  implementation constraint: INIT=r	 : LB_Reg/storage_20
+  implementation constraint: INIT=r	 : LB_Reg/storage_21
+  implementation constraint: INIT=r	 : LB_Reg/storage_22
+  implementation constraint: INIT=r	 : LB_Reg/storage_23
+  implementation constraint: INIT=r	 : LB_Reg/storage_24
+  implementation constraint: INIT=r	 : LB_Reg/storage_25
+  implementation constraint: INIT=r	 : LB_Reg/storage_26
+  implementation constraint: INIT=r	 : LB_Reg/storage_27
+  implementation constraint: INIT=r	 : LB_Reg/storage_28
+  implementation constraint: INIT=r	 : LB_Reg/storage_29
+  implementation constraint: INIT=r	 : LB_Reg/storage_30
+  implementation constraint: INIT=r	 : LB_Reg/storage_31
+  implementation constraint: INIT=r	 : LA_Reg/storage_0
+  implementation constraint: INIT=r	 : LA_Reg/storage_1
+  implementation constraint: INIT=r	 : LA_Reg/storage_2
+  implementation constraint: INIT=r	 : LA_Reg/storage_3
+  implementation constraint: INIT=r	 : LA_Reg/storage_4
+  implementation constraint: INIT=r	 : LA_Reg/storage_5
+  implementation constraint: INIT=r	 : LA_Reg/storage_6
+  implementation constraint: INIT=r	 : LA_Reg/storage_7
+  implementation constraint: INIT=r	 : LA_Reg/storage_8
+  implementation constraint: INIT=r	 : LA_Reg/storage_9
+  implementation constraint: INIT=r	 : LA_Reg/storage_10
+  implementation constraint: INIT=r	 : LA_Reg/storage_11
+  implementation constraint: INIT=r	 : LA_Reg/storage_12
+  implementation constraint: INIT=r	 : LA_Reg/storage_13
+  implementation constraint: INIT=r	 : LA_Reg/storage_14
+  implementation constraint: INIT=r	 : LA_Reg/storage_15
+  implementation constraint: INIT=r	 : LA_Reg/storage_16
+  implementation constraint: INIT=r	 : LA_Reg/storage_17
+  implementation constraint: INIT=r	 : LA_Reg/storage_18
+  implementation constraint: INIT=r	 : LA_Reg/storage_19
+  implementation constraint: INIT=r	 : LA_Reg/storage_20
+  implementation constraint: INIT=r	 : LA_Reg/storage_21
+  implementation constraint: INIT=r	 : LA_Reg/storage_22
+  implementation constraint: INIT=r	 : LA_Reg/storage_23
+  implementation constraint: INIT=r	 : LA_Reg/storage_24
+  implementation constraint: INIT=r	 : LA_Reg/storage_25
+  implementation constraint: INIT=r	 : LA_Reg/storage_26
+  implementation constraint: INIT=r	 : LA_Reg/storage_27
+  implementation constraint: INIT=r	 : LA_Reg/storage_28
+  implementation constraint: INIT=r	 : LA_Reg/storage_29
+  implementation constraint: INIT=r	 : LA_Reg/storage_30
+  implementation constraint: INIT=r	 : LA_Reg/storage_31
+  implementation constraint: INIT=r	 : IR_Reg/storage_0
+  implementation constraint: INIT=r	 : IR_Reg/storage_1
+  implementation constraint: INIT=r	 : IR_Reg/storage_2
+  implementation constraint: INIT=r	 : IR_Reg/storage_3
+  implementation constraint: INIT=r	 : IR_Reg/storage_4
+  implementation constraint: INIT=r	 : IR_Reg/storage_5
+  implementation constraint: INIT=r	 : IR_Reg/storage_6
+  implementation constraint: INIT=r	 : IR_Reg/storage_7
+  implementation constraint: INIT=r	 : IR_Reg/storage_8
+  implementation constraint: INIT=r	 : IR_Reg/storage_9
+  implementation constraint: INIT=r	 : IR_Reg/storage_10
+  implementation constraint: INIT=r	 : IR_Reg/storage_11
+  implementation constraint: INIT=r	 : IR_Reg/storage_12
+  implementation constraint: INIT=r	 : IR_Reg/storage_13
+  implementation constraint: INIT=r	 : IR_Reg/storage_14
+  implementation constraint: INIT=r	 : IR_Reg/storage_15
+  implementation constraint: INIT=r	 : IR_Reg/storage_16
+  implementation constraint: INIT=r	 : IR_Reg/storage_17
+  implementation constraint: INIT=r	 : IR_Reg/storage_18
+  implementation constraint: INIT=r	 : IR_Reg/storage_19
+  implementation constraint: INIT=r	 : IR_Reg/storage_20
+  implementation constraint: INIT=r	 : IR_Reg/storage_21
+  implementation constraint: INIT=r	 : IR_Reg/storage_22
+  implementation constraint: INIT=r	 : IR_Reg/storage_23
+  implementation constraint: INIT=r	 : IR_Reg/storage_24
+  implementation constraint: INIT=r	 : IR_Reg/storage_25
+  implementation constraint: INIT=r	 : IR_Reg/storage_26
+  implementation constraint: INIT=r	 : IR_Reg/storage_27
+  implementation constraint: INIT=r	 : IR_Reg/storage_28
+  implementation constraint: INIT=r	 : IR_Reg/storage_29
+  implementation constraint: INIT=r	 : IR_Reg/storage_30
+  implementation constraint: INIT=r	 : IR_Reg/storage_31
+  implementation constraint: INIT=r	 : PC_Reg/storage_0
+  implementation constraint: INIT=r	 : PC_Reg/storage_1
+  implementation constraint: INIT=r	 : PC_Reg/storage_2
+  implementation constraint: INIT=r	 : PC_Reg/storage_3
+  implementation constraint: INIT=r	 : PC_Reg/storage_4
+  implementation constraint: INIT=r	 : PC_Reg/storage_5
+  implementation constraint: INIT=r	 : PC_Reg/storage_6
+  implementation constraint: INIT=r	 : PC_Reg/storage_7
+  implementation constraint: INIT=r	 : PC_Reg/storage_8
+  implementation constraint: INIT=r	 : PC_Reg/storage_9
+  implementation constraint: INIT=r	 : PC_Reg/storage_10
+  implementation constraint: INIT=r	 : PC_Reg/storage_11
+  implementation constraint: INIT=r	 : PC_Reg/storage_12
+  implementation constraint: INIT=r	 : PC_Reg/storage_13
+  implementation constraint: INIT=r	 : PC_Reg/storage_14
+  implementation constraint: INIT=r	 : PC_Reg/storage_15
+  implementation constraint: INIT=r	 : PC_Reg/storage_16
+  implementation constraint: INIT=r	 : PC_Reg/storage_17
+  implementation constraint: INIT=r	 : PC_Reg/storage_18
+  implementation constraint: INIT=r	 : PC_Reg/storage_19
+  implementation constraint: INIT=r	 : PC_Reg/storage_20
+  implementation constraint: INIT=r	 : PC_Reg/storage_21
+  implementation constraint: INIT=r	 : PC_Reg/storage_22
+  implementation constraint: INIT=r	 : PC_Reg/storage_23
+  implementation constraint: INIT=r	 : PC_Reg/storage_24
+  implementation constraint: INIT=r	 : PC_Reg/storage_25
+  implementation constraint: INIT=r	 : PC_Reg/storage_26
+  implementation constraint: INIT=r	 : PC_Reg/storage_27
+  implementation constraint: INIT=r	 : PC_Reg/storage_28
+  implementation constraint: INIT=r	 : PC_Reg/storage_29
+  implementation constraint: INIT=r	 : PC_Reg/storage_30
+  implementation constraint: INIT=r	 : PC_Reg/storage_31
+
+Optimizing unit <PC_Seperator> ...
+
+Optimizing unit <PCHighExtender> ...
+
+Optimizing unit <Instruction_Seperator> ...
+
+Optimizing unit <Oprand_Seperator> ...
+
+Optimizing unit <Imme_Seperator> ...
+
+Optimizing unit <ImmeExt> ...
+
+Optimizing unit <ShamtExt> ...
+
+Optimizing unit <Mux_ALU_OP> ...
+
+Optimizing unit <Mux_MDR> ...
+
+Optimizing unit <Mux_Reg> ...
+
+Optimizing unit <CU> ...
+  implementation constraint: INIT=r	 : InstructionAddress_0
+  implementation constraint: INIT=r	 : InstructionAddress_1
+  implementation constraint: INIT=r	 : InstructionAddress_2
+  implementation constraint: INIT=r	 : InstructionAddress_3
+  implementation constraint: INIT=r	 : InstructionAddress_4
+  implementation constraint: INIT=r	 : InstructionAddress_5
+
+Optimizing unit <SRAM> ...
+
+Optimizing unit <Mux_PC> ...
+
+Optimizing unit <Mux_LB> ...
+
+Optimizing unit <ALU> ...
+
+Optimizing unit <PC_Adder> ...
+WARNING:Xst:2677 - Node <test_opcode_5> of sequential type is unconnected in block <CentralCU>.
+WARNING:Xst:2677 - Node <test_opcode_4> of sequential type is unconnected in block <CentralCU>.
+WARNING:Xst:2677 - Node <test_opcode_3> of sequential type is unconnected in block <CentralCU>.
+WARNING:Xst:2677 - Node <test_opcode_2> of sequential type is unconnected in block <CentralCU>.
+WARNING:Xst:2677 - Node <test_opcode_1> of sequential type is unconnected in block <CentralCU>.
+WARNING:Xst:2677 - Node <test_opcode_0> of sequential type is unconnected in block <CentralCU>.
+WARNING:Xst:2677 - Node <test_MCounter_5> of sequential type is unconnected in block <CentralCU>.
+WARNING:Xst:2677 - Node <test_MCounter_4> of sequential type is unconnected in block <CentralCU>.
+WARNING:Xst:2677 - Node <test_MCounter_3> of sequential type is unconnected in block <CentralCU>.
+WARNING:Xst:2677 - Node <test_MCounter_2> of sequential type is unconnected in block <CentralCU>.
+WARNING:Xst:2677 - Node <test_MCounter_1> of sequential type is unconnected in block <CentralCU>.
+WARNING:Xst:2677 - Node <test_MCounter_0> of sequential type is unconnected in block <CentralCU>.
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : Computer.ngr
+Top Level Output File Name         : Computer
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : Yes
+Target Technology                  : XC9500 CPLDs
+Macro Preserve                     : YES
+XOR Preserve                       : YES
+wysiwyg                            : NO
+
+Design Statistics
+# IOs                              : 203
+
+Cell Usage :
+# BELS                             : 118211
+#      AND2                        : 44729
+#      AND3                        : 3219
+#      AND4                        : 12311
+#      AND5                        : 57
+#      AND6                        : 8
+#      AND8                        : 335
+#      GND                         : 3
+#      INV                         : 45451
+#      OR2                         : 10477
+#      OR3                         : 49
+#      OR4                         : 64
+#      OR8                         : 1280
+#      VCC                         : 1
+#      XOR2                        : 227
+# FlipFlops/Latches                : 9469
+#      FD                          : 5373
+#      FDC                         : 3331
+#      FDP                         : 765
+# Tri-States                       : 357
+#      BUFE                        : 325
+#      BUFT                        : 32
+# IO Buffers                       : 203
+#      IBUF                        : 4
+#      OBUF                        : 167
+#      OBUFT                       : 32
+=========================================================================
+
+
+Total REAL time to Xst completion: 140.00 secs
+Total CPU time to Xst completion: 140.43 secs
+ 
+--> 
+
+Total memory usage is 541704 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   43 (   0 filtered)
+Number of infos    :  193 (   0 filtered)
+

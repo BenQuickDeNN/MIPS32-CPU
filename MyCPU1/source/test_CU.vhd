@@ -44,10 +44,11 @@ ARCHITECTURE behavior OF test_CU IS
          opcode : IN  std_logic_vector(5 downto 0);
          CLK : IN  std_logic;
          flag_zero : IN  std_logic;
-         initiation : IN  std_logic;
+         initiation, pro_run : IN  std_logic;
 			test_MCounter : OUT std_logic_vector(5 downto 0);
 			test_opcode: out std_logic_vector(5 downto 0);
 			test_Miinstruct : OUT std_logic_vector(31 downto 0);
+			test_ROM_out : out std_logic_vector(31 downto 0);
          instruction_done : OUT  std_logic;
          mem_ready : IN  std_logic;
          write_PC : OUT  std_logic;
@@ -79,12 +80,14 @@ ARCHITECTURE behavior OF test_CU IS
    signal CLK : std_logic := '0';
    signal flag_zero : std_logic := '0';
    signal initiation : std_logic := '0';
+	signal pro_run : std_logic := '0';
    signal mem_ready : std_logic := '0';
 
  	--Outputs
 	signal test_opcode : std_logic_vector(5 downto 0);
 	signal test_MCounter : std_logic_vector(5 downto 0);
 	signal test_Miinstruct : std_logic_vector(31 downto 0);
+	signal test_ROM_out : std_logic_vector(31 downto 0);
    signal instruction_done : std_logic;
    signal write_PC : std_logic;
    signal allow_PC_BUS : std_logic;
@@ -118,9 +121,11 @@ BEGIN
           CLK => CLK,
           flag_zero => flag_zero,
           initiation => initiation,
+			 pro_run => pro_run,
 			 test_MCounter => test_MCounter,
 			 test_opcode => test_opcode,
 			 test_Miinstruct => test_Miinstruct,
+			 test_ROM_out => test_ROM_out,
           instruction_done => instruction_done,
           mem_ready => mem_ready,
           write_PC => write_PC,
@@ -164,10 +169,13 @@ BEGIN
 		mem_ready <= '1';
 		opcode <= "001000";-- ADDI
 		initiation <= '1';
-		
+		wait for 100 ns;
+		initiation <= '0';
+		wait for 10 ns;
+		pro_run <= '1';
       wait for CLK_period*20;
 		
-		initiation <= '0';
+		
 
       -- insert stimulus here 
 

@@ -48,7 +48,9 @@ ARCHITECTURE behavior OF testSRAM IS
          oe : IN  std_logic;
          cs : IN  std_logic;
          clk : IN  std_logic;
-         data_out : OUT  std_logic_vector(31 downto 0)
+			boot : IN std_logic;
+         data_out : OUT  std_logic_vector(31 downto 0);
+			test_data_out : out std_logic_vector(31 downto 0)
         );
     END COMPONENT;
     
@@ -61,6 +63,8 @@ ARCHITECTURE behavior OF testSRAM IS
    signal oe : std_logic := '0';
    signal cs : std_logic := '0';
    signal clk : std_logic := '0';
+	signal boot : std_logic := '0';
+	signal test_data_out : std_logic_vector(31 downto 0) := (others => '0');
 
  	--Outputs
    signal data_out : std_logic_vector(31 downto 0);
@@ -79,7 +83,9 @@ BEGIN
           oe => oe,
           cs => cs,
           clk => clk,
-          data_out => data_out
+			 boot => boot,
+          data_out => data_out,
+			 test_data_out => test_data_out
         );
 
    -- Clock process definitions
@@ -96,21 +102,20 @@ BEGIN
    stim_proc: process
    begin		
       -- hold reset state for 100 ns.
-      wait for 100 ns;	
-		
-		cs <= '1';
+		boot <= '0';
+		wait for 50 ns;
+		boot <= '1';
+		wait for 100 ns;
+		boot <= '0';
 		address <= "00000000000000000000000000000001";
 		data_in <= "11111111111111111111111111111111";
+		wait for 20 ns;
 		write1 <= '1';
-		oe <= '0';
-		wait for clk_period*4;
+		cs <= '1';
+		wait for 30 ns;
 		write1 <= '0';
 		oe <= '1';
 		read1 <= '1';
-      wait for clk_period*10;
-
-      -- insert stimulus here 
-
       wait;
    end process;
 
