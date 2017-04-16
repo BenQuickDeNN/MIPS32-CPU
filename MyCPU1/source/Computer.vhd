@@ -549,6 +549,7 @@ begin
 			boot => boot,
 			-- Êä³ö¶Ë¿Ú
 			data_out => MEMDataOut,
+			ready => MEMReady,
 			test_data_out => debug_memData
 		);
 	PC_Reg : Register32 port map(
