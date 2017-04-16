@@ -1,0 +1,2 @@
+vhdl isim_temp "source/BEQ_Hardware.vhd"
+vhdl isim_temp "source/testBEQ_Hardware.vhd"

@@ -1,0 +1,6 @@
+[Inputs]
+=pc_high[3:0]=
+=imme[31:0]=
+[Outputs]
+=pc_new[31:0]=
+[BiDir]

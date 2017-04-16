@@ -1,0 +1,2 @@
+vhdtdtfi -lib work source/BEQ_Hardware.vhd -prj MyCPU1 -o BEQ_Hardware.spl -module BEQ_Hardware -template D:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family xc9500 BEQ_Hardware.spl E:/projects/VHDL/MyCPU1_ISE/MyCPU1/BEQ_Hardware.sym 
