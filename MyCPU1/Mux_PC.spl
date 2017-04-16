@@ -2,6 +2,7 @@
 =data_adder4[31:0]=
 =data_bus[31:0]=
 =data_addr_merge[31:0]=
+=data_BEQ[31:0]=
 =data_select[1:0]=
 [Outputs]
 =data_out[31:0]=

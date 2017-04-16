@@ -1,5 +1,5 @@
 ISim log file
-Running: E:\projects\VHDL\MyCPU1_ISE\MyCPU1\testComputer_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb E:/projects/VHDL/MyCPU1_ISE/MyCPU1/testComputer_isim_beh.wdb 
+Running: E:\projects\VHDL\MyCPU1_ISE\MyCPU1\testBEQ_Hardware_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb E:/projects/VHDL/MyCPU1_ISE/MyCPU1/testBEQ_Hardware_isim_beh.wdb 
 ISim P.20131013 (signature 0x8ef4fb42)
 ----------------------------------------------------------------------
 INFO:Security:60 - The XILINXD_LICENSE_FILE environment variable is set to 'E:\Xilinx\license\xilinx_ise.lic'.
@@ -27,21 +27,4 @@ Time resolution is 1 ps
 # wave add /
 # run 1000 ns
 Simulator is doing circuit initialization process.
-at 0 ps, Instance /testcomputer/uut/MainALU/ : Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-at 0 ps, Instance /testcomputer/uut/MainALU/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
 Finished circuit initialization process.
-at 0 ps, Instance /testcomputer/uut/MainALU/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-at 265 ns(4), Instance /testcomputer/uut/MainALU/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-at 430 ns(7), Instance /testcomputer/uut/MainALU/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-at 500 ns(2), Instance /testcomputer/uut/MainALU/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-at 530 ns(6), Instance /testcomputer/uut/MainALU/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-at 630 ns(7), Instance /testcomputer/uut/MainALU/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-at 700 ns(2), Instance /testcomputer/uut/MainALU/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-at 730 ns(6), Instance /testcomputer/uut/MainALU/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-at 745 ns(3), Instance /testcomputer/uut/Register_Field/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-at 810 ns(3), Instance /testcomputer/uut/MainALU/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-at 825 ns(4), Instance /testcomputer/uut/MainALU/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-at 860 ns(2), Instance /testcomputer/uut/MainALU/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-at 860 ns(2), Instance /testcomputer/uut/MainALU/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-at 860 ns(2), Instance /testcomputer/uut/MainSRAM/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-at 955 ns(3), Instance /testcomputer/uut/MainSRAM/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.

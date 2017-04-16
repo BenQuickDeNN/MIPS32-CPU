@@ -1,4 +1,4 @@
-V3 97
+V3 100
 FL E:/projects/VHDL/MyCPU1_ISE/MyCPU1/Instruction_Seperator.vhd 2017/04/12.19:48:48 P.20131013
 EN work/Instruction_Seperator 1492267808 \
       FL E:/projects/VHDL/MyCPU1_ISE/MyCPU1/Instruction_Seperator.vhd \
@@ -32,6 +32,14 @@ EN work/alu_logic_shift 1490441494 \
 AR work/alu_logic_shift/behave 1490441495 \
       FL E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/alu_logic_shift.vhd \
       EN work/alu_logic_shift 1490441494
+FL E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/BEQ_Hardware.vhd 2017/04/16.18:17:57 P.20131013
+EN work/BEQ_Hardware 1492338028 \
+      FL E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/BEQ_Hardware.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/STD_LOGIC_UNSIGNED 1381692179 \
+      PB ieee/std_logic_arith 1381692177
+AR work/BEQ_Hardware/Behavioral 1492338029 \
+      FL E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/BEQ_Hardware.vhd \
+      EN work/BEQ_Hardware 1492338028
 FL E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/Computer.vhd 2017/04/15.22:42:42 P.20131013
 EN work/Computer 1492267828 \
       FL E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/Computer.vhd \
@@ -89,11 +97,11 @@ EN work/Mux_MDR 1492267826 \
       PB ieee/std_logic_1164 1381692176
 AR work/Mux_MDR/Behavioral 1492267827 \
       FL E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/Mux_MDR.vhd EN work/Mux_MDR 1492267826
-FL E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/Mux_PC.vhd 2017/04/12.23:41:29 P.20131013
-EN work/Mux_PC 1492267804 FL E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/Mux_PC.vhd \
+FL E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/Mux_PC.vhd 2017/04/16.18:21:52 P.20131013
+EN work/Mux_PC 1492338180 FL E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/Mux_PC.vhd \
       PB ieee/std_logic_1164 1381692176
-AR work/Mux_PC/Behavioral 1492267805 \
-      FL E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/Mux_PC.vhd EN work/Mux_PC 1492267804
+AR work/Mux_PC/Behavioral 1492338181 \
+      FL E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/Mux_PC.vhd EN work/Mux_PC 1492338180
 FL E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/Mux_Reg.vhd 2017/04/13.08:44:30 P.20131013
 EN work/Mux_Reg 1492267824 \
       FL E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/Mux_Reg.vhd \

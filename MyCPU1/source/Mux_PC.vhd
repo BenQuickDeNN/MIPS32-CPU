@@ -30,7 +30,7 @@ use IEEE.STD_LOGIC_1164.ALL;
 --use UNISIM.VComponents.all;
 -- PC数据来源选择
 entity Mux_PC is
-	port(data_adder4, data_bus,data_addr_merge:in std_logic_vector(31 downto 0);
+	port(data_adder4, data_bus, data_addr_merge, data_BEQ :in std_logic_vector(31 downto 0);
 			data_out:out std_logic_vector(31 downto 0);
 			data_select:in std_logic_vector(1 downto 0));
 end Mux_PC;
@@ -41,14 +41,14 @@ begin
 	process(data_select, data_adder4, data_bus, data_addr_merge)
 	begin
 		case(data_select) is
-			when "00" =>
-				data_out <= data_adder4;
+			when "11" =>
+				data_out <= data_BEQ;
 			when "01" =>
 				data_out <= data_bus;
 			when "10" =>
 				data_out <= data_addr_merge;
 			when others =>
-				data_out <= "ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ";
+				data_out <= data_adder4;
 		end case;
 	end process;
 end Behavioral;
