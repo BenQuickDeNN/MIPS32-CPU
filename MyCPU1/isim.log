@@ -32,11 +32,26 @@ at 0 ps, Instance /testcomputer/uut/MainALU/ : Warning: CONV_INTEGER: There is a
 Finished circuit initialization process.
 at 0 ps, Instance /testcomputer/uut/MainALU/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
 at 265 ns(4), Instance /testcomputer/uut/MainALU/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-at 330 ns(7), Instance /testcomputer/uut/MainALU/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-at 400 ns(2), Instance /testcomputer/uut/MainALU/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-at 430 ns(6), Instance /testcomputer/uut/MainALU/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 430 ns(7), Instance /testcomputer/uut/MainALU/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
 at 445 ns(3), Instance /testcomputer/uut/Register_Field/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
 at 465 ns(4), Instance /testcomputer/uut/MainALU/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
 at 495 ns(5), Instance /testcomputer/uut/MainALU/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
 at 530 ns(2), Instance /testcomputer/uut/MainALU/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-at 560 ns(6), Instance /testcomputer/uut/MainALU/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 575 ns(3), Instance /testcomputer/uut/Register_Field/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 595 ns(4), Instance /testcomputer/uut/MainALU/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 625 ns(5), Instance /testcomputer/uut/MainALU/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 660 ns(2), Instance /testcomputer/uut/MainALU/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 705 ns(3), Instance /testcomputer/uut/Register_Field/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 725 ns(4), Instance /testcomputer/uut/MainALU/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 755 ns(5), Instance /testcomputer/uut/MainALU/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 790 ns(2), Instance /testcomputer/uut/MainALU/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 835 ns(3), Instance /testcomputer/uut/Register_Field/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 855 ns(4), Instance /testcomputer/uut/MainALU/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 885 ns(5), Instance /testcomputer/uut/MainALU/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 920 ns(2), Instance /testcomputer/uut/MainALU/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 965 ns(3), Instance /testcomputer/uut/Register_Field/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 985 ns(4), Instance /testcomputer/uut/MainALU/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# run 1.00us
+at 1015 ns(5), Instance /testcomputer/uut/MainALU/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 1050 ns(2), Instance /testcomputer/uut/MainALU/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 1080 ns(6), Instance /testcomputer/uut/MainALU/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.

@@ -31,7 +31,7 @@ begin
 	variable file_buff_vector : std_logic_vector(31 downto 0);
 	begin
 		if(boot = '1' and not(write1 = '1'))then
-			file_open(INST_FILE_STATUS, ProgramFile, "TestPrograme.txt", read_mode);-- 打开文件
+			file_open(INST_FILE_STATUS, ProgramFile, "asm_test/TestPrograme.txt", read_mode);-- 打开文件
 			PUSH_LOOP: for i in 0 to 127 loop
 				readline(ProgramFile, file_buff);
 				read(file_buff, file_buff_vector);
