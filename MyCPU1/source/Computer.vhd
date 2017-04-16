@@ -34,7 +34,7 @@ use std.textio.all;
 --use UNISIM.VComponents.all;
 -- 整体结构
 entity Computer is
-	port(CLK, Initiation, boot, pro_run : in std_logic;
+	port(CLK, initiation, boot, pro_run : in std_logic;
 			InstructionDone : out std_logic;
 			-- 调试输出端口
 			debug_memData, debug_memAddr, debug_PCData, debug_IRData, debug_BUSData : out std_logic_vector(31 downto 0);
@@ -53,7 +53,7 @@ architecture Behavioral of Computer is
          initiation, pro_run : IN  std_logic;
 			test_MCounter : OUT std_logic_vector(5 downto 0);
 			test_opcode: out std_logic_vector(5 downto 0);
-			test_Miinstruct : OUT std_logic_vector(31 downto 0);
+			--test_Miinstruct : OUT std_logic_vector(31 downto 0);
 			test_ROM_out : out std_logic_vector(31 downto 0);
          instruction_done : OUT  std_logic;
          mem_ready : IN  std_logic;
@@ -490,9 +490,9 @@ begin
 	CentralCU : CU port map(
 			-- 输入端口
 			opcode => CUOpcode,
-         CLK => CLK,
+         CLK => BootCLK,
          flag_zero => ALUFlag_Zero,
-         initiation => Initiation,
+         initiation => initiation,
 			pro_run => pro_run,
 			mem_ready => MEMready,
 			--test_MCounter,

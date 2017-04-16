@@ -42,7 +42,7 @@ ARCHITECTURE behavior OF testComputer IS
     COMPONENT Computer
     PORT(
          CLK : IN  std_logic;
-         Initiation, pro_run : IN  std_logic;
+         initiation, pro_run : IN  std_logic;
          boot : IN  std_logic;
          InstructionDone : OUT  std_logic;
 			-- µ÷ÊÔÊä³ö¶Ë¿Ú
@@ -55,7 +55,7 @@ ARCHITECTURE behavior OF testComputer IS
 
    --Inputs
    signal CLK : std_logic := '0';
-   signal Initiation, pro_run : std_logic := '0';
+   signal initiation, pro_run : std_logic := '0';
    signal boot : std_logic := '0';
 
  	--Outputs
@@ -72,7 +72,7 @@ BEGIN
 	-- Instantiate the Unit Under Test (UUT)
    uut: Computer PORT MAP (
           CLK => CLK,
-          Initiation => Initiation,
+          initiation => initiation,
 			 pro_run => pro_run,
           boot => boot,
           InstructionDone => InstructionDone,
@@ -98,16 +98,15 @@ BEGIN
    stim_proc: process
    begin		
       -- hold reset state for 100 ns.
-		boot <= '0';
+		initiation <= '1';
 		wait for 100 ns;
+		initiation <= '0';
+		boot <= '0';
+		wait for 50 ns;
 		boot <= '1';
 		wait for 50 ns;
 		boot <= '0';
-		Initiation <= '0';
-      wait for 50 ns;	
-		Initiation <= '1';
-		wait for 50 ns;
-		Initiation <= '0';
+		
 		wait for 10 ns;
 		pro_run <= '1';
       wait for CLK_period*50;
