@@ -1,29 +1,29 @@
-V3 100
+V3 102
 FL E:/projects/VHDL/MyCPU1_ISE/MyCPU1/Instruction_Seperator.vhd 2017/04/12.19:48:48 P.20131013
-EN work/Instruction_Seperator 1492267808 \
+EN work/Instruction_Seperator 1492345280 \
       FL E:/projects/VHDL/MyCPU1_ISE/MyCPU1/Instruction_Seperator.vhd \
       PB ieee/std_logic_1164 1381692176
-AR work/Instruction_Seperator/Behavioral 1492267809 \
+AR work/Instruction_Seperator/Behavioral 1492345281 \
       FL E:/projects/VHDL/MyCPU1_ISE/MyCPU1/Instruction_Seperator.vhd \
-      EN work/Instruction_Seperator 1492267808
+      EN work/Instruction_Seperator 1492345280
 FL E:/projects/VHDL/MyCPU1_ISE/MyCPU1/MyCPU.vhd 2017/03/24.23:41:26 P.20131013
 EN work/MyCPU 1490370092 FL E:/projects/VHDL/MyCPU1_ISE/MyCPU1/MyCPU.vhd \
       PB ieee/std_logic_1164 1381692176
 AR work/MyCPU/Behavioral 1490370093 \
       FL E:/projects/VHDL/MyCPU1_ISE/MyCPU1/MyCPU.vhd EN work/MyCPU 1490370092
 FL E:/projects/VHDL/MyCPU1_ISE/MyCPU1/Oprand_Seperator.vhd 2017/04/12.19:48:48 P.20131013
-EN work/Oprand_Seperator 1492267810 \
+EN work/Oprand_Seperator 1492345282 \
       FL E:/projects/VHDL/MyCPU1_ISE/MyCPU1/Oprand_Seperator.vhd \
       PB ieee/std_logic_1164 1381692176
-AR work/Oprand_Seperator/Behavioral 1492267811 \
+AR work/Oprand_Seperator/Behavioral 1492345283 \
       FL E:/projects/VHDL/MyCPU1_ISE/MyCPU1/Oprand_Seperator.vhd \
-      EN work/Oprand_Seperator 1492267810
-FL E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/ALU.vhd 2017/04/13.09:38:18 P.20131013
-EN work/ALU 1492267792 FL E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/ALU.vhd \
+      EN work/Oprand_Seperator 1492345282
+FL E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/ALU.vhd 2017/04/16.19:34:41 P.20131013
+EN work/ALU 1492345262 FL E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/ALU.vhd \
       PB ieee/std_logic_1164 1381692176 PB ieee/STD_LOGIC_UNSIGNED 1381692179 \
       PB ieee/std_logic_arith 1381692177
-AR work/ALU/behav 1492267793 \
-      FL E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/ALU.vhd EN work/ALU 1492267792
+AR work/ALU/behav 1492345263 \
+      FL E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/ALU.vhd EN work/ALU 1492345262
 FL E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/alu_logic_shift.vhd 2016/12/19.11:06:31 P.20131013
 EN work/alu_logic_shift 1490441494 \
       FL E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/alu_logic_shift.vhd \
@@ -33,32 +33,32 @@ AR work/alu_logic_shift/behave 1490441495 \
       FL E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/alu_logic_shift.vhd \
       EN work/alu_logic_shift 1490441494
 FL E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/BEQ_Hardware.vhd 2017/04/16.18:17:57 P.20131013
-EN work/BEQ_Hardware 1492338028 \
+EN work/BEQ_Hardware 1492345300 \
       FL E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/BEQ_Hardware.vhd \
       PB ieee/std_logic_1164 1381692176 PB ieee/STD_LOGIC_UNSIGNED 1381692179 \
       PB ieee/std_logic_arith 1381692177
-AR work/BEQ_Hardware/Behavioral 1492338029 \
+AR work/BEQ_Hardware/Behavioral 1492345301 \
       FL E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/BEQ_Hardware.vhd \
-      EN work/BEQ_Hardware 1492338028
-FL E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/Computer.vhd 2017/04/15.22:42:42 P.20131013
-EN work/Computer 1492267828 \
+      EN work/BEQ_Hardware 1492345300
+FL E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/Computer.vhd 2017/04/16.20:20:54 P.20131013
+EN work/Computer 1492345302 \
       FL E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/Computer.vhd \
       PB ieee/std_logic_1164 1381692176 PB ieee/STD_LOGIC_UNSIGNED 1381692179 \
       PB ieee/std_logic_arith 1381692177 PB ieee/STD_LOGIC_TEXTIO 1381692180 \
       PB std/TEXTIO 1381692176
-AR work/Computer/Behavioral 1492267829 \
-      FL E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/Computer.vhd EN work/Computer 1492267828 \
-      CP CU CP ALU CP SRAM CP Register32 CP PC_Adder CP PC_Seperator CP PCHighExtender \
-      CP MUX_PC CP TriState CP Instruction_Seperator CP Oprand_Seperator \
-      CP Imme_Seperator CP ImmeExt CP ShamtExt CP MUX_LB CP MUX_ALU_OP \
-      CP RegistersField CP MUX_Reg CP MUX_MDR
-FL E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/CU.vhd 2017/04/15.22:38:27 P.20131013
-EN work/CU 1492267790 FL E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/CU.vhd \
+AR work/Computer/Behavioral 1492345303 \
+      FL E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/Computer.vhd EN work/Computer 1492345302 \
+      CP CU CP ALU CP SRAM CP Register32 CP PC_Adder CP PC_Seperator CP PCMerger \
+      CP PCHighExtender CP MUX_PC CP TriState CP Instruction_Seperator \
+      CP Oprand_Seperator CP Imme_Seperator CP ImmeExt CP ShamtExt CP MUX_LB \
+      CP MUX_ALU_OP CP RegistersField CP MUX_Reg CP MUX_MDR CP BEQ_Hardware
+FL E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/CU.vhd 2017/04/16.20:11:11 P.20131013
+EN work/CU 1492345260 FL E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/CU.vhd \
       PB ieee/std_logic_1164 1381692176 PB ieee/STD_LOGIC_UNSIGNED 1381692179 \
       PB ieee/std_logic_arith 1381692177 PB ieee/STD_LOGIC_TEXTIO 1381692180 \
       PB std/TEXTIO 1381692176
-AR work/CU/behav 1492267791 \
-      FL E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/CU.vhd EN work/CU 1492267790
+AR work/CU/behav 1492345261 \
+      FL E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/CU.vhd EN work/CU 1492345260
 FL E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/Decoder38.vhd 2016/10/31.12:16:02 P.20131013
 EN work/Decoder38 1490433331 \
       FL E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/Decoder38.vhd \
@@ -67,96 +67,96 @@ AR work/Decoder38/behave 1490433332 \
       FL E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/Decoder38.vhd \
       EN work/Decoder38 1490433331
 FL E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/ImmeExt.vhd 2017/04/12.19:48:48 P.20131013
-EN work/ImmeExt 1492267814 \
+EN work/ImmeExt 1492345286 \
       FL E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/ImmeExt.vhd \
       PB ieee/std_logic_1164 1381692176
-AR work/ImmeExt/Behavioral 1492267815 \
-      FL E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/ImmeExt.vhd EN work/ImmeExt 1492267814
+AR work/ImmeExt/Behavioral 1492345287 \
+      FL E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/ImmeExt.vhd EN work/ImmeExt 1492345286
 FL E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/Imme_Seperator.vhd 2017/04/12.19:48:48 P.20131013
-EN work/Imme_Seperator 1492267812 \
+EN work/Imme_Seperator 1492345284 \
       FL E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/Imme_Seperator.vhd \
       PB ieee/std_logic_1164 1381692176
-AR work/Imme_Seperator/Behavioral 1492267813 \
+AR work/Imme_Seperator/Behavioral 1492345285 \
       FL E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/Imme_Seperator.vhd \
-      EN work/Imme_Seperator 1492267812
+      EN work/Imme_Seperator 1492345284
 FL E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/Mux_ALU_OP.vhd 2017/04/13.08:35:16 P.20131013
-EN work/Mux_ALU_OP 1492267820 \
+EN work/Mux_ALU_OP 1492345292 \
       FL E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/Mux_ALU_OP.vhd \
       PB ieee/std_logic_1164 1381692176
-AR work/Mux_ALU_OP/Behavioral 1492267821 \
+AR work/Mux_ALU_OP/Behavioral 1492345293 \
       FL E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/Mux_ALU_OP.vhd \
-      EN work/Mux_ALU_OP 1492267820
+      EN work/Mux_ALU_OP 1492345292
 FL E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/Mux_LB.vhd 2017/04/13.00:11:52 P.20131013
-EN work/Mux_LB 1492267818 FL E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/Mux_LB.vhd \
+EN work/Mux_LB 1492345290 FL E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/Mux_LB.vhd \
       PB ieee/std_logic_1164 1381692176
-AR work/Mux_LB/Behavioral 1492267819 \
-      FL E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/Mux_LB.vhd EN work/Mux_LB 1492267818
+AR work/Mux_LB/Behavioral 1492345291 \
+      FL E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/Mux_LB.vhd EN work/Mux_LB 1492345290
 FL E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/Mux_MDR.vhd 2017/04/13.08:50:00 P.20131013
-EN work/Mux_MDR 1492267826 \
+EN work/Mux_MDR 1492345298 \
       FL E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/Mux_MDR.vhd \
       PB ieee/std_logic_1164 1381692176
-AR work/Mux_MDR/Behavioral 1492267827 \
-      FL E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/Mux_MDR.vhd EN work/Mux_MDR 1492267826
-FL E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/Mux_PC.vhd 2017/04/16.18:21:52 P.20131013
-EN work/Mux_PC 1492338180 FL E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/Mux_PC.vhd \
+AR work/Mux_MDR/Behavioral 1492345299 \
+      FL E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/Mux_MDR.vhd EN work/Mux_MDR 1492345298
+FL E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/Mux_PC.vhd 2017/04/16.18:39:13 P.20131013
+EN work/Mux_PC 1492345276 FL E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/Mux_PC.vhd \
       PB ieee/std_logic_1164 1381692176
-AR work/Mux_PC/Behavioral 1492338181 \
-      FL E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/Mux_PC.vhd EN work/Mux_PC 1492338180
+AR work/Mux_PC/Behavioral 1492345277 \
+      FL E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/Mux_PC.vhd EN work/Mux_PC 1492345276
 FL E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/Mux_Reg.vhd 2017/04/13.08:44:30 P.20131013
-EN work/Mux_Reg 1492267824 \
+EN work/Mux_Reg 1492345296 \
       FL E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/Mux_Reg.vhd \
       PB ieee/std_logic_1164 1381692176 PB ieee/STD_LOGIC_UNSIGNED 1381692179 \
       PB ieee/std_logic_arith 1381692177
-AR work/Mux_Reg/behav 1492267825 \
-      FL E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/Mux_Reg.vhd EN work/Mux_Reg 1492267824
+AR work/Mux_Reg/behav 1492345297 \
+      FL E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/Mux_Reg.vhd EN work/Mux_Reg 1492345296
 FL E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/MyCPU1.vhd 2017/03/24.23:20:34 P.20131013
 EN work/MyCPU1 1490368837 FL E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/MyCPU1.vhd \
       PB ieee/std_logic_1164 1381692176
 AR work/MyCPU1/Behavioral 1490368838 \
       FL E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/MyCPU1.vhd EN work/MyCPU1 1490368837
 FL E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/PCHighExtender.vhd 2017/04/12.21:23:22 P.20131013
-EN work/PCHighExtender 1492267802 \
+EN work/PCHighExtender 1492345274 \
       FL E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/PCHighExtender.vhd \
       PB ieee/std_logic_1164 1381692176
-AR work/PCHighExtender/Behavioral 1492267803 \
+AR work/PCHighExtender/Behavioral 1492345275 \
       FL E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/PCHighExtender.vhd \
-      EN work/PCHighExtender 1492267802
+      EN work/PCHighExtender 1492345274
 FL E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/PCMerger.vhd 2017/04/16.17:28:14 P.20131013
-EN work/PCMerger 1492336913 \
+EN work/PCMerger 1492345272 \
       FL E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/PCMerger.vhd \
       PB ieee/std_logic_1164 1381692176
-AR work/PCMerger/Behavioral 1492336914 \
-      FL E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/PCMerger.vhd EN work/PCMerger 1492336913
+AR work/PCMerger/Behavioral 1492345273 \
+      FL E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/PCMerger.vhd EN work/PCMerger 1492345272
 FL E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/PC_Adder.vhd 2017/04/13.21:45:57 P.20131013
-EN work/PC_Adder 1492267798 \
+EN work/PC_Adder 1492345268 \
       FL E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/PC_Adder.vhd \
       PB ieee/std_logic_1164 1381692176 PB ieee/STD_LOGIC_UNSIGNED 1381692179 \
       PB ieee/std_logic_arith 1381692177
-AR work/PC_Adder/Behavioral 1492267799 \
-      FL E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/PC_Adder.vhd EN work/PC_Adder 1492267798
+AR work/PC_Adder/Behavioral 1492345269 \
+      FL E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/PC_Adder.vhd EN work/PC_Adder 1492345268
 FL E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/PC_Seperator.vhd 2017/04/12.19:48:48 P.20131013
-EN work/PC_Seperator 1492267800 \
+EN work/PC_Seperator 1492345270 \
       FL E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/PC_Seperator.vhd \
       PB ieee/std_logic_1164 1381692176
-AR work/PC_Seperator/Behavioral 1492267801 \
+AR work/PC_Seperator/Behavioral 1492345271 \
       FL E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/PC_Seperator.vhd \
-      EN work/PC_Seperator 1492267800
-FL E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/Register32.vhd 2017/04/15.22:07:44 P.20131013
-EN work/Register32 1492267796 \
+      EN work/PC_Seperator 1492345270
+FL E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/Register32.vhd 2017/04/16.20:18:04 P.20131013
+EN work/Register32 1492345266 \
       FL E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/Register32.vhd \
       PB ieee/std_logic_1164 1381692176 PB ieee/STD_LOGIC_UNSIGNED 1381692179 \
       PB ieee/std_logic_arith 1381692177
-AR work/Register32/behav 1492267797 \
+AR work/Register32/behav 1492345267 \
       FL E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/Register32.vhd \
-      EN work/Register32 1492267796
-FL E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/RegisterField.vhd 2017/04/13.08:39:49 P.20131013
-EN work/RegistersField 1492267822 \
+      EN work/Register32 1492345266
+FL E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/RegisterField.vhd 2017/04/16.13:27:10 P.20131013
+EN work/RegistersField 1492345294 \
       FL E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/RegisterField.vhd \
       PB ieee/std_logic_1164 1381692176 PB ieee/STD_LOGIC_UNSIGNED 1381692179 \
       PB ieee/std_logic_arith 1381692177
-AR work/RegistersField/behav 1492267823 \
+AR work/RegistersField/behav 1492345295 \
       FL E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/RegisterField.vhd \
-      EN work/RegistersField 1492267822
+      EN work/RegistersField 1492345294
 FL E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/Register_32.vhd 2017/03/25.19:03:20 P.20131013
 EN work/Register_32 1490439840 \
       FL E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/Register_32.vhd \
@@ -166,22 +166,22 @@ AR work/Register_32/behav 1490439841 \
       FL E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/Register_32.vhd \
       EN work/Register_32 1490439840
 FL E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/ShamtExt.vhd 2017/04/12.19:48:48 P.20131013
-EN work/ShamtExt 1492267816 \
+EN work/ShamtExt 1492345288 \
       FL E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/ShamtExt.vhd \
       PB ieee/std_logic_1164 1381692176
-AR work/ShamtExt/Behavioral 1492267817 \
-      FL E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/ShamtExt.vhd EN work/ShamtExt 1492267816
-FL E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/SRAM.vhd 2017/04/15.21:31:37 P.20131013
-EN work/SRAM 1492267794 FL E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/SRAM.vhd \
+AR work/ShamtExt/Behavioral 1492345289 \
+      FL E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/ShamtExt.vhd EN work/ShamtExt 1492345288
+FL E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/SRAM.vhd 2017/04/16.14:10:47 P.20131013
+EN work/SRAM 1492345264 FL E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/SRAM.vhd \
       PB ieee/std_logic_1164 1381692176 PB ieee/STD_LOGIC_UNSIGNED 1381692179 \
       PB ieee/std_logic_arith 1381692177 PB ieee/STD_LOGIC_TEXTIO 1381692180 \
       PB std/TEXTIO 1381692176
-AR work/SRAM/behave 1492267795 \
-      FL E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/SRAM.vhd EN work/SRAM 1492267794
+AR work/SRAM/behave 1492345265 \
+      FL E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/SRAM.vhd EN work/SRAM 1492345264
 FL E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/TriState.vhd 2017/04/12.19:48:48 P.20131013
-EN work/TriState 1492267806 \
+EN work/TriState 1492345278 \
       FL E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/TriState.vhd \
       PB ieee/std_logic_1164 1381692176 PB ieee/STD_LOGIC_UNSIGNED 1381692179 \
       PB ieee/std_logic_arith 1381692177
-AR work/TriState/behav 1492267807 \
-      FL E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/TriState.vhd EN work/TriState 1492267806
+AR work/TriState/behav 1492345279 \
+      FL E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/TriState.vhd EN work/TriState 1492345278

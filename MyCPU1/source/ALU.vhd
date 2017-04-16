@@ -55,12 +55,12 @@ architecture behav of ALU is
 			end case;
 			-- result <= temp_result;
 		end process;
-	flagZeroPro : process(alu_in_a, alu_in_b, op_code, temp_result)
-	begin
-		if(conv_integer(temp_result) = 0)then
-			flag_z <= '1';
-		else
-			flag_z <= '0';
-		end if;
-	end process;
+		flagZeroPro : process(alu_in_a, alu_in_b, op_code, temp_result)
+		begin
+			if(temp_result = "00000000000000000000000000000000") and not(op_code = "111111")then
+				flag_z <= '1';
+			else
+				flag_z <= '0';
+			end if;
+		end process;
 end behav;

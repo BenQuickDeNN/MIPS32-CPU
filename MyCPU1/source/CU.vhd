@@ -181,20 +181,20 @@ architecture behav of CU is
 						if (InstructionAddress = "00010" or InstructionAddress = "100001") and mem_ready = '0' then
 							-- 读取内存，等待内存准备好
 							-- do nothing
-						elsif (opcode = "000101") then
+						elsif (opcode = "000100") and (InstructionAddress = "101101") then
 							-- BEQ
 							if (flag_zero = '1') then
 								InstructionAddress <= InstructionAddress + "000001";
-							elsif (InstructionAddress = "101010") then
+							else
 								-- do nothing
 								InstructionAddress <= "000000";
 								instruction_done <= '1';
 							end if;
-						elsif (opcode = "000101") then
+						elsif (opcode = "000101") and (InstructionAddress = "101101") then
 							-- BNE
 							if (flag_zero = '0') then
 								InstructionAddress <= InstructionAddress + "000001";
-							elsif (InstructionAddress = "101010") then
+							else
 								-- do nothing
 								InstructionAddress <= "000000";
 								instruction_done <= '1';

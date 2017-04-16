@@ -1,23 +1,67 @@
-Running: D:\Xilinx\14.7\ISE_DS\ISE\bin\nt\unwrapped\fuse.exe -intstyle ise -incremental -o E:/projects/VHDL/MyCPU1_ISE/MyCPU1/testBEQ_Hardware_isim_beh.exe -prj E:/projects/VHDL/MyCPU1_ISE/MyCPU1/testBEQ_Hardware_beh.prj work.testBEQ_Hardware 
+Running: D:\Xilinx\14.7\ISE_DS\ISE\bin\nt\unwrapped\fuse.exe -intstyle ise -incremental -o E:/projects/VHDL/MyCPU1_ISE/MyCPU1/testComputer_isim_beh.exe -prj E:/projects/VHDL/MyCPU1_ISE/MyCPU1/testComputer_beh.prj work.testComputer 
 ISim P.20131013 (signature 0x8ef4fb42)
 Number of CPUs detected in this system: 4
 Turning on mult-threading, number of parallel sub-compilation jobs: 8 
 Determining compilation order of HDL files
+Parsing VHDL file "E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/TriState.vhd" into library work
+Parsing VHDL file "E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/SRAM.vhd" into library work
+Parsing VHDL file "E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/ShamtExt.vhd" into library work
+Parsing VHDL file "E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/RegisterField.vhd" into library work
+Parsing VHDL file "E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/Register32.vhd" into library work
+Parsing VHDL file "E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/PC_Seperator.vhd" into library work
+Parsing VHDL file "E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/PC_Adder.vhd" into library work
+Parsing VHDL file "E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/PCMerger.vhd" into library work
+Parsing VHDL file "E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/PCHighExtender.vhd" into library work
+Parsing VHDL file "E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/Mux_Reg.vhd" into library work
+Parsing VHDL file "E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/Mux_PC.vhd" into library work
+Parsing VHDL file "E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/Mux_MDR.vhd" into library work
+Parsing VHDL file "E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/Mux_LB.vhd" into library work
+Parsing VHDL file "E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/Mux_ALU_OP.vhd" into library work
+Parsing VHDL file "E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/Imme_Seperator.vhd" into library work
+Parsing VHDL file "E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/ImmeExt.vhd" into library work
+Parsing VHDL file "E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/CU.vhd" into library work
 Parsing VHDL file "E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/BEQ_Hardware.vhd" into library work
-Parsing VHDL file "E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/testBEQ_Hardware.vhd" into library work
+Parsing VHDL file "E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/ALU.vhd" into library work
+Parsing VHDL file "E:/projects/VHDL/MyCPU1_ISE/MyCPU1/Oprand_Seperator.vhd" into library work
+Parsing VHDL file "E:/projects/VHDL/MyCPU1_ISE/MyCPU1/Instruction_Seperator.vhd" into library work
+Parsing VHDL file "E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/Computer.vhd" into library work
+Parsing VHDL file "E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/testComputer.vhd" into library work
 Starting static elaboration
 Completed static elaboration
-Fuse Memory Usage: 156600 KB
-Fuse CPU Usage: 296 ms
+Fuse Memory Usage: 157624 KB
+Fuse CPU Usage: 437 ms
 Compiling package standard
 Compiling package std_logic_1164
 Compiling package std_logic_arith
 Compiling package std_logic_unsigned
+Compiling package textio
+Compiling package std_logic_textio
+Compiling architecture behav of entity CU [cu_default]
+Compiling architecture behav of entity ALU [alu_default]
+Compiling architecture behave of entity SRAM [sram_default]
+Compiling architecture behav of entity Register32 [register32_default]
+Compiling architecture behavioral of entity PC_Adder [pc_adder_default]
+Compiling architecture behavioral of entity PC_Seperator [pc_seperator_default]
+Compiling architecture behavioral of entity PCMerger [pcmerger_default]
+Compiling architecture behavioral of entity PCHighExtender [pchighextender_default]
+Compiling architecture behavioral of entity Mux_PC [mux_pc_default]
+Compiling architecture behav of entity TriState [tristate_default]
+Compiling architecture behavioral of entity Instruction_Seperator [instruction_seperator_default]
+Compiling architecture behavioral of entity Oprand_Seperator [oprand_seperator_default]
+Compiling architecture behavioral of entity Imme_Seperator [imme_seperator_default]
+Compiling architecture behavioral of entity ImmeExt [immeext_default]
+Compiling architecture behavioral of entity ShamtExt [shamtext_default]
+Compiling architecture behavioral of entity Mux_LB [mux_lb_default]
+Compiling architecture behavioral of entity Mux_ALU_OP [mux_alu_op_default]
+Compiling architecture behav of entity RegistersField [registersfield_default]
+Compiling architecture behav of entity Mux_Reg [mux_reg_default]
+Compiling architecture behavioral of entity Mux_MDR [mux_mdr_default]
 Compiling architecture behavioral of entity BEQ_Hardware [beq_hardware_default]
-Compiling architecture behavior of entity testbeq_hardware
+Compiling architecture behavioral of entity Computer [computer_default]
+Compiling architecture behavior of entity testcomputer
 Time Resolution for simulation is 1ps.
-Waiting for 1 sub-compilation(s) to finish...
-Compiled 7 VHDL Units
-Built simulation executable E:/projects/VHDL/MyCPU1_ISE/MyCPU1/testBEQ_Hardware_isim_beh.exe
-Fuse Memory Usage: 176556 KB
-Fuse CPU Usage: 389 ms
+Waiting for 21 sub-compilation(s) to finish...
+Compiled 51 VHDL Units
+Built simulation executable E:/projects/VHDL/MyCPU1_ISE/MyCPU1/testComputer_isim_beh.exe
+Fuse Memory Usage: 183060 KB
+Fuse CPU Usage: 780 ms

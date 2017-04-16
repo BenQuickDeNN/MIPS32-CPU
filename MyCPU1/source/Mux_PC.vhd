@@ -38,7 +38,7 @@ end Mux_PC;
 architecture Behavioral of Mux_PC is
 
 begin
-	process(data_select, data_adder4, data_bus, data_addr_merge)
+	process(data_select, data_adder4, data_bus, data_addr_merge, data_BEQ)
 	begin
 		case(data_select) is
 			when "11" =>

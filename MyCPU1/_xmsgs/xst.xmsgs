@@ -5,654 +5,652 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/Computer.vhd</arg>&quot; line <arg fmt="%d" index="2">489</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">test_MCounter</arg>&apos; of component &apos;<arg fmt="%s" index="4">CU</arg>&apos;.
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/Computer.vhd</arg>&quot; line <arg fmt="%d" index="2">520</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">test_opcode</arg>&apos; of component &apos;<arg fmt="%s" index="4">CU</arg>&apos;.
 </msg>
 
-<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/Computer.vhd</arg>&quot; line <arg fmt="%d" index="2">489</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">test_opcode</arg>&apos; of component &apos;<arg fmt="%s" index="4">CU</arg>&apos;.
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/Computer.vhd</arg>&quot; line <arg fmt="%d" index="2">520</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">test_ROM_out</arg>&apos; of component &apos;<arg fmt="%s" index="4">CU</arg>&apos;.
 </msg>
 
-<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/Computer.vhd</arg>&quot; line <arg fmt="%d" index="2">489</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">test_ROM_out</arg>&apos; of component &apos;<arg fmt="%s" index="4">CU</arg>&apos;.
+<msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">MicroInstructionROM&lt;0&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">01000000000000000000000000000000</arg> during circuit operation. The register is replaced by logic.
 </msg>
 
-<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/Computer.vhd</arg>&quot; line <arg fmt="%d" index="2">536</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">ready</arg>&apos; of component &apos;<arg fmt="%s" index="4">SRAM</arg>&apos;.
+<msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">MicroInstructionROM&lt;1&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">01000100000000000000010001100010</arg> during circuit operation. The register is replaced by logic.
 </msg>
 
-<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">MicroInstructionROM&lt;0&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">01000000000000000000000000000000</arg> during circuit operation. The register is replaced by logic.
+<msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">MicroInstructionROM&lt;2&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">01000100000000000110010011100010</arg> during circuit operation. The register is replaced by logic.
 </msg>
 
-<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">MicroInstructionROM&lt;1&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">01000100000000000000010001100010</arg> during circuit operation. The register is replaced by logic.
+<msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">MicroInstructionROM&lt;3&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">01000100000000001001010101100001</arg> during circuit operation. The register is replaced by logic.
 </msg>
 
-<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">MicroInstructionROM&lt;2&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">01000100000000000110010011100010</arg> during circuit operation. The register is replaced by logic.
+<msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">MicroInstructionROM&lt;4&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">01000100000000000000011001100000</arg> during circuit operation. The register is replaced by logic.
 </msg>
 
-<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">MicroInstructionROM&lt;3&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">01000100000000001001010001100001</arg> during circuit operation. The register is replaced by logic.
+<msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">MicroInstructionROM&lt;5&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">01000100000000000000001001100100</arg> during circuit operation. The register is replaced by logic.
 </msg>
 
-<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">MicroInstructionROM&lt;4&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">01000100000000000000011001100000</arg> during circuit operation. The register is replaced by logic.
+<msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">MicroInstructionROM&lt;6&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">01000100000000000000001001100100</arg> during circuit operation. The register is replaced by logic.
 </msg>
 
-<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">MicroInstructionROM&lt;5&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">10000100000000000000001001100100</arg> during circuit operation. The register is replaced by logic.
+<msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">MicroInstructionROM&lt;7&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">10000100000000000000001001100100</arg> during circuit operation. The register is replaced by logic.
 </msg>
 
-<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">MicroInstructionROM&lt;6&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">11000100000000000000000000010000</arg> during circuit operation. The register is replaced by logic.
+<msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">MicroInstructionROM&lt;8&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">11000100000000000000000000010000</arg> during circuit operation. The register is replaced by logic.
 </msg>
 
-<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">MicroInstructionROM&lt;7&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">01000100000000000010000000010000</arg> during circuit operation. The register is replaced by logic.
+<msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">MicroInstructionROM&lt;9&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">01000100000000000010000000010000</arg> during circuit operation. The register is replaced by logic.
 </msg>
 
-<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">MicroInstructionROM&lt;8&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">01000100000000000000000000110000</arg> during circuit operation. The register is replaced by logic.
+<msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">MicroInstructionROM&lt;10&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">01000100000000000000000000110000</arg> during circuit operation. The register is replaced by logic.
 </msg>
 
-<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">MicroInstructionROM&lt;9&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">01000100000000000100000000110000</arg> during circuit operation. The register is replaced by logic.
+<msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">MicroInstructionROM&lt;11&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">01000100000000000100000000110000</arg> during circuit operation. The register is replaced by logic.
 </msg>
 
-<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">MicroInstructionROM&lt;10&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">01000100000000001000000001100000</arg> during circuit operation. The register is replaced by logic.
+<msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">MicroInstructionROM&lt;12&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">01000100000000001000000001100000</arg> during circuit operation. The register is replaced by logic.
 </msg>
 
-<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">MicroInstructionROM&lt;11&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000100000000000000000001001000</arg> during circuit operation. The register is replaced by logic.
+<msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">MicroInstructionROM&lt;13&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000100000000001000000001001000</arg> during circuit operation. The register is replaced by logic.
 </msg>
 
-<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">MicroInstructionROM&lt;12&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">11000000000000000010000000010000</arg> during circuit operation. The register is replaced by logic.
+<msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">MicroInstructionROM&lt;14&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">11000000000000000010000000010000</arg> during circuit operation. The register is replaced by logic.
 </msg>
 
-<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">MicroInstructionROM&lt;13&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">01000000011000000100000000000000</arg> during circuit operation. The register is replaced by logic.
+<msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">MicroInstructionROM&lt;15&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">01000000011000000100000000000000</arg> during circuit operation. The register is replaced by logic.
 </msg>
 
-<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">MicroInstructionROM&lt;14&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">01000000011000001000000000100000</arg> during circuit operation. The register is replaced by logic.
+<msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">MicroInstructionROM&lt;16&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">01000000011000001000000000100000</arg> during circuit operation. The register is replaced by logic.
 </msg>
 
-<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">MicroInstructionROM&lt;15&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000011000001000000000101000</arg> during circuit operation. The register is replaced by logic.
+<msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">MicroInstructionROM&lt;17&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000011000001000000000101000</arg> during circuit operation. The register is replaced by logic.
 </msg>
 
-<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">MicroInstructionROM&lt;16&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">01000000011001000100000000000000</arg> during circuit operation. The register is replaced by logic.
+<msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">MicroInstructionROM&lt;18&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">01000000011001000100000000000000</arg> during circuit operation. The register is replaced by logic.
 </msg>
 
-<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">MicroInstructionROM&lt;17&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">01000000011001001000000000100000</arg> during circuit operation. The register is replaced by logic.
+<msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">MicroInstructionROM&lt;19&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">01000000011001001000000000100000</arg> during circuit operation. The register is replaced by logic.
 </msg>
 
-<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">MicroInstructionROM&lt;18&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000011001001000000000101000</arg> during circuit operation. The register is replaced by logic.
+<msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">MicroInstructionROM&lt;20&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000011001001000000000101000</arg> during circuit operation. The register is replaced by logic.
 </msg>
 
-<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">MicroInstructionROM&lt;19&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">01000000011001010100000000000000</arg> during circuit operation. The register is replaced by logic.
+<msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">MicroInstructionROM&lt;21&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">01000000011001010100000000000000</arg> during circuit operation. The register is replaced by logic.
 </msg>
 
-<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">MicroInstructionROM&lt;20&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">01000000011001011000000000100000</arg> during circuit operation. The register is replaced by logic.
+<msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">MicroInstructionROM&lt;22&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">01000000011001011000000000100000</arg> during circuit operation. The register is replaced by logic.
 </msg>
 
-<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">MicroInstructionROM&lt;21&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000011001011000000000101000</arg> during circuit operation. The register is replaced by logic.
+<msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">MicroInstructionROM&lt;23&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000011001011000000000101000</arg> during circuit operation. The register is replaced by logic.
 </msg>
 
-<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">MicroInstructionROM&lt;22&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">01000000011001100100000000000000</arg> during circuit operation. The register is replaced by logic.
+<msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">MicroInstructionROM&lt;24&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">01000000011001100100000000000000</arg> during circuit operation. The register is replaced by logic.
 </msg>
 
-<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">MicroInstructionROM&lt;23&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">01000000011001101000000000100000</arg> during circuit operation. The register is replaced by logic.
+<msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">MicroInstructionROM&lt;25&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">01000000011001101000000000100000</arg> during circuit operation. The register is replaced by logic.
 </msg>
 
-<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">MicroInstructionROM&lt;24&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000011001101000000000101000</arg> during circuit operation. The register is replaced by logic.
+<msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">MicroInstructionROM&lt;26&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000011001101000000000101000</arg> during circuit operation. The register is replaced by logic.
 </msg>
 
-<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">MicroInstructionROM&lt;25&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">01001000000000000000000000100000</arg> during circuit operation. The register is replaced by logic.
+<msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">MicroInstructionROM&lt;27&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">01001000000000000000000000100000</arg> during circuit operation. The register is replaced by logic.
 </msg>
 
-<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">MicroInstructionROM&lt;26&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00001000000000000000000000101000</arg> during circuit operation. The register is replaced by logic.
+<msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">MicroInstructionROM&lt;28&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00001000000000000000000000101000</arg> during circuit operation. The register is replaced by logic.
 </msg>
 
-<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">MicroInstructionROM&lt;27&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">01000000011000000100000000010000</arg> during circuit operation. The register is replaced by logic.
+<msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">MicroInstructionROM&lt;29&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">01000000011000000100000000010000</arg> during circuit operation. The register is replaced by logic.
 </msg>
 
-<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">MicroInstructionROM&lt;28&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">01000000011000000010000000010000</arg> during circuit operation. The register is replaced by logic.
+<msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">MicroInstructionROM&lt;30&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">01000000011000000010000000010000</arg> during circuit operation. The register is replaced by logic.
 </msg>
 
-<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">MicroInstructionROM&lt;29&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">01000000011000001000000000000000</arg> during circuit operation. The register is replaced by logic.
+<msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">MicroInstructionROM&lt;31&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">01000000011000001000000000000000</arg> during circuit operation. The register is replaced by logic.
 </msg>
 
-<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">MicroInstructionROM&lt;30&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">11000000011000001000000010000000</arg> during circuit operation. The register is replaced by logic.
+<msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">MicroInstructionROM&lt;32&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">11000000011000001000000010000000</arg> during circuit operation. The register is replaced by logic.
 </msg>
 
-<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">MicroInstructionROM&lt;31&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">01000000000000000001000001100000</arg> during circuit operation. The register is replaced by logic.
+<msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">MicroInstructionROM&lt;33&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">01000000000000000001000001100000</arg> during circuit operation. The register is replaced by logic.
 </msg>
 
-<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">MicroInstructionROM&lt;32&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">01000000000000000001000100100000</arg> during circuit operation. The register is replaced by logic.
+<msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">MicroInstructionROM&lt;34&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">01000000000000000001000100100000</arg> during circuit operation. The register is replaced by logic.
 </msg>
 
-<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">MicroInstructionROM&lt;33&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">01000000000000000000001000100000</arg> during circuit operation. The register is replaced by logic.
+<msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">MicroInstructionROM&lt;35&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">01000000000000000000001000100000</arg> during circuit operation. The register is replaced by logic.
 </msg>
 
-<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">MicroInstructionROM&lt;34&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000000000000000001000101000</arg> during circuit operation. The register is replaced by logic.
+<msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">MicroInstructionROM&lt;36&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000000000000000001000101000</arg> during circuit operation. The register is replaced by logic.
 </msg>
 
-<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">MicroInstructionROM&lt;35&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">01000000000000000000010000110000</arg> during circuit operation. The register is replaced by logic.
+<msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">MicroInstructionROM&lt;37&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">01000000000000000000010000110000</arg> during circuit operation. The register is replaced by logic.
 </msg>
 
-<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">MicroInstructionROM&lt;36&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">01000000000000000000010100110000</arg> during circuit operation. The register is replaced by logic.
+<msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">MicroInstructionROM&lt;38&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">01000000000000000000010100110000</arg> during circuit operation. The register is replaced by logic.
 </msg>
 
-<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">MicroInstructionROM&lt;37&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000000000000000100000100000</arg> during circuit operation. The register is replaced by logic.
+<msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">MicroInstructionROM&lt;39&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000000000000000100000100000</arg> during circuit operation. The register is replaced by logic.
 </msg>
 
-<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">MicroInstructionROM&lt;38&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">01000010011001100000000000010000</arg> during circuit operation. The register is replaced by logic.
+<msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">MicroInstructionROM&lt;40&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">01000100011111110000000000010000</arg> during circuit operation. The register is replaced by logic.
 </msg>
 
-<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">MicroInstructionROM&lt;39&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">01000010011001100010000000010000</arg> during circuit operation. The register is replaced by logic.
+<msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">MicroInstructionROM&lt;41&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">01000100011111110010000000010000</arg> during circuit operation. The register is replaced by logic.
 </msg>
 
-<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">MicroInstructionROM&lt;40&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">01000010011001100000000000110000</arg> during circuit operation. The register is replaced by logic.
+<msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">MicroInstructionROM&lt;42&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">01000100011111110000000000010000</arg> during circuit operation. The register is replaced by logic.
 </msg>
 
-<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">MicroInstructionROM&lt;41&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">01000010011001100100000000110000</arg> during circuit operation. The register is replaced by logic.
+<msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">MicroInstructionROM&lt;43&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">01000100011111110100000000110000</arg> during circuit operation. The register is replaced by logic.
 </msg>
 
-<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">MicroInstructionROM&lt;42&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">01000000011000000100000001100010</arg> during circuit operation. The register is replaced by logic.
+<msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">MicroInstructionROM&lt;44&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">01000100011000100100000000110000</arg> during circuit operation. The register is replaced by logic.
 </msg>
 
-<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">MicroInstructionROM&lt;43&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">01000000011000000010000001100000</arg> during circuit operation. The register is replaced by logic.
+<msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">MicroInstructionROM&lt;45&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">01000101111000100000000001100000</arg> during circuit operation. The register is replaced by logic.
 </msg>
 
-<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">MicroInstructionROM&lt;44&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">01000000111000001000000001100000</arg> during circuit operation. The register is replaced by logic.
+<msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">MicroInstructionROM&lt;46&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000101111000100000000001100001</arg> during circuit operation. The register is replaced by logic.
 </msg>
 
-<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">MicroInstructionROM&lt;45&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000111000001000000001100001</arg> during circuit operation. The register is replaced by logic.
+<msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">MicroInstructionROM&lt;47&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000111000001000000001100001</arg> during circuit operation. The register is replaced by logic.
 </msg>
 
-<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">MicroInstructionROM&lt;46&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000001000000000000000001100001</arg> during circuit operation. The register is replaced by logic.
+<msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">MicroInstructionROM&lt;48&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000001000000000000000001100001</arg> during circuit operation. The register is replaced by logic.
 </msg>
 
-<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">MicroInstructionROM&lt;47&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000000000000000000000000000</arg> during circuit operation. The register is replaced by logic.
+<msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">MicroInstructionROM&lt;49&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000000000000000000000000000</arg> during circuit operation. The register is replaced by logic.
 </msg>
 
-<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">MicroInstructionROM&lt;48&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000000000000000000000000000</arg> during circuit operation. The register is replaced by logic.
+<msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">MicroInstructionROM&lt;50&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000000000000000000000000000</arg> during circuit operation. The register is replaced by logic.
 </msg>
 
-<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">MicroInstructionROM&lt;49&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000000000000000000000000000</arg> during circuit operation. The register is replaced by logic.
+<msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">MicroInstructionROM&lt;51&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000000000000000000000000000</arg> during circuit operation. The register is replaced by logic.
 </msg>
 
-<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">MicroInstructionROM&lt;50&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000000000000000000000000000</arg> during circuit operation. The register is replaced by logic.
+<msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">MicroInstructionROM&lt;52&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000000000000000000000000000</arg> during circuit operation. The register is replaced by logic.
 </msg>
 
-<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">MicroInstructionROM&lt;51&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000000000000000000000000000</arg> during circuit operation. The register is replaced by logic.
+<msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">MicroInstructionROM&lt;53&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000000000000000000000000000</arg> during circuit operation. The register is replaced by logic.
 </msg>
 
-<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">MicroInstructionROM&lt;52&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000000000000000000000000000</arg> during circuit operation. The register is replaced by logic.
+<msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">MicroInstructionROM&lt;54&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000000000000000000000000000</arg> during circuit operation. The register is replaced by logic.
 </msg>
 
-<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">MicroInstructionROM&lt;53&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000000000000000000000000000</arg> during circuit operation. The register is replaced by logic.
+<msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">MicroInstructionROM&lt;55&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000000000000000000000000000</arg> during circuit operation. The register is replaced by logic.
 </msg>
 
-<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">MicroInstructionROM&lt;54&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000000000000000000000000000</arg> during circuit operation. The register is replaced by logic.
+<msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">MicroInstructionROM&lt;56&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000000000000000000000000000</arg> during circuit operation. The register is replaced by logic.
 </msg>
 
-<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">MicroInstructionROM&lt;55&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000000000000000000000000000</arg> during circuit operation. The register is replaced by logic.
+<msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">MicroInstructionROM&lt;57&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000000000000000000000000000</arg> during circuit operation. The register is replaced by logic.
 </msg>
 
-<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">MicroInstructionROM&lt;56&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000000000000000000000000000</arg> during circuit operation. The register is replaced by logic.
+<msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">MicroInstructionROM&lt;58&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000000000000000000000000000</arg> during circuit operation. The register is replaced by logic.
 </msg>
 
-<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">MicroInstructionROM&lt;57&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000000000000000000000000000</arg> during circuit operation. The register is replaced by logic.
+<msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">MicroInstructionROM&lt;59&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000000000000000000000000000</arg> during circuit operation. The register is replaced by logic.
 </msg>
 
-<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">MicroInstructionROM&lt;58&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000000000000000000000000000</arg> during circuit operation. The register is replaced by logic.
+<msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">MicroInstructionROM&lt;60&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000000000000000000000000000</arg> during circuit operation. The register is replaced by logic.
 </msg>
 
-<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">MicroInstructionROM&lt;59&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000000000000000000000000000</arg> during circuit operation. The register is replaced by logic.
+<msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">MicroInstructionROM&lt;61&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000000000000000000000000000</arg> during circuit operation. The register is replaced by logic.
 </msg>
 
-<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">MicroInstructionROM&lt;60&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000000000000000000000000000</arg> during circuit operation. The register is replaced by logic.
+<msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">MicroInstructionROM&lt;62&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000000000000000000000000000</arg> during circuit operation. The register is replaced by logic.
 </msg>
 
-<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">MicroInstructionROM&lt;61&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000000000000000000000000000</arg> during circuit operation. The register is replaced by logic.
+<msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">MicroInstructionROM&lt;63&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000000000000000000000000000</arg> during circuit operation. The register is replaced by logic.
 </msg>
 
-<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">MicroInstructionROM&lt;62&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000000000000000000000000000</arg> during circuit operation. The register is replaced by logic.
+<msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">MicroInstructionAddrTable1&lt;0&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000110</arg> during circuit operation. The register is replaced by logic.
 </msg>
 
-<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">MicroInstructionROM&lt;63&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000000000000000000000000000</arg> during circuit operation. The register is replaced by logic.
+<msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">MicroInstructionAddrTable1&lt;1&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
 </msg>
 
-<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">MicroInstructionAddrTable1&lt;0&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000110</arg> during circuit operation. The register is replaced by logic.
+<msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">MicroInstructionAddrTable1&lt;2&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00101110</arg> during circuit operation. The register is replaced by logic.
 </msg>
 
-<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">MicroInstructionAddrTable1&lt;1&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
+<msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">MicroInstructionAddrTable1&lt;3&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
 </msg>
 
-<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">MicroInstructionAddrTable1&lt;2&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00101110</arg> during circuit operation. The register is replaced by logic.
+<msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">MicroInstructionAddrTable1&lt;4&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00100110</arg> during circuit operation. The register is replaced by logic.
 </msg>
 
-<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">MicroInstructionAddrTable1&lt;3&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
+<msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">MicroInstructionAddrTable1&lt;5&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
 </msg>
 
-<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">MicroInstructionAddrTable1&lt;4&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00100110</arg> during circuit operation. The register is replaced by logic.
+<msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">MicroInstructionAddrTable1&lt;6&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
 </msg>
 
-<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">MicroInstructionAddrTable1&lt;5&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
+<msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">MicroInstructionAddrTable1&lt;7&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
 </msg>
 
-<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">MicroInstructionAddrTable1&lt;6&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
+<msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">MicroInstructionAddrTable1&lt;8&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000110</arg> during circuit operation. The register is replaced by logic.
 </msg>
 
-<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">MicroInstructionAddrTable1&lt;7&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
+<msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">MicroInstructionAddrTable1&lt;9&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
 </msg>
 
-<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">MicroInstructionAddrTable1&lt;8&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000110</arg> during circuit operation. The register is replaced by logic.
+<msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">MicroInstructionAddrTable1&lt;10&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
 </msg>
 
-<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">MicroInstructionAddrTable1&lt;9&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
+<msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">MicroInstructionAddrTable1&lt;11&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
 </msg>
 
-<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">MicroInstructionAddrTable1&lt;10&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
+<msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">MicroInstructionAddrTable1&lt;12&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000110</arg> during circuit operation. The register is replaced by logic.
 </msg>
 
-<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">MicroInstructionAddrTable1&lt;11&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
+<msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">MicroInstructionAddrTable1&lt;13&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000110</arg> during circuit operation. The register is replaced by logic.
 </msg>
 
-<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">MicroInstructionAddrTable1&lt;12&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000110</arg> during circuit operation. The register is replaced by logic.
+<msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">MicroInstructionAddrTable1&lt;14&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000110</arg> during circuit operation. The register is replaced by logic.
 </msg>
 
-<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">MicroInstructionAddrTable1&lt;13&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000110</arg> during circuit operation. The register is replaced by logic.
+<msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">MicroInstructionAddrTable1&lt;15&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00011001</arg> during circuit operation. The register is replaced by logic.
 </msg>
 
-<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">MicroInstructionAddrTable1&lt;14&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000110</arg> during circuit operation. The register is replaced by logic.
+<msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">MicroInstructionAddrTable1&lt;16&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
 </msg>
 
-<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">MicroInstructionAddrTable1&lt;15&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00011001</arg> during circuit operation. The register is replaced by logic.
+<msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">MicroInstructionAddrTable1&lt;17&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
 </msg>
 
-<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">MicroInstructionAddrTable1&lt;16&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
+<msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">MicroInstructionAddrTable1&lt;18&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
 </msg>
 
-<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">MicroInstructionAddrTable1&lt;17&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
+<msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">MicroInstructionAddrTable1&lt;19&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
 </msg>
 
-<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">MicroInstructionAddrTable1&lt;18&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
+<msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">MicroInstructionAddrTable1&lt;20&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
 </msg>
 
-<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">MicroInstructionAddrTable1&lt;19&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
+<msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">MicroInstructionAddrTable1&lt;21&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
 </msg>
 
-<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">MicroInstructionAddrTable1&lt;20&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
+<msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">MicroInstructionAddrTable1&lt;22&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
 </msg>
 
-<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">MicroInstructionAddrTable1&lt;21&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
+<msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">MicroInstructionAddrTable1&lt;23&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
 </msg>
 
-<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">MicroInstructionAddrTable1&lt;22&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
+<msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">MicroInstructionAddrTable1&lt;24&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
 </msg>
 
-<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">MicroInstructionAddrTable1&lt;23&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
+<msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">MicroInstructionAddrTable1&lt;25&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
 </msg>
 
-<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">MicroInstructionAddrTable1&lt;24&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
+<msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">MicroInstructionAddrTable1&lt;26&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
 </msg>
 
-<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">MicroInstructionAddrTable1&lt;25&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
+<msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">MicroInstructionAddrTable1&lt;27&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
 </msg>
 
-<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">MicroInstructionAddrTable1&lt;26&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
+<msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">MicroInstructionAddrTable1&lt;28&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
 </msg>
 
-<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">MicroInstructionAddrTable1&lt;27&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
+<msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">MicroInstructionAddrTable1&lt;29&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
 </msg>
 
-<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">MicroInstructionAddrTable1&lt;28&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
+<msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">MicroInstructionAddrTable1&lt;30&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
 </msg>
 
-<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">MicroInstructionAddrTable1&lt;29&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
+<msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">MicroInstructionAddrTable1&lt;31&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
 </msg>
 
-<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">MicroInstructionAddrTable1&lt;30&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
+<msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">MicroInstructionAddrTable1&lt;32&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
 </msg>
 
-<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">MicroInstructionAddrTable1&lt;31&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
+<msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">MicroInstructionAddrTable1&lt;33&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
 </msg>
 
-<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">MicroInstructionAddrTable1&lt;32&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
+<msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">MicroInstructionAddrTable1&lt;34&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
 </msg>
 
-<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">MicroInstructionAddrTable1&lt;33&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
+<msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">MicroInstructionAddrTable1&lt;35&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00011011</arg> during circuit operation. The register is replaced by logic.
 </msg>
 
-<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">MicroInstructionAddrTable1&lt;34&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
+<msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">MicroInstructionAddrTable1&lt;36&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
 </msg>
 
-<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">MicroInstructionAddrTable1&lt;35&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00011011</arg> during circuit operation. The register is replaced by logic.
+<msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">MicroInstructionAddrTable1&lt;37&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
 </msg>
 
-<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">MicroInstructionAddrTable1&lt;36&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
+<msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">MicroInstructionAddrTable1&lt;38&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
 </msg>
 
-<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">MicroInstructionAddrTable1&lt;37&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
+<msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">MicroInstructionAddrTable1&lt;39&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
 </msg>
 
-<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">MicroInstructionAddrTable1&lt;38&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
+<msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">MicroInstructionAddrTable1&lt;40&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
 </msg>
 
-<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">MicroInstructionAddrTable1&lt;39&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
+<msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">MicroInstructionAddrTable1&lt;41&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
 </msg>
 
-<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">MicroInstructionAddrTable1&lt;40&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
+<msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">MicroInstructionAddrTable1&lt;42&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
 </msg>
 
-<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">MicroInstructionAddrTable1&lt;41&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
+<msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">MicroInstructionAddrTable1&lt;43&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00011011</arg> during circuit operation. The register is replaced by logic.
 </msg>
 
-<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">MicroInstructionAddrTable1&lt;42&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
+<msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">MicroInstructionAddrTable1&lt;44&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
 </msg>
 
-<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">MicroInstructionAddrTable1&lt;43&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00011011</arg> during circuit operation. The register is replaced by logic.
+<msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">MicroInstructionAddrTable1&lt;45&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
 </msg>
 
-<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">MicroInstructionAddrTable1&lt;44&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
+<msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">MicroInstructionAddrTable1&lt;46&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
 </msg>
 
-<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">MicroInstructionAddrTable1&lt;45&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
+<msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">MicroInstructionAddrTable1&lt;47&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
 </msg>
 
-<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">MicroInstructionAddrTable1&lt;46&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
+<msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">MicroInstructionAddrTable1&lt;48&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
 </msg>
 
-<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">MicroInstructionAddrTable1&lt;47&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
+<msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">MicroInstructionAddrTable1&lt;49&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
 </msg>
 
-<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">MicroInstructionAddrTable1&lt;48&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
+<msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">MicroInstructionAddrTable1&lt;50&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
 </msg>
 
-<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">MicroInstructionAddrTable1&lt;49&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
+<msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">MicroInstructionAddrTable1&lt;51&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
 </msg>
 
-<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">MicroInstructionAddrTable1&lt;50&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
+<msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">MicroInstructionAddrTable1&lt;52&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
 </msg>
 
-<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">MicroInstructionAddrTable1&lt;51&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
+<msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">MicroInstructionAddrTable1&lt;53&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
 </msg>
 
-<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">MicroInstructionAddrTable1&lt;52&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
+<msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">MicroInstructionAddrTable1&lt;54&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
 </msg>
 
-<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">MicroInstructionAddrTable1&lt;53&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
+<msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">MicroInstructionAddrTable1&lt;55&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
 </msg>
 
-<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">MicroInstructionAddrTable1&lt;54&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
+<msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">MicroInstructionAddrTable1&lt;56&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
 </msg>
 
-<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">MicroInstructionAddrTable1&lt;55&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
+<msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">MicroInstructionAddrTable1&lt;57&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
 </msg>
 
-<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">MicroInstructionAddrTable1&lt;56&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
+<msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">MicroInstructionAddrTable1&lt;58&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
 </msg>
 
-<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">MicroInstructionAddrTable1&lt;57&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
+<msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">MicroInstructionAddrTable1&lt;59&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
 </msg>
 
-<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">MicroInstructionAddrTable1&lt;58&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
+<msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">MicroInstructionAddrTable1&lt;60&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
 </msg>
 
-<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">MicroInstructionAddrTable1&lt;59&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
+<msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">MicroInstructionAddrTable1&lt;61&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
 </msg>
 
-<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">MicroInstructionAddrTable1&lt;60&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
+<msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">MicroInstructionAddrTable1&lt;62&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
 </msg>
 
-<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">MicroInstructionAddrTable1&lt;61&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
+<msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">MicroInstructionAddrTable1&lt;63&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
 </msg>
 
-<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">MicroInstructionAddrTable1&lt;62&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
+<msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">MicroInstructionAddrTable2&lt;0&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00010000</arg> during circuit operation. The register is replaced by logic.
 </msg>
 
-<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">MicroInstructionAddrTable1&lt;63&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
+<msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">MicroInstructionAddrTable2&lt;1&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00010011</arg> during circuit operation. The register is replaced by logic.
 </msg>
 
-<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">MicroInstructionAddrTable2&lt;0&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00010000</arg> during circuit operation. The register is replaced by logic.
+<msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">MicroInstructionAddrTable2&lt;2&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00010110</arg> during circuit operation. The register is replaced by logic.
 </msg>
 
-<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">MicroInstructionAddrTable2&lt;1&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00010011</arg> during circuit operation. The register is replaced by logic.
+<msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">MicroInstructionAddrTable2&lt;3&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
 </msg>
 
-<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">MicroInstructionAddrTable2&lt;2&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00010110</arg> during circuit operation. The register is replaced by logic.
+<msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">MicroInstructionAddrTable2&lt;4&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00001101</arg> during circuit operation. The register is replaced by logic.
 </msg>
 
-<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">MicroInstructionAddrTable2&lt;3&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
+<msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">MicroInstructionAddrTable2&lt;5&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
 </msg>
 
-<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">MicroInstructionAddrTable2&lt;4&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00001101</arg> during circuit operation. The register is replaced by logic.
+<msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">MicroInstructionAddrTable2&lt;6&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000111</arg> during circuit operation. The register is replaced by logic.
 </msg>
 
-<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">MicroInstructionAddrTable2&lt;5&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
+<msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">MicroInstructionAddrTable2&lt;7&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
 </msg>
 
-<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">MicroInstructionAddrTable2&lt;6&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000111</arg> during circuit operation. The register is replaced by logic.
+<msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">MicroInstructionAddrTable2&lt;8&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00001100</arg> during circuit operation. The register is replaced by logic.
 </msg>
 
-<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">MicroInstructionAddrTable2&lt;7&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
+<msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">MicroInstructionAddrTable2&lt;9&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
 </msg>
 
-<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">MicroInstructionAddrTable2&lt;8&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00001100</arg> during circuit operation. The register is replaced by logic.
+<msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">MicroInstructionAddrTable2&lt;10&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00001100</arg> during circuit operation. The register is replaced by logic.
 </msg>
 
-<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">MicroInstructionAddrTable2&lt;9&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
+<msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">MicroInstructionAddrTable2&lt;11&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00001100</arg> during circuit operation. The register is replaced by logic.
 </msg>
 
-<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">MicroInstructionAddrTable2&lt;10&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00001100</arg> during circuit operation. The register is replaced by logic.
+<msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">MicroInstructionAddrTable2&lt;12&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
 </msg>
 
-<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">MicroInstructionAddrTable2&lt;11&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00001100</arg> during circuit operation. The register is replaced by logic.
+<msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">MicroInstructionAddrTable2&lt;13&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
 </msg>
 
-<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">MicroInstructionAddrTable2&lt;12&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
+<msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">MicroInstructionAddrTable2&lt;14&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00001100</arg> during circuit operation. The register is replaced by logic.
 </msg>
 
-<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">MicroInstructionAddrTable2&lt;13&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
+<msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">MicroInstructionAddrTable2&lt;15&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
 </msg>
 
-<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">MicroInstructionAddrTable2&lt;14&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00001100</arg> during circuit operation. The register is replaced by logic.
+<msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">MicroInstructionAddrTable2&lt;16&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
 </msg>
 
-<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">MicroInstructionAddrTable2&lt;15&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
+<msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">MicroInstructionAddrTable2&lt;17&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
 </msg>
 
-<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">MicroInstructionAddrTable2&lt;16&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
+<msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">MicroInstructionAddrTable2&lt;18&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
 </msg>
 
-<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">MicroInstructionAddrTable2&lt;17&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
+<msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">MicroInstructionAddrTable2&lt;19&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
 </msg>
 
-<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">MicroInstructionAddrTable2&lt;18&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
+<msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">MicroInstructionAddrTable2&lt;20&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
 </msg>
 
-<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">MicroInstructionAddrTable2&lt;19&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
+<msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">MicroInstructionAddrTable2&lt;21&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
 </msg>
 
-<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">MicroInstructionAddrTable2&lt;20&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
+<msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">MicroInstructionAddrTable2&lt;22&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
 </msg>
 
-<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">MicroInstructionAddrTable2&lt;21&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
+<msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">MicroInstructionAddrTable2&lt;23&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
 </msg>
 
-<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">MicroInstructionAddrTable2&lt;22&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
+<msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">MicroInstructionAddrTable2&lt;24&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
 </msg>
 
-<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">MicroInstructionAddrTable2&lt;23&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
+<msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">MicroInstructionAddrTable2&lt;25&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
 </msg>
 
-<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">MicroInstructionAddrTable2&lt;24&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
+<msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">MicroInstructionAddrTable2&lt;26&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
 </msg>
 
-<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">MicroInstructionAddrTable2&lt;25&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
+<msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">MicroInstructionAddrTable2&lt;27&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
 </msg>
 
-<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">MicroInstructionAddrTable2&lt;26&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
+<msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">MicroInstructionAddrTable2&lt;28&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
 </msg>
 
-<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">MicroInstructionAddrTable2&lt;27&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
+<msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">MicroInstructionAddrTable2&lt;29&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
 </msg>
 
-<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">MicroInstructionAddrTable2&lt;28&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
+<msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">MicroInstructionAddrTable2&lt;30&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
 </msg>
 
-<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">MicroInstructionAddrTable2&lt;29&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
+<msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">MicroInstructionAddrTable2&lt;31&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
 </msg>
 
-<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">MicroInstructionAddrTable2&lt;30&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
+<msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">MicroInstructionAddrTable2&lt;32&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
 </msg>
 
-<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">MicroInstructionAddrTable2&lt;31&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
+<msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">MicroInstructionAddrTable2&lt;33&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
 </msg>
 
-<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">MicroInstructionAddrTable2&lt;32&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
+<msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">MicroInstructionAddrTable2&lt;34&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
 </msg>
 
-<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">MicroInstructionAddrTable2&lt;33&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
+<msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">MicroInstructionAddrTable2&lt;35&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
 </msg>
 
-<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">MicroInstructionAddrTable2&lt;34&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
+<msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">MicroInstructionAddrTable2&lt;36&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
 </msg>
 
-<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">MicroInstructionAddrTable2&lt;35&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
+<msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">MicroInstructionAddrTable2&lt;37&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
 </msg>
 
-<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">MicroInstructionAddrTable2&lt;36&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
+<msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">MicroInstructionAddrTable2&lt;38&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
 </msg>
 
-<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">MicroInstructionAddrTable2&lt;37&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
+<msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">MicroInstructionAddrTable2&lt;39&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
 </msg>
 
-<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">MicroInstructionAddrTable2&lt;38&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
+<msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">MicroInstructionAddrTable2&lt;40&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
 </msg>
 
-<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">MicroInstructionAddrTable2&lt;39&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
+<msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">MicroInstructionAddrTable2&lt;41&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
 </msg>
 
-<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">MicroInstructionAddrTable2&lt;40&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
+<msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">MicroInstructionAddrTable2&lt;42&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
 </msg>
 
-<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">MicroInstructionAddrTable2&lt;41&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
+<msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">MicroInstructionAddrTable2&lt;43&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
 </msg>
 
-<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">MicroInstructionAddrTable2&lt;42&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
+<msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">MicroInstructionAddrTable2&lt;44&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
 </msg>
 
-<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">MicroInstructionAddrTable2&lt;43&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
+<msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">MicroInstructionAddrTable2&lt;45&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
 </msg>
 
-<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">MicroInstructionAddrTable2&lt;44&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
+<msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">MicroInstructionAddrTable2&lt;46&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
 </msg>
 
-<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">MicroInstructionAddrTable2&lt;45&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
+<msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">MicroInstructionAddrTable2&lt;47&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
 </msg>
 
-<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">MicroInstructionAddrTable2&lt;46&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
+<msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">MicroInstructionAddrTable2&lt;48&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
 </msg>
 
-<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">MicroInstructionAddrTable2&lt;47&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
+<msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">MicroInstructionAddrTable2&lt;49&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
 </msg>
 
-<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">MicroInstructionAddrTable2&lt;48&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
+<msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">MicroInstructionAddrTable2&lt;50&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
 </msg>
 
-<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">MicroInstructionAddrTable2&lt;49&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
+<msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">MicroInstructionAddrTable2&lt;51&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
 </msg>
 
-<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">MicroInstructionAddrTable2&lt;50&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
+<msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">MicroInstructionAddrTable2&lt;52&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
 </msg>
 
-<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">MicroInstructionAddrTable2&lt;51&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
+<msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">MicroInstructionAddrTable2&lt;53&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00100011</arg> during circuit operation. The register is replaced by logic.
 </msg>
 
-<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">MicroInstructionAddrTable2&lt;52&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
+<msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">MicroInstructionAddrTable2&lt;54&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
 </msg>
 
-<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">MicroInstructionAddrTable2&lt;53&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00100011</arg> during circuit operation. The register is replaced by logic.
+<msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">MicroInstructionAddrTable2&lt;55&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
 </msg>
 
-<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">MicroInstructionAddrTable2&lt;54&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
+<msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">MicroInstructionAddrTable2&lt;56&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
 </msg>
 
-<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">MicroInstructionAddrTable2&lt;55&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
+<msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">MicroInstructionAddrTable2&lt;57&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
 </msg>
 
-<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">MicroInstructionAddrTable2&lt;56&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
+<msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">MicroInstructionAddrTable2&lt;58&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
 </msg>
 
-<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">MicroInstructionAddrTable2&lt;57&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
+<msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">MicroInstructionAddrTable2&lt;59&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
 </msg>
 
-<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">MicroInstructionAddrTable2&lt;58&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
+<msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">MicroInstructionAddrTable2&lt;60&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
 </msg>
 
-<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">MicroInstructionAddrTable2&lt;59&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
+<msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">MicroInstructionAddrTable2&lt;61&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00011111</arg> during circuit operation. The register is replaced by logic.
 </msg>
 
-<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">MicroInstructionAddrTable2&lt;60&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
+<msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">MicroInstructionAddrTable2&lt;62&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
 </msg>
 
-<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">MicroInstructionAddrTable2&lt;61&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00011111</arg> during circuit operation. The register is replaced by logic.
+<msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">MicroInstructionAddrTable2&lt;63&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
 </msg>
 
-<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">MicroInstructionAddrTable2&lt;62&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
+<msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">ready</arg>&gt; in unit &lt;<arg fmt="%s" index="2">SRAM</arg>&gt; has a constant value of <arg fmt="%s" index="3">1</arg> during circuit operation. The register is replaced by logic.
 </msg>
 
-<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">MicroInstructionAddrTable2&lt;63&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">CU</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
+<msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">ready</arg>&gt; in unit &lt;<arg fmt="%s" index="2">SRAM</arg>&gt; has a constant value of <arg fmt="%s" index="3">1</arg> during circuit operation. The register is replaced by logic.
 </msg>
 
-<msg type="warning" file="Xst" num="819" delta="old" >&quot;<arg fmt="%s" index="1">E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/Register32.vhd</arg>&quot; line <arg fmt="%d" index="2">24</arg>: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+<msg type="warning" file="Xst" num="819" delta="new" >&quot;<arg fmt="%s" index="1">E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/Register32.vhd</arg>&quot; line <arg fmt="%d" index="2">25</arg>: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
 <arg fmt="%s" index="3">&lt;storage&gt;</arg>
 </msg>
 
-<msg type="warning" file="Xst" num="819" delta="old" >&quot;<arg fmt="%s" index="1">E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/PC_Adder.vhd</arg>&quot; line <arg fmt="%d" index="2">42</arg>: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+<msg type="warning" file="Xst" num="819" delta="new" >&quot;<arg fmt="%s" index="1">E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/PC_Adder.vhd</arg>&quot; line <arg fmt="%d" index="2">42</arg>: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
 <arg fmt="%s" index="3">&lt;add_num&gt;</arg>
 </msg>
 
-<msg type="warning" file="Xst" num="1780" delta="old" >Signal &lt;<arg fmt="%s" index="1">zero_vector</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">opcode_ready</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 </msg>
 
-<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">address&lt;31:8&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+<msg type="warning" file="Xst" num="1780" delta="new" >Signal &lt;<arg fmt="%s" index="1">zero_vector</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">add_num</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">00000000000000000000000000000001</arg>.
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">address&lt;31:8&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 </msg>
 
-<msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">addrMerge</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">00000000000000000000000000000000</arg>.
+<msg type="warning" file="Xst" num="653" delta="new" >Signal &lt;<arg fmt="%s" index="1">add_num</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">00000000000000000000000000000001</arg>.
 </msg>
 
-<msg type="warning" file="Xst" num="646" delta="old" >Signal &lt;<arg fmt="%s" index="1">PCLow</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">imme&lt;31:28&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 </msg>
 
-<msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">MEMready</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">0</arg>.
+<msg type="warning" file="Xst" num="646" delta="new" >Signal &lt;<arg fmt="%s" index="1">PCLow</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">C_VCC</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">1</arg>.
+<msg type="warning" file="Xst" num="653" delta="new" >Signal &lt;<arg fmt="%s" index="1">C_VCC</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">1</arg>.
 </msg>
 
-<msg type="warning" file="Xst" num="1780" delta="old" >Signal &lt;<arg fmt="%s" index="1">C_GND</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="653" delta="new" >Signal &lt;<arg fmt="%s" index="1">C_GND</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">0</arg>.
 </msg>
 
-<msg type="warning" file="Xst" num="1780" delta="old" >Signal &lt;<arg fmt="%s" index="1">CUControl&lt;31:28&gt;</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="653" delta="new" >Signal &lt;<arg fmt="%s" index="1">CUOpcodeReady</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">0</arg>.
 </msg>
 
-<msg type="info" file="Xst" num="1767" delta="old" >HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+<msg type="warning" file="Xst" num="1780" delta="new" >Signal &lt;<arg fmt="%s" index="1">CUControl&lt;31:28&gt;</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">0</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">3</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="info" file="Xst" num="1767" delta="new" >HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
 </msg>
 
-<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">0</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">4</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">0</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">0</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">0</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">19</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">0</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">25</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">0</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">20</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">0</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">28</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">0</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">28</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">0</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">29</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">0</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">29</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1290" delta="new" >Hierarchical block &lt;<arg fmt="%s" index="1">Shamt_Ext</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">Computer</arg>&gt;.
+It will be removed from the design.
 </msg>
 
-<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">alu_op_4</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">CU</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
-<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">alu_op_3</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">CU</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">LB_data_select_0</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">CU</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
 <msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">test_Miinstruct_29</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">CU</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
@@ -661,10 +659,10 @@
 <msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">test_Miinstruct_28</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">CU</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">test_Miinstruct_20</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">CU</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">test_Miinstruct_25</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">CU</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">test_Miinstruct_19</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">CU</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1348" delta="new" >Unit <arg fmt="%s" index="1">ALU</arg> is merged (output interface has tristates)
 </msg>
 
 <msg type="warning" file="Xst" num="1348" delta="new" >Unit <arg fmt="%s" index="1">TriState</arg> is merged (output interface has tristates)
@@ -677,6 +675,10 @@
 </msg>
 
 <msg type="warning" file="Xst" num="2183" delta="new" >Unit <arg fmt="%s" index="1">Computer</arg>: the following tristate(s) are NOT replaced by logic (Please refer to Answer Record 20048 for more information): </msg>
+
+<msg type="warning" file="Xst" num="1290" delta="new" >Hierarchical block &lt;<arg fmt="%s" index="1">PCHigh4Extender</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">Computer</arg>&gt;.
+It will be removed from the design.
+</msg>
 
 <msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">test_opcode_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">CentralCU</arg>&gt;.
 </msg>
@@ -696,22 +698,8 @@
 <msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">test_opcode_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">CentralCU</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">test_MCounter_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">CentralCU</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">test_MCounter_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">CentralCU</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">test_MCounter_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">CentralCU</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">test_MCounter_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">CentralCU</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">test_MCounter_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">CentralCU</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">test_MCounter_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">CentralCU</arg>&gt;.
+<msg type="warning" file="Xst" num="1290" delta="new" >Hierarchical block &lt;<arg fmt="%s" index="1">Shamt_Ext</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">Computer</arg>&gt;.
+It will be removed from the design.
 </msg>
 
 </messages>

@@ -113,7 +113,6 @@ architecture Behavioral of Computer is
     PORT(
          data_in : IN  std_logic_vector(31 downto 0);
          data_out : OUT  std_logic_vector(31 downto 0);
-			opcode_ready : out std_logic;
          WE : IN  std_logic;
 			OE : in std_logic; -- 输出使能
          clk : IN  std_logic
@@ -154,7 +153,7 @@ architecture Behavioral of Computer is
     PORT(
          data_adder4 : IN  std_logic_vector(31 downto 0);
          data_bus : IN  std_logic_vector(31 downto 0);
-         data_addr_merge : IN  std_logic_vector(31 downto 0);
+         data_addr_merge, data_BEQ : IN  std_logic_vector(31 downto 0);
          data_out : OUT  std_logic_vector(31 downto 0);
          data_select : IN  std_logic_vector(1 downto 0)
         );
@@ -256,7 +255,14 @@ architecture Behavioral of Computer is
          data_select : IN  std_logic
         );
     END COMPONENT;
-
+	 -- BEQ PC地址加法器
+	 COMPONENT BEQ_Hardware
+    PORT(
+         pc_value : IN  std_logic_vector(31 downto 0);
+         imme : IN  std_logic_vector(31 downto 0);
+         pc_new : OUT  std_logic_vector(31 downto 0)
+        );
+    END COMPONENT;
 	 -- 定义公共信号
 	 signal MainBus : std_logic_vector(31 downto 0) := (others => '0'); -- 总线
 	 signal C_VCC : std_logic := '1'; -- 默认高电平
@@ -484,7 +490,12 @@ architecture Behavioral of Computer is
 	 -- bus
 	 -- MDR_data_select
 	 
-	 
+	 -- BEQ Hardware
+	 -- 输出
+	 signal BEQOut : std_logic_vector(31 downto 0);
+	 -- 输入
+	 -- PCDataOut
+	 -- Imme32
 	 
 	 -- 定义初始化时钟
 	 signal BootCLK : std_logic := '0';
@@ -586,8 +597,7 @@ begin
 			WE => CUControl(2),
 			OE => C_VCC,
 			-- 输出端口
-			data_out => IRDataOut,
-			opcode_ready => CUOpcodeReady
+			data_out => IRDataOut
 		);
 	LA_Reg : Register32 port map(
 			-- 输入端口
@@ -655,6 +665,7 @@ begin
 			data_adder4 => PCAdderDataOut,
 			data_bus => MainBus,
 			data_addr_merge => addrMerge,
+			data_BEQ => BEQOut,
 			data_select => CUControl(24 downto 23),
 			-- 输出信号
 			data_out => PCDataIn
@@ -773,6 +784,11 @@ begin
 			data_select => CUControl(10),
 			-- 输出端口
 			data_out => MDRDataIn
+		);
+	BEQHardware : BEQ_Hardware port map(
+			pc_value => PCDataOut,
+			imme => Imme32,
+			pc_new => BEQOut
 		);
 	
 	-- 指令输入过程
