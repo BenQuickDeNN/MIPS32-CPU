@@ -43,6 +43,7 @@ ARCHITECTURE behavior OF testRegister32 IS
     PORT(
          data_in : IN  std_logic_vector(31 downto 0);
          data_out : OUT  std_logic_vector(31 downto 0);
+			opcode_ready : out std_logic;-- 操作码准备好（IR寄存器）
          WE : IN  std_logic;
 			OE : in std_logic; -- 输出使能
          clk : IN  std_logic
@@ -57,6 +58,7 @@ ARCHITECTURE behavior OF testRegister32 IS
 	signal OE : std_logic; -- 输出使能
  	--Outputs
    signal data_out : std_logic_vector(31 downto 0);
+	signal opcode_ready : std_logic;
 
    -- Clock period definitions
    constant clk_period : time := 10 ns;
@@ -67,6 +69,7 @@ BEGIN
    uut: Register32 PORT MAP (
           data_in => data_in,
           data_out => data_out,
+			 opcode_ready => opcode_ready,
           WE => WE,
 			 OE => OE,
           clk => clk

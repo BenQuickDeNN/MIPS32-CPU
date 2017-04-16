@@ -265,11 +265,11 @@
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForProperties"/>
     </transform>
-    <transform xil_pn:end_ts="1492270842" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1492270842">
+    <transform xil_pn:end_ts="1492319864" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1492319864">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1492311646" xil_pn:in_ck="-7485373698308121275" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1492311646">
+    <transform xil_pn:end_ts="1492321592" xil_pn:in_ck="-7485373698308121275" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1492321592">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="Instruction_Seperator.vhd"/>
@@ -318,11 +318,11 @@
       <outfile xil_pn:name="testMUX_Reg.vhd"/>
       <outfile xil_pn:name="testRF.vhd"/>
     </transform>
-    <transform xil_pn:end_ts="1492311118" xil_pn:in_ck="-8976754647023043861" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="3682433518378203021" xil_pn:start_ts="1492311117">
+    <transform xil_pn:end_ts="1492319866" xil_pn:in_ck="-8976754647023043861" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="3682433518378203021" xil_pn:start_ts="1492319864">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1492311649" xil_pn:in_ck="-7485373698308121275" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1492311649">
+    <transform xil_pn:end_ts="1492321595" xil_pn:in_ck="-7485373698308121275" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1492321595">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="Instruction_Seperator.vhd"/>
@@ -371,9 +371,11 @@
       <outfile xil_pn:name="testMUX_Reg.vhd"/>
       <outfile xil_pn:name="testRF.vhd"/>
     </transform>
-    <transform xil_pn:end_ts="1492311654" xil_pn:in_ck="-7485373698308121275" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="1591366848068611396" xil_pn:start_ts="1492311649">
+    <transform xil_pn:end_ts="1492321600" xil_pn:in_ck="-7485373698308121275" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="1591366848068611396" xil_pn:start_ts="1492321595">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="fuse.log"/>
       <outfile xil_pn:name="isim"/>
       <outfile xil_pn:name="isim.log"/>
@@ -381,7 +383,7 @@
       <outfile xil_pn:name="testComputer_isim_beh.exe"/>
       <outfile xil_pn:name="xilinxsim.ini"/>
     </transform>
-    <transform xil_pn:end_ts="1492311654" xil_pn:in_ck="-1725907967583474119" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="4406621556007590065" xil_pn:start_ts="1492311654">
+    <transform xil_pn:end_ts="1492321777" xil_pn:in_ck="-1725907967583474119" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="4406621556007590065" xil_pn:start_ts="1492321777">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="isim.cmd"/>

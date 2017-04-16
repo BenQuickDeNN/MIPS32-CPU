@@ -5,7 +5,7 @@ use ieee.std_logic_unsigned.all;
 use ieee.std_logic_arith.all;
 entity RegistersField is
 	port(W_data:in std_logic_vector(31 downto 0);-- 写入数据
-			R_data:out std_logic_vector(31 downto 0);-- 读出数据
+			R_data, test_data :out std_logic_vector(31 downto 0);-- 读出数据
 			WE:in std_logic;-- 写入使能
 			OE:in std_logic;-- 输出使能
 			clk:in std_logic;-- 时钟信号
@@ -19,6 +19,7 @@ architecture behav of RegistersField is
 	type register_space is array(0 to 31) of word;
 	signal register_space_32: register_space;
 	begin
+	test_data <= register_space_32(0);
 	writePro : process(WE, Reg_addr, clk)
 		begin
 		if (WE = '1') then

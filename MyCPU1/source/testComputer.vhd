@@ -47,8 +47,8 @@ ARCHITECTURE behavior OF testComputer IS
          InstructionDone : OUT  std_logic;
 			-- µ÷ÊÔÊä³ö¶Ë¿Ú
 			debug_memData, debug_memAddr, debug_PCData, debug_IRData, debug_BUSData : out std_logic_vector(31 downto 0);
-			debug_microInstruc : out std_logic_vector(31 downto 0);
-			debug_CUOPcode : out std_logic_vector(5 downto 0);
+			debug_microInstruc, debug_MDRData, debug_RFtest : out std_logic_vector(31 downto 0);
+			debug_CUOPcode, debug_ALUFunc, debug_mcounter : out std_logic_vector(5 downto 0);
 			debug_AddrTable1 : out std_logic_vector(7 downto 0)
         );
     END COMPONENT;
@@ -62,8 +62,8 @@ ARCHITECTURE behavior OF testComputer IS
  	--Outputs
    signal InstructionDone : std_logic;
 	signal debug_memData, debug_memAddr, debug_PCData ,debug_IRData, debug_BUSData : std_logic_vector(31 downto 0);
-	signal debug_microInstruc : std_logic_vector(31 downto 0);
-	signal debug_CUOPcode : std_logic_vector(5 downto 0);
+	signal debug_microInstruc, debug_MDRData, debug_RFtest : std_logic_vector(31 downto 0);
+	signal debug_CUOPcode, debug_ALUFunc, debug_mcounter : std_logic_vector(5 downto 0);
 	signal debug_AddrTable1 : std_logic_vector(7 downto 0);
 
    -- Clock period definitions
@@ -84,8 +84,12 @@ BEGIN
 			 debug_IRData => debug_IRData,
 			 debug_BUSData => debug_BUSData,
 			 debug_microInstruc => debug_microInstruc,
+			 debug_MDRData => debug_MDRData,
+			 debug_RFtest => debug_RFtest,
 			 debug_CUOPcode => debug_CUOPcode,
-			 debug_AddrTable1 => debug_AddrTable1
+			 debug_ALUFunc => debug_ALUFunc,
+			 debug_AddrTable1 => debug_AddrTable1,
+			 debug_mcounter => debug_mcounter
         );
 
    -- Clock process definitions

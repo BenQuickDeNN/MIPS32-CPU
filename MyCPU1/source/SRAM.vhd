@@ -40,13 +40,15 @@ begin
 		elsif (write1 = '1' and boot = '0') then
 				if (cs = '1') then
 					if (clk = '1' and clk'event) then
+						ready <= '0';
 						memory_space_256(conv_integer(address(7 downto 0))) <= data_in;
+						ready <= '1';
 					end if;
 				end if;
 		end if;
 	end process pushInstructionPro;
 
-	ready <= '1';
+	--ready <= '1';
 	test_data_out <= memory_space_256(0);
 	
 	
@@ -56,7 +58,9 @@ begin
 		if(read1 = '1') then
 			if (oe = '1') then
 				if (cs = '1') then
+					ready <= '0';
 					data_out <= memory_space_256(conv_integer(address(7 downto 0)));
+					ready <= '1';
 				else
 					data_out <= "ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ";
 				end if;

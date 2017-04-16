@@ -13,7 +13,7 @@ entity CU is
 			flag_zero:in std_logic;-- 结果状态输入
 			initiation, pro_run :in std_logic;-- 初始化信号
 			instruction_done:out std_logic;-- 指令完成信号
-			mem_ready:in std_logic;-- 记忆体是否已准备好
+			mem_ready, opcode_ready :in std_logic;-- 记忆体是否已准备好
 			test_MCounter : OUT std_logic_vector(5 downto 0);
 			test_opcode: out std_logic_vector(5 downto 0); 
 			test_Miinstruct : OUT std_logic_vector(31 downto 0);
@@ -123,7 +123,7 @@ architecture behav of CU is
 	
 	--test_Miinstruct <= MicroInstructionROM(conv_integer(InstructionAddress));
 	
-	ControlProcess : process(CLK, initiation, pro_run)
+	ControlProcess : process(CLK, initiation, pro_run, opcode_ready, mem_ready)
 		begin
 			if(CLK = '1' and CLK'event and initiation = '0' and pro_run = '1') then
 				instruction_done <= '0';
@@ -170,11 +170,15 @@ architecture behav of CU is
 							instruction_done <= '1';
 						end if;
 					when "10" =>
-						InstructionAddress <= MicroInstructionAddrTable1(conv_integer(opcode))(5 downto 0);
+						if(not (opcode = "111111")) then
+							InstructionAddress <= MicroInstructionAddrTable1(conv_integer(opcode))(5 downto 0) + "000010";
+						end if;
 					when "11" =>
-						InstructionAddress <= MicroInstructionAddrTable2(conv_integer(InstructionAddress xor opcode))(5 downto 0);
+						if(not (opcode = "111111"))then
+							InstructionAddress <= MicroInstructionAddrTable2(conv_integer((InstructionAddress - "000010") xor opcode))(5 downto 0) + "000010";
+						end if;
 					when others =>
-						if (InstructionAddress = "000010" or InstructionAddress = "011111") and mem_ready = '0' then
+						if (InstructionAddress = "00010" or InstructionAddress = "100001") and mem_ready = '0' then
 							-- 读取内存，等待内存准备好
 							-- do nothing
 						elsif (opcode = "000100") then

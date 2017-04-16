@@ -5,7 +5,8 @@ use ieee.std_logic_unsigned.all;
 use ieee.std_logic_arith.all;
 entity Register32 is
 	port(data_in:in std_logic_vector(31 downto 0);
-			data_out:out std_logic_vector(31 downto 0);
+			data_out : out std_logic_vector(31 downto 0);
+			opcode_ready : out std_logic;-- 操作码准备好（IR寄存器专用）
 			WE:in std_logic;-- 写入使能
 			OE : in std_logic; -- 输出使能
 			clk:in std_logic);
@@ -15,9 +16,18 @@ architecture behav of Register32 is
 	begin
 	writePro : process(WE, clk)
 		begin
-		if (WE = '1') then
-			if (clk = '1' and clk'event) then
+		if (WE = '1' and WE'event) then
+			opcode_ready <= '0';
+		end if;
+		if (clk = '1' and clk'event) then
+			if(WE = '1')then
 				storage <= data_in;
+			end if;
+		else
+			if(WE = '1')then
+				opcode_ready <= '0';
+			else
+				opcode_ready <= '1';
 			end if;
 		end if;
 	end process;

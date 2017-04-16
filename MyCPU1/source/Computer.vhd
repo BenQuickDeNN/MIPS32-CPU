@@ -38,8 +38,8 @@ entity Computer is
 			InstructionDone : out std_logic;
 			-- 调试输出端口
 			debug_memData, debug_memAddr, debug_PCData, debug_IRData, debug_BUSData : out std_logic_vector(31 downto 0);
-			debug_microInstruc : out std_logic_vector(31 downto 0);
-			debug_CUOPcode : out std_logic_vector(5 downto 0);
+			debug_microInstruc, debug_MDRData, debug_RFtest : out std_logic_vector(31 downto 0);
+			debug_CUOPcode,debug_ALUFunc, debug_mcounter : out std_logic_vector(5 downto 0);
 			debug_AddrTable1 : out std_logic_vector(7 downto 0));
 end Computer;
 
@@ -54,11 +54,11 @@ architecture Behavioral of Computer is
          initiation, pro_run : IN  std_logic;
 			test_MCounter : OUT std_logic_vector(5 downto 0);
 			test_opcode: out std_logic_vector(5 downto 0);
-			--test_Miinstruct : OUT std_logic_vector(31 downto 0);
-			test_ROM_out : out std_logic_vector(31 downto 0);
+			test_Miinstruct : OUT std_logic_vector(31 downto 0);
+			--test_ROM_out : out std_logic_vector(31 downto 0);
 			test_AddrTable1 : out std_logic_vector(7 downto 0);
          instruction_done : OUT  std_logic;
-         mem_ready : IN  std_logic;
+         mem_ready, opcode_ready : IN  std_logic;
          write_PC : OUT  std_logic;
          allow_PC_BUS : OUT  std_logic;
          write_IR : OUT  std_logic;
@@ -112,6 +112,7 @@ architecture Behavioral of Computer is
     PORT(
          data_in : IN  std_logic_vector(31 downto 0);
          data_out : OUT  std_logic_vector(31 downto 0);
+			opcode_ready : out std_logic;
          WE : IN  std_logic;
 			OE : in std_logic; -- 输出使能
          clk : IN  std_logic
@@ -220,7 +221,7 @@ architecture Behavioral of Computer is
 	 COMPONENT RegistersField
     PORT(
          W_data : IN  std_logic_vector(31 downto 0);
-         R_data : OUT  std_logic_vector(31 downto 0);
+         R_data, test_data : OUT  std_logic_vector(31 downto 0);
          WE : IN  std_logic;
          OE : IN  std_logic;
          clk : IN  std_logic;
@@ -258,6 +259,7 @@ architecture Behavioral of Computer is
 	 -- CU输入信号
 	 signal MEMready : std_logic;-- 内存准备好
 	 signal CUOpcode : std_logic_vector(5 downto 0);-- 指令操作码部分
+	 signal CUOpcodeReady : std_logic;
 	 signal ALUFlag_Zero : std_logic; -- 结果0标志
 	 
 	 -- ALU信号
@@ -486,8 +488,11 @@ begin
 	-- debug_memData <= MEMDataIn;
 	debug_IRData <= IRDataOut;
 	debug_BUSData <= MainBus;
-	-- debug_microInstruc <= CUControl;
+	--debug_microInstruc <= CUControl;
 	debug_CUOPcode <= CUOPcode;
+	debug_ALUFunc <= ALUFunc;
+	debug_MDRData <= MDRDataIn;
+	--debug_RFtest <= ALUResult;
 	-- 中央控制器
 	CentralCU : CU port map(
 			-- 输入端口
@@ -497,13 +502,14 @@ begin
          initiation => initiation,
 			pro_run => pro_run,
 			mem_ready => MEMready,
-			--test_MCounter,
+			opcode_ready => CUOpcodeReady,
+			test_MCounter => debug_mcounter,
 			--test_opcode,
-			test_ROM_out => debug_microInstruc,
+			--test_ROM_out => debug_microInstruc,
 			test_AddrTable1 => debug_AddrTable1,
 			-- 输出端口
          instruction_done => InstructionDone,
-			--test_Miinstruct => debug_microInstruc,
+			test_Miinstruct => debug_microInstruc,
          -- 微命令输出端口
          write_PC => CUControl(0),
          allow_PC_BUS => CUControl(1),
@@ -568,7 +574,8 @@ begin
 			WE => CUControl(2),
 			OE => C_VCC,
 			-- 输出端口
-			data_out => IRDataOut
+			data_out => IRDataOut,
+			opcode_ready => CUOpcodeReady
 		);
 	LA_Reg : Register32 port map(
 			-- 输入端口
@@ -730,7 +737,8 @@ begin
 			clk => CLK,
 			Reg_addr => RegAddr,
 			-- 输出端口
-			R_data => MainBus
+			R_data => MainBus,
+			test_data => debug_RFtest
 		);
 	MUXReg : MUX_Reg port map(
 			-- 输入端口
