@@ -28,7 +28,7 @@ Parsing VHDL file "E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/testComputer.vhd" i
 Starting static elaboration
 Completed static elaboration
 Fuse Memory Usage: 157624 KB
-Fuse CPU Usage: 374 ms
+Fuse CPU Usage: 343 ms
 Compiling package standard
 Compiling package std_logic_1164
 Compiling package std_logic_arith
@@ -62,4 +62,4 @@ Waiting for 20 sub-compilation(s) to finish...
 Compiled 49 VHDL Units
 Built simulation executable E:/projects/VHDL/MyCPU1_ISE/MyCPU1/testComputer_isim_beh.exe
 Fuse Memory Usage: 182036 KB
-Fuse CPU Usage: 703 ms
+Fuse CPU Usage: 687 ms

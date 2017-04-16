@@ -1,3 +1,4 @@
+EN pcmerger NULL E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/PCMerger.vhd sub00/vhpl52 1492336913
 EN mux_alu_op NULL E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/Mux_ALU_OP.vhd sub00/vhpl28 1492267820
 AR oprand_seperator behavioral E:/projects/VHDL/MyCPU1_ISE/MyCPU1/Oprand_Seperator.vhd sub00/vhpl23 1492267811
 EN register_32 NULL E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/Register_32.vhd sub00/vhpl16 1490439840
@@ -13,6 +14,7 @@ EN sram NULL E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/SRAM.vhd sub00/vhpl40 149
 AR registerfield behav E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/RegisterField.vhd sub00/vhpl11 1490438324
 EN mux_mdr NULL E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/Mux_MDR.vhd sub00/vhpl50 1492267826
 AR mux_alu_op behavioral E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/Mux_ALU_OP.vhd sub00/vhpl29 1492267821
+AR pcmerger behavioral E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/PCMerger.vhd sub00/vhpl53 1492336914
 EN shamtext NULL E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/ShamtExt.vhd sub00/vhpl34 1492267816
 AR mux_lb behavioral E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/Mux_LB.vhd sub00/vhpl33 1492267819
 AR shamtext behavioral E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/ShamtExt.vhd sub00/vhpl35 1492267817

@@ -58,6 +58,7 @@
         <signal name="Initiation" />
         <signal name="InstructionDone" />
         <signal name="XLXN_103(31:0)" />
+        <signal name="XLXN_121(31:0)" />
         <port polarity="Input" name="CLK" />
         <port polarity="Input" name="Initiation" />
         <port polarity="Output" name="InstructionDone" />
@@ -309,6 +310,16 @@
             <rect width="64" x="320" y="-44" height="24" />
             <line x2="384" y1="-32" y2="-32" x1="320" />
         </blockdef>
+        <blockdef name="PCMerger">
+            <timestamp>2017-4-16T10:1:59</timestamp>
+            <rect width="288" x="64" y="-128" height="128" />
+            <rect width="64" x="0" y="-108" height="24" />
+            <line x2="0" y1="-96" y2="-96" x1="64" />
+            <rect width="64" x="0" y="-44" height="24" />
+            <line x2="0" y1="-32" y2="-32" x1="64" />
+            <rect width="64" x="352" y="-108" height="24" />
+            <line x2="416" y1="-96" y2="-96" x1="352" />
+        </blockdef>
         <block symbolname="ALU" name="ALU">
             <blockpin signalname="XLXN_16(31:0)" name="alu_in_a(31:0)" />
             <blockpin signalname="XLXN_14(31:0)" name="alu_in_b(31:0)" />
@@ -395,7 +406,7 @@
         <block symbolname="Mux_PC" name="XLXI_32">
             <blockpin signalname="XLXN_48(31:0)" name="data_adder4(31:0)" />
             <blockpin signalname="BUS_Main" name="data_bus(31:0)" />
-            <blockpin name="data_addr_merge(31:0)" />
+            <blockpin signalname="XLXN_121(31:0)" name="data_addr_merge(31:0)" />
             <blockpin signalname="XLXN_80(1:0)" name="data_select(1:0)" />
             <blockpin signalname="XLXN_47(31:0)" name="data_out(31:0)" />
         </block>
@@ -496,6 +507,11 @@
             <blockpin signalname="XLXN_105(31:0)" name="data_in(31:0)" />
             <blockpin signalname="BUS_Main" name="data_out(31:0)" />
         </block>
+        <block symbolname="PCMerger" name="XLXI_49">
+            <blockpin signalname="XLXN_104(3:0)" name="pc_high(3:0)" />
+            <blockpin signalname="XLXN_41(31:0)" name="imme(31:0)" />
+            <blockpin signalname="XLXN_121(31:0)" name="pc_new(31:0)" />
+        </block>
     </netlist>
     <sheet sheetnum="1" width="7609" height="5382">
         <attr value="CM" name="LengthUnitName" />
@@ -574,9 +590,11 @@
         <instance x="1616" y="2112" name="XLXI_29" orien="R270">
         </instance>
         <branch name="XLXN_41(31:0)">
+            <wire x2="1392" y1="4352" y2="4352" x1="928" />
             <wire x2="1392" y1="2112" y2="2224" x1="1392" />
             <wire x2="1504" y1="2224" y2="2224" x1="1392" />
             <wire x2="1504" y1="2224" y2="2352" x1="1504" />
+            <wire x2="1392" y1="2224" y2="4352" x1="1392" />
         </branch>
         <instance x="1680" y="2816" name="XLXI_30" orien="R270">
         </instance>
@@ -821,7 +839,11 @@
             <wire x2="432" y1="400" y2="400" x1="288" />
             <wire x2="432" y1="400" y2="960" x1="432" />
             <wire x2="656" y1="960" y2="960" x1="432" />
+            <wire x2="656" y1="960" y2="1440" x1="656" />
+            <wire x2="1280" y1="1440" y2="1440" x1="656" />
+            <wire x2="1280" y1="1440" y2="4416" x1="1280" />
             <wire x2="656" y1="928" y2="960" x1="656" />
+            <wire x2="1280" y1="4416" y2="4416" x1="928" />
         </branch>
         <instance x="688" y="480" name="XLXI_48" orien="R270">
         </instance>
@@ -928,6 +950,14 @@
             <wire x2="624" y1="944" y2="1424" x1="624" />
             <wire x2="912" y1="944" y2="944" x1="624" />
             <wire x2="912" y1="464" y2="944" x1="912" />
+        </branch>
+        <instance x="928" y="4320" name="XLXI_49" orien="R180">
+        </instance>
+        <branch name="XLXN_121(31:0)">
+            <wire x2="448" y1="4256" y2="4416" x1="448" />
+            <wire x2="512" y1="4416" y2="4416" x1="448" />
+            <wire x2="544" y1="4256" y2="4256" x1="448" />
+            <wire x2="544" y1="1968" y2="4256" x1="544" />
         </branch>
     </sheet>
 </drawing>

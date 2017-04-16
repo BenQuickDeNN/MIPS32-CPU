@@ -142,6 +142,11 @@
     <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="PCHighExtender.sym" xil_pn:origination="imported"/>
     <file xil_pn:fileType="FILE_XST" xil_pn:name="PCHighExtender.xst"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="PCHighExtender_stx_beh.prj"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="PCMerger.prj"/>
+    <file xil_pn:fileType="FILE_SPL" xil_pn:name="PCMerger.spl"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="PCMerger.stx"/>
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="PCMerger.sym" xil_pn:origination="imported"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="PCMerger.xst"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="PCMerger_stx_beh.prj"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="PC_Adder.prj"/>
     <file xil_pn:fileType="FILE_SPL" xil_pn:name="PC_Adder.spl"/>
@@ -273,7 +278,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1492335164" xil_pn:in_ck="-3379739006263768657" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1492335164">
+    <transform xil_pn:end_ts="1492336043" xil_pn:in_ck="-3379739006263768657" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1492336043">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="Instruction_Seperator.vhd"/>
@@ -328,7 +333,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1492335166" xil_pn:in_ck="-3379739006263768657" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1492335166">
+    <transform xil_pn:end_ts="1492336045" xil_pn:in_ck="-3379739006263768657" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1492336045">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="Instruction_Seperator.vhd"/>
@@ -379,20 +384,26 @@
       <outfile xil_pn:name="testMUX_Reg.vhd"/>
       <outfile xil_pn:name="testRF.vhd"/>
     </transform>
-    <transform xil_pn:end_ts="1492335171" xil_pn:in_ck="-3379739006263768657" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="1591366848068611396" xil_pn:start_ts="1492335166">
+    <transform xil_pn:end_ts="1492336050" xil_pn:in_ck="-3379739006263768657" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="1591366848068611396" xil_pn:start_ts="1492336045">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="fuse.log"/>
       <outfile xil_pn:name="isim"/>
+      <outfile xil_pn:name="isim.log"/>
       <outfile xil_pn:name="testComputer_beh.prj"/>
       <outfile xil_pn:name="testComputer_isim_beh.exe"/>
       <outfile xil_pn:name="xilinxsim.ini"/>
     </transform>
-    <transform xil_pn:end_ts="1492335229" xil_pn:in_ck="6582014654196403480" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="4406621556007590065" xil_pn:start_ts="1492335229">
+    <transform xil_pn:end_ts="1492336051" xil_pn:in_ck="6582014654196403480" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="4406621556007590065" xil_pn:start_ts="1492336050">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="isim.cmd"/>
       <outfile xil_pn:name="isim.log"/>
       <outfile xil_pn:name="testComputer_isim_beh.wdb"/>
@@ -410,8 +421,10 @@
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="InputAdded"/>
       <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name=".lso"/>
       <outfile xil_pn:name="Computer.lso"/>
       <outfile xil_pn:name="Computer.ngc"/>
