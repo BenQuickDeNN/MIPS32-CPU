@@ -83,6 +83,7 @@ BEGIN
 			 debug_PCData => debug_PCData,
 			 debug_IRData => debug_IRData,
 			 debug_BUSData => debug_BUSData,
+			 debug_microInstruc => debug_microInstruc,
 			 debug_CUOPcode => debug_CUOPcode,
 			 debug_AddrTable1 => debug_AddrTable1
         );

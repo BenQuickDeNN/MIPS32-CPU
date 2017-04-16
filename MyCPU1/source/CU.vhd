@@ -70,7 +70,7 @@ architecture behav of CU is
 	signal InstructionAddress : std_logic_vector(5 downto 0) := "000000";-- 地址计数器,初值为0
 	begin
 	-- 微指令存储器赋初值
-	MicroInstructionROM(0) <= "11111111111111111111111111111111";
+	--MicroInstructionROM(0) <= "11111111111111111111111111111111";
 	IntiatCUROMProcess : process(initiation, pro_run)
 	variable ROM_FILE_STATUS:FILE_OPEN_STATUS;-- 文件打开状态
 	variable file_buff32 : line;
