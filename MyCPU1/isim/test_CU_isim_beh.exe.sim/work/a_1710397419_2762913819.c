@@ -183,7 +183,7 @@ LAB0:    xsi_set_current_line(88, ng0);
 
 LAB3:    t1 = (t0 + 3536U);
     t2 = *((char **)t1);
-    t3 = (1 - 0);
+    t3 = (0 - 0);
     t4 = (t3 * 1);
     t5 = (32U * t4);
     t6 = (0 + t5);

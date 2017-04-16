@@ -70,16 +70,17 @@ architecture behav of CU is
 	signal InstructionAddress : std_logic_vector(5 downto 0) := "000000";-- 地址计数器,初值为0
 	begin
 	-- 微指令存储器赋初值
+	MicroInstructionROM(0) <= "11111111111111111111111111111111";
 	IntiatCUROMProcess : process(initiation, pro_run)
 	variable ROM_FILE_STATUS:FILE_OPEN_STATUS;-- 文件打开状态
-	variable file_buff:line;
+	variable file_buff32 : line;
 	variable file_buff_vector32:std_logic_vector(31 downto 0);
 	begin
 	if(initiation = '1' and not(pro_run = '1'))then
 		file_open(ROM_FILE_STATUS,ROM_INI_FILE,"ROM_INI.txt",read_mode);-- 打开文件
 		ROM_LOOP: for i in 0 to 63 loop
-			readline(ROM_INI_FILE, file_buff);
-			read(file_buff, file_buff_vector32);
+			readline(ROM_INI_FILE, file_buff32);
+			read(file_buff32, file_buff_vector32);
 			MicroInstructionROM(i) <= file_buff_vector32;-- 将文件中的内容赋给控存
 		end loop ROM_LOOP;
 		file_close(ROM_INI_FILE);
