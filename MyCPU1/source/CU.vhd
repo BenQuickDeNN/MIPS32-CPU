@@ -18,6 +18,7 @@ entity CU is
 			test_opcode: out std_logic_vector(5 downto 0); 
 			test_Miinstruct : OUT std_logic_vector(31 downto 0);
 			test_ROM_out : out std_logic_vector(31 downto 0);
+			test_AddrTable1 : out std_logic_vector(7 downto 0);
 			--微命令输出
 			write_PC:out STD_LOGIC;-- 允许写PC寄存器
 			allow_PC_BUS:out std_logic;-- 允许将PC内容写入总线
@@ -101,7 +102,7 @@ architecture behav of CU is
 		file_close(addrTable1_ini_file);
 	end if;
 	end process IntiatAddrTable1Process;
-	
+	test_AddrTable1 <= MicroInstructionAddrTable1(0);
 	-- 功能转移2下地址表赋初值
 	IntiatAddrTable2Process : process(initiation, pro_run)
 	variable ROM_FILE_STATUS:FILE_OPEN_STATUS;-- 文件打开状态

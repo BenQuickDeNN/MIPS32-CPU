@@ -39,7 +39,8 @@ entity Computer is
 			-- 调试输出端口
 			debug_memData, debug_memAddr, debug_PCData, debug_IRData, debug_BUSData : out std_logic_vector(31 downto 0);
 			debug_microInstruc : out std_logic_vector(31 downto 0);
-			debug_CUOPcode : out std_logic_vector(5 downto 0));
+			debug_CUOPcode : out std_logic_vector(5 downto 0);
+			debug_AddrTable1 : out std_logic_vector(7 downto 0));
 end Computer;
 
 architecture Behavioral of Computer is
@@ -55,6 +56,7 @@ architecture Behavioral of Computer is
 			test_opcode: out std_logic_vector(5 downto 0);
 			--test_Miinstruct : OUT std_logic_vector(31 downto 0);
 			test_ROM_out : out std_logic_vector(31 downto 0);
+			test_AddrTable1 : out std_logic_vector(7 downto 0);
          instruction_done : OUT  std_logic;
          mem_ready : IN  std_logic;
          write_PC : OUT  std_logic;
@@ -498,6 +500,7 @@ begin
 			--test_MCounter,
 			--test_opcode,
 			test_ROM_out => debug_microInstruc,
+			test_AddrTable1 => debug_AddrTable1,
 			-- 输出端口
          instruction_done => InstructionDone,
 			--test_Miinstruct => debug_microInstruc,

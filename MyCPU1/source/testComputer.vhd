@@ -48,7 +48,8 @@ ARCHITECTURE behavior OF testComputer IS
 			-- µ÷ÊÔÊä³ö¶Ë¿Ú
 			debug_memData, debug_memAddr, debug_PCData, debug_IRData, debug_BUSData : out std_logic_vector(31 downto 0);
 			debug_microInstruc : out std_logic_vector(31 downto 0);
-			debug_CUOPcode : out std_logic_vector(5 downto 0)
+			debug_CUOPcode : out std_logic_vector(5 downto 0);
+			debug_AddrTable1 : out std_logic_vector(7 downto 0)
         );
     END COMPONENT;
     
@@ -63,6 +64,7 @@ ARCHITECTURE behavior OF testComputer IS
 	signal debug_memData, debug_memAddr, debug_PCData ,debug_IRData, debug_BUSData : std_logic_vector(31 downto 0);
 	signal debug_microInstruc : std_logic_vector(31 downto 0);
 	signal debug_CUOPcode : std_logic_vector(5 downto 0);
+	signal debug_AddrTable1 : std_logic_vector(7 downto 0);
 
    -- Clock period definitions
    constant CLK_period : time := 10 ns;
@@ -81,7 +83,8 @@ BEGIN
 			 debug_PCData => debug_PCData,
 			 debug_IRData => debug_IRData,
 			 debug_BUSData => debug_BUSData,
-			 debug_CUOPcode => debug_CUOPcode
+			 debug_CUOPcode => debug_CUOPcode,
+			 debug_AddrTable1 => debug_AddrTable1
         );
 
    -- Clock process definitions
