@@ -1,0 +1,2 @@
+vhdl isim_temp "source/PCMerger.vhd"
+vhdl isim_temp "source/testPCMerger.vhd"

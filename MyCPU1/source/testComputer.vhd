@@ -44,10 +44,11 @@ ARCHITECTURE behavior OF testComputer IS
          CLK : IN  std_logic;
          initiation, pro_run : IN  std_logic;
          boot : IN  std_logic;
-         InstructionDone : OUT  std_logic;
+         InstructionDone, debug_flagZero : OUT  std_logic;
 			-- µ÷ÊÔÊä³ö¶Ë¿Ú
 			debug_memData, debug_memAddr, debug_PCData, debug_IRData, debug_BUSData : out std_logic_vector(31 downto 0);
-			debug_microInstruc, debug_MDRData, debug_RFtest : out std_logic_vector(31 downto 0);
+			debug_microInstruc, debug_MDRData, debug_RFtest, debug_ALUResult : out std_logic_vector(31 downto 0);
+			debug_la, debug_lb : out std_logic_vector(31 downto 0);
 			debug_CUOPcode, debug_ALUFunc, debug_mcounter : out std_logic_vector(5 downto 0);
 			debug_AddrTable1 : out std_logic_vector(7 downto 0)
         );
@@ -60,9 +61,10 @@ ARCHITECTURE behavior OF testComputer IS
    signal boot : std_logic := '0';
 
  	--Outputs
-   signal InstructionDone : std_logic;
+   signal InstructionDone, debug_flagZero : std_logic;
 	signal debug_memData, debug_memAddr, debug_PCData ,debug_IRData, debug_BUSData : std_logic_vector(31 downto 0);
-	signal debug_microInstruc, debug_MDRData, debug_RFtest : std_logic_vector(31 downto 0);
+	signal debug_microInstruc, debug_MDRData, debug_RFtest, debug_ALUResult : std_logic_vector(31 downto 0);
+	signal debug_la, debug_lb : std_logic_vector(31 downto 0);
 	signal debug_CUOPcode, debug_ALUFunc, debug_mcounter : std_logic_vector(5 downto 0);
 	signal debug_AddrTable1 : std_logic_vector(7 downto 0);
 
@@ -78,6 +80,7 @@ BEGIN
 			 pro_run => pro_run,
           boot => boot,
           InstructionDone => InstructionDone,
+			 debug_flagZero => debug_flagZero,
 			 debug_memData => debug_memData,
 			 debug_memAddr => debug_memAddr,
 			 debug_PCData => debug_PCData,
@@ -86,6 +89,9 @@ BEGIN
 			 debug_microInstruc => debug_microInstruc,
 			 debug_MDRData => debug_MDRData,
 			 debug_RFtest => debug_RFtest,
+			 debug_ALUResult => debug_ALUResult,
+			 debug_la => debug_la,
+			 debug_lb => debug_lb,
 			 debug_CUOPcode => debug_CUOPcode,
 			 debug_ALUFunc => debug_ALUFunc,
 			 debug_AddrTable1 => debug_AddrTable1,

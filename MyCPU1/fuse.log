@@ -10,6 +10,7 @@ Parsing VHDL file "E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/RegisterField.vhd" 
 Parsing VHDL file "E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/Register32.vhd" into library work
 Parsing VHDL file "E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/PC_Seperator.vhd" into library work
 Parsing VHDL file "E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/PC_Adder.vhd" into library work
+Parsing VHDL file "E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/PCMerger.vhd" into library work
 Parsing VHDL file "E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/PCHighExtender.vhd" into library work
 Parsing VHDL file "E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/Mux_Reg.vhd" into library work
 Parsing VHDL file "E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/Mux_PC.vhd" into library work
@@ -27,7 +28,7 @@ Parsing VHDL file "E:/projects/VHDL/MyCPU1_ISE/MyCPU1/source/testComputer.vhd" i
 Starting static elaboration
 Completed static elaboration
 Fuse Memory Usage: 157624 KB
-Fuse CPU Usage: 405 ms
+Fuse CPU Usage: 374 ms
 Compiling package standard
 Compiling package std_logic_1164
 Compiling package std_logic_arith
@@ -40,6 +41,7 @@ Compiling architecture behave of entity SRAM [sram_default]
 Compiling architecture behav of entity Register32 [register32_default]
 Compiling architecture behavioral of entity PC_Adder [pc_adder_default]
 Compiling architecture behavioral of entity PC_Seperator [pc_seperator_default]
+Compiling architecture behavioral of entity PCMerger [pcmerger_default]
 Compiling architecture behavioral of entity PCHighExtender [pchighextender_default]
 Compiling architecture behavioral of entity Mux_PC [mux_pc_default]
 Compiling architecture behav of entity TriState [tristate_default]
@@ -56,8 +58,8 @@ Compiling architecture behavioral of entity Mux_MDR [mux_mdr_default]
 Compiling architecture behavioral of entity Computer [computer_default]
 Compiling architecture behavior of entity testcomputer
 Time Resolution for simulation is 1ps.
-Waiting for 19 sub-compilation(s) to finish...
-Compiled 47 VHDL Units
+Waiting for 20 sub-compilation(s) to finish...
+Compiled 49 VHDL Units
 Built simulation executable E:/projects/VHDL/MyCPU1_ISE/MyCPU1/testComputer_isim_beh.exe
 Fuse Memory Usage: 182036 KB
-Fuse CPU Usage: 796 ms
+Fuse CPU Usage: 703 ms

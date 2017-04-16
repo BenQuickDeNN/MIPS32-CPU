@@ -35,10 +35,11 @@ use std.textio.all;
 -- 整体结构
 entity Computer is
 	port(CLK, initiation, boot, pro_run : in std_logic;
-			InstructionDone : out std_logic;
+			InstructionDone, debug_flagZero : out std_logic;
 			-- 调试输出端口
 			debug_memData, debug_memAddr, debug_PCData, debug_IRData, debug_BUSData : out std_logic_vector(31 downto 0);
-			debug_microInstruc, debug_MDRData, debug_RFtest : out std_logic_vector(31 downto 0);
+			debug_microInstruc, debug_MDRData, debug_RFtest, debug_ALUResult : out std_logic_vector(31 downto 0);
+			debug_la, debug_lb : out std_logic_vector(31 downto 0);
 			debug_CUOPcode,debug_ALUFunc, debug_mcounter : out std_logic_vector(5 downto 0);
 			debug_AddrTable1 : out std_logic_vector(7 downto 0));
 end Computer;
@@ -123,6 +124,14 @@ architecture Behavioral of Computer is
     PORT(
          old_pc : IN  std_logic_vector(31 downto 0);
          new_pc : OUT  std_logic_vector(31 downto 0)
+        );
+    END COMPONENT;
+	 -- PC Merger
+	 COMPONENT PCMerger
+    PORT(
+         pc_high : IN  std_logic_vector(3 downto 0);
+         imme : IN  std_logic_vector(31 downto 0);
+         pc_new : OUT  std_logic_vector(31 downto 0)
         );
     END COMPONENT;
 	 -- PC Seperator
@@ -492,7 +501,10 @@ begin
 	debug_CUOPcode <= CUOPcode;
 	debug_ALUFunc <= ALUFunc;
 	debug_MDRData <= MDRDataIn;
-	--debug_RFtest <= ALUResult;
+	debug_ALUResult <= ALUResult;
+	debug_flagZero <= ALUFlag_Zero;
+	debug_la <= ALUOprand_a;
+	debug_lb <= ALUOprand_b;
 	-- 中央控制器
 	CentralCU : CU port map(
 			-- 输入端口
@@ -626,6 +638,11 @@ begin
 			-- 输出端口
 			high4 => PCHigh,
 			low4 => PCLow
+		);
+	PC_Merger : PCMerger port map(
+			pc_high => PCHigh,
+			imme => Imme32,
+			pc_new => addrMerge
 		);
 	PCHigh4Extender : PCHighExtender port map(
 			-- 输入信号

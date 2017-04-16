@@ -123,7 +123,7 @@ architecture behav of CU is
 	
 	--test_Miinstruct <= MicroInstructionROM(conv_integer(InstructionAddress));
 	
-	ControlProcess : process(CLK, initiation, pro_run, opcode_ready, mem_ready)
+	ControlProcess : process(CLK, initiation, pro_run)
 		begin
 			if(CLK = '1' and CLK'event and initiation = '0' and pro_run = '1') then
 				instruction_done <= '0';
@@ -187,6 +187,8 @@ architecture behav of CU is
 								InstructionAddress <= InstructionAddress + "000001";
 							else
 								-- do nothing
+								InstructionAddress <= "000000";
+								instruction_done <= '1';
 							end if;
 						elsif (opcode = "000101") then
 							-- BNE
@@ -194,10 +196,11 @@ architecture behav of CU is
 								InstructionAddress <= InstructionAddress + "000001";
 							else
 								-- do nothing
+								InstructionAddress <= "000000";
+								instruction_done <= '1';
 							end if;
 						else
 							InstructionAddress <= InstructionAddress + "000001";
-							
 						end if;
 				end case;
 				test_MCounter <= InstructionAddress;
