@@ -32,7 +32,7 @@ begin
 	begin
 		if(boot = '1' and not(write1 = '1'))then
 			file_open(INST_FILE_STATUS, ProgramFile, "asm_test/TestPrograme.txt", read_mode);-- 打开文件
-			PUSH_LOOP: for i in 0 to 127 loop
+			PUSH_LOOP: for i in 0 to 255 loop
 				readline(ProgramFile, file_buff);
 				read(file_buff, file_buff_vector);
 				memory_space_256(i) <= file_buff_vector;-- 将文件中的内容赋给内存
