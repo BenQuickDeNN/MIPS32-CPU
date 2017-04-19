@@ -50,7 +50,8 @@ ARCHITECTURE behavior OF testSRAM IS
          clk : IN  std_logic;
 			boot : IN std_logic;
          data_out : OUT  std_logic_vector(31 downto 0);
-			test_data_out : out std_logic_vector(31 downto 0)
+			test_data_out : out std_logic_vector(31 downto 0);
+			ready : out std_logic-- 内存准备好
         );
     END COMPONENT;
     
@@ -65,6 +66,7 @@ ARCHITECTURE behavior OF testSRAM IS
    signal clk : std_logic := '0';
 	signal boot : std_logic := '0';
 	signal test_data_out : std_logic_vector(31 downto 0) := (others => '0');
+	signal ready : std_logic;-- 内存准备好
 
  	--Outputs
    signal data_out : std_logic_vector(31 downto 0);
@@ -85,7 +87,8 @@ BEGIN
           clk => clk,
 			 boot => boot,
           data_out => data_out,
-			 test_data_out => test_data_out
+			 test_data_out => test_data_out,
+			 ready => ready
         );
 
    -- Clock process definitions

@@ -8,6 +8,7 @@ entity Register32 is
 			data_out : out std_logic_vector(31 downto 0);
 			WE:in std_logic;-- 写入使能
 			OE : in std_logic; -- 输出使能
+			MDRReady : out std_logic;-- MDR寄存器是否准备好
 			clk:in std_logic);
 end Register32;
 architecture behav of Register32 is

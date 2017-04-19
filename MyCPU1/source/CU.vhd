@@ -77,7 +77,7 @@ architecture behav of CU is
 	variable file_buff_vector32:std_logic_vector(31 downto 0);
 	begin
 	if(initiation = '1' and not(pro_run = '1'))then
-		file_open(ROM_FILE_STATUS,ROM_INI_FILE,"ROM_INI.txt",read_mode);-- 打开文件
+		file_open(ROM_FILE_STATUS,ROM_INI_FILE,"tables/ROM_INI.txt",read_mode);-- 打开文件
 		ROM_LOOP: for i in 0 to 63 loop
 			readline(ROM_INI_FILE, file_buff32);
 			read(file_buff32, file_buff_vector32);
@@ -94,7 +94,7 @@ architecture behav of CU is
 	variable file_buff_vector:std_logic_vector(7 downto 0);
 	begin
 	if(initiation = '1' and not(pro_run = '1'))then
-		file_open(ROM_FILE_STATUS,addrTable1_ini_file,"addrTable1.txt",read_mode);-- 打开文件
+		file_open(ROM_FILE_STATUS,addrTable1_ini_file,"tables/addrTable1.txt",read_mode);-- 打开文件
 		ADDR_TABLE1_LOOP: for i in 0 to 63 loop
 			readline(addrTable1_ini_file, file_buff);
 			read(file_buff, file_buff_vector);
@@ -111,7 +111,7 @@ architecture behav of CU is
 	variable file_buff_vector:std_logic_vector(7 downto 0);
 	begin
 	if(initiation = '1' and not(pro_run = '1'))then
-		file_open(ROM_FILE_STATUS,addrTable2_ini_file,"addrTable2.txt",read_mode);-- 打开文件
+		file_open(ROM_FILE_STATUS,addrTable2_ini_file,"tables/addrTable2.txt",read_mode);-- 打开文件
 		ADDR_TABLE2_LOOP: for i in 0 to 63 loop
 			readline(addrTable2_ini_file, file_buff);
 			read(file_buff, file_buff_vector);

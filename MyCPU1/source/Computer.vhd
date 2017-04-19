@@ -631,7 +631,7 @@ begin
 			clk => CLK,
 			data_in => MDRDataIn,
 			WE => CUControl(8),
-			OE => C_VCC,
+			OE => CUControl(9),
 			-- Êä³ö¶Ë¿Ú
 			data_out => MEMDataIn
 		);
