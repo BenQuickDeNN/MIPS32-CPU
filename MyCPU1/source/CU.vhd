@@ -68,6 +68,7 @@ architecture behav of CU is
 	file addrTable2_ini_file : text;-- 功能转移2下地址表文件
 	-- 设置地址计数器，记录微存储器地址
 	signal InstructionAddress : std_logic_vector(5 downto 0) := "000000";-- 地址计数器,初值为0
+	signal MEMAccessCounter : std_logic := '0'; -- 内存访问计数器，用于平衡速度差异
 	begin
 	-- 微指令存储器赋初值
 	--MicroInstructionROM(0) <= "11111111111111111111111111111111";
@@ -162,9 +163,16 @@ architecture behav of CU is
 				-- 根据下地址字段更新微指令地址
 				case MicroInstructionROM(conv_integer(InstructionAddress))(31 downto 30) is
 					when "00" =>
-						if (mem_ready = '0' and opcode = "101011") and mem_ready = '0' then
+						if (opcode = "101011") then
 							-- 可能会写内存，等待内存准备好
-							-- do nothing
+							-- 修改内存计数器
+							if(MEMAccessCounter = '1')then
+								InstructionAddress <= "000000";
+								instruction_done <= '1';
+								MEMAccessCounter <= '0';
+							else
+								MEMAccessCounter <= '1';
+							end if;
 						else
 							InstructionAddress <= "000000";
 							instruction_done <= '1';

@@ -511,7 +511,8 @@ begin
 	--debug_microInstruc <= CUControl;
 	debug_CUOPcode <= CUOPcode;
 	debug_ALUFunc <= ALUFunc;
-	debug_MDRData <= MDRDataIn;
+	--debug_MDRData <= MDRDataIn;
+	debug_MDRData <= MEMDataIn;
 	debug_ALUResult <= ALUResult;
 	debug_flagZero <= ALUFlag_Zero;
 	debug_la <= ALUOprand_a;
